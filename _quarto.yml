@@ -1,0 +1,61 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Учения"
+  navbar:
+    left:
+      - text: "Дома"
+        href: index.qmd
+      - text: "Конспекты"
+        href: Lecture_notes/index.qmd
+      - text: "О этом"
+        href: about.qmd
+
+  sidebar:
+    - title: "Конспекты"
+      collapse-level: 3
+      contents:
+          - section: "Конспекты"
+            href: Lecture_notes/index.qmd
+            contents: 
+              - section: "Линейная Алгебра"
+                href: Lecture_notes/LinearAlgebra/index.qmd
+                contents: 
+                  - Lecture_notes/LinearAlgebra/P20_Several_real_variables_function.qmd
+                  - Lecture_notes/LinearAlgebra/P21_SRVF_differentiation.qmd
+                  - Lecture_notes/LinearAlgebra/P22_Rn_to_Rm_differentiation.qmd
+              - section: "Диффуры"
+                href: Lecture_notes/DifferentialEquations/index.qmd
+                contents: 
+                  - Lecture_notes/DifferentialEquations/P1_ODE_General_concepts.qmd
+              - section: "Физика"
+                href: Lecture_notes/Physics/index.qmd
+                contents:
+                  - section: "Электрические цепи"
+                    href: "Lecture_notes/Physics/ElectricCircuits/index.qmd"
+                    contents: 
+                      - Lecture_notes/Physics/ElectricCircuits/Transition_processes_L_C.qmd
+                      - Lecture_notes/Physics/ElectricCircuits/RLC_circuit.qmd
+
+format:
+  html:
+    toc-depth: 5
+    toc-title: "На странице" # On this page перевод да
+    crossref:
+      ref-hyperlink: true
+      thm-prefix: "Теорема"
+      thm-title: "Теорема"
+      def-title: "Определение"
+      def-prefix: "Определение"
+    grid:
+      sidebar-width: 300px
+      body-width: 900px
+      margin-width: 300px
+      gutter-width: 1rem
+    theme:
+      light: cosmo
+      dark: darkly
+    css: styles.css
+    toc: true

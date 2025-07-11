@@ -1,0 +1,37 @@
+/* css styles */
+
+h1::before {
+  content: "α|";
+  color: #00e5b3;
+  margin-right: -0.2em;
+}
+
+h2::before {
+  content: "β|";
+  color: #00e5b3;
+  margin-right: -0.2em;
+}
+
+h3::before {
+  content: "γ|";
+  color: #00e5b3;
+  margin-right: -0.2em;
+}
+
+h4::before {
+  content: "δ|";
+  color: #00e5b3;
+  margin-right: -0.2em;
+}
+
+h5::before {
+  content: "ε|";
+  color: #00e5b3;
+  margin-right: -0.2em;
+}
+
+h6::before {
+  content: "ζ|";
+  color: #00e5b3;
+  margin-right: -0.2em;
+}

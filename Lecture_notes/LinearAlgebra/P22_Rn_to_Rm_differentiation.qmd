@@ -1,0 +1,106 @@
+---
+title: "Параграф XXII: Дифференцируемость из R^n^ в R^m^"
+---
+
+#### Определение 1: Дифференцируемость функции из $\mathbb{R}^n$ в $\mathbb{R}^m$
+Пусть: 
+
+::: {layout-ncol="3"}
+$X \subset \mathbb{R}^n$\
+$\vec{f} : X \rightarrow \mathbb{R}^m$\
+$x_0$ - предельная точка $X$
+
+$\vec{x}_0 = \begin{pmatrix}x_0 \\ x_1 \\ \vdots \\ x_n\end{pmatrix} \in X$
+
+$\vec{f}(\vec{x}) = \begin{pmatrix}f_1(\vec{x}) \\ f_2(\vec{x}) \\ \vdots \\ f_m(\vec{x})\end{pmatrix}$
+:::
+
+Функция $\vec{f}$ называется дифференцируемой в $\vec{x}_0$, если существует ($\exists A = a_{ik}$) матрица $m \times n$ такая, что:
+$$
+\vec{f}(\vec{x}) = \vec{f}(\vec{x}_0) + A(\vec{x} - \vec{x}_0) + o(\| \vec{x} - \vec{x}_0 \|)
+$$
+
+Или подробнее:
+$$
+\begin{pmatrix} f_1(\vec{x}) \\ f_2(\vec{x}) \\ \vdots \\ f_m(\vec{x}) \end{pmatrix}
+= 
+\begin{pmatrix} f_1(\vec{x}_0) \\ f_2(\vec{x}_0) \\ \vdots \\ f_m(\vec{x}_0) \end{pmatrix}
++
+\begin{pmatrix}
+a_{11} & a_{12} & \cdots & a_{1n} \\
+a_{21} & a_{22} & \cdots & a_{2n} \\
+\vdots & \vdots & \cdots & \vdots \\
+a_{m1} & a_{m2} & \cdots & a_{mn}   
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+x_1 - x_{10} \\
+x_2 - x_{20} \\
+\vdots \\
+x_n - x_{n0}
+\end{pmatrix}
++ 
+\begin{pmatrix}
+o_1(\| \vec{x} - \vec{x}_0 \|) \\
+o_2(\| \vec{x} - \vec{x}_0 \|) \\
+\vdots \\
+o_m(\| \vec{x} - \vec{x}_0 \|)
+\end{pmatrix}
+$$
+
+#### Определение 2: Производная функции из $\mathbb{R}^n$ в $\mathbb{R}^m$ или матрица Якоби
+
+Пусть $\vec{f}$ имеет все частные производные в $\vec{x}_0$. Матрица размера $m \times n$:
+
+$$
+\begin{pmatrix}
+\frac{\partial f_1}{\partial x_1}(\vec{x}_0) & \frac{\partial f_1}{\partial x_2}(\vec{x}_0) & \cdots & \frac{\partial f_1}{\partial x_n}(\vec{x}_0) \\
+\frac{\partial f_2}{\partial x_1}(\vec{x}_0) & \frac{\partial f_2}{\partial x_2}(\vec{x}_0) & \cdots & \frac{\partial f_2}{\partial x_n}(\vec{x}_0) \\
+\vdots & \vdots & \cdots & \vdots \\
+\frac{\partial f_m}{\partial x_1}(\vec{x}_0) & \frac{\partial f_m}{\partial x_2}(\vec{x}_0) & \cdots & \frac{\partial f_m}{\partial x_n}(\vec{x}_0) 
+\end{pmatrix}
+= \vec{f'}(\vec{x}_0) = J
+$$
+
+называется производной $\vec{f}$ или матрицей Якоби $\vec{f}$ в $\vec{x}_0$. $|J|$ называется якобианом.
+
+#### Теорема 1: Формула Тейлора 1-го порядка для $\vec{f}$ в $\vec{x}_0$
+
+Пусть: $X \subset \mathbb{R}^n$, $\vec{f} : X \rightarrow \mathbb{R}^m$. Если $\vec{f}$ дифференцируема в $\vec{x}_0$, то:
+
+$$ \vec{f}(\vec{x}) = \vec{f}(\vec{x}_0) + \vec{f'}(\vec{x}_0)(\vec{x} - \vec{x}_0) + o(\| \vec{x} - \vec{x}_0 \|) $$
+
+##### Доказательство:
+
+::: {layout-ncol="2"}
+По [определению 1](#определение-1-дифференцируемость-функции-из-mathbbrn-в-mathbbrm):
+$$
+\vec{f}(\vec{x}) = \vec{f}(\vec{x}_0) + A(\vec{x} - \vec{x}_0) + o(\| \vec{x} - \vec{x}_0 \|) 
+$$
+Пусть $A_k$ - $k$-ая строка матрицы $A$. Тогда по [теореме 1 параграфа 21](/Lecture_notes/LinearAlgebra/P21_SRVF_differentiation.qmd#теорема-1-формула-тейлора-для-функции-нескольких-переменных):
+$$
+A_k = \begin{pmatrix}
+\frac{\partial f_k}{\partial x_1}(\vec{x}_0) & \frac{\partial f_k}{\partial x_2}(\vec{x}_0) & \cdots & \frac{\partial f_k}{\partial x_n}(\vec{x}_0) 
+\end{pmatrix}
+$$
+
+Следовательно:
+$$ A = \begin{pmatrix}A_1 \\ A_2 \\ \vdots \\ A_m\end{pmatrix} = \vec{f'}(\vec{x}_0) $$
+:::
+
+Значит справедлива формула Тейлора 1-го порядка. $\blacksquare$
+
+::: {.callout-note}
+#### Замечание 1
+
+Из доказательства теоремы следует, что дифференцируемость $\vec{f}$ из $\mathbb{R}^n$ в $\mathbb{R}^m$ равносильна дифференцируемости всех её координатных функций.
+:::
+
+#### Теорема 2: Дифференцируемость суперпозиции
+
+Пусть: $X \subset \mathbb{R}^n$, $Y \subset \mathbb{R}^m$, $f: X \rightarrow Y$, $g: Y \rightarrow \mathbb{R}^p$, причем $f$ дифференцируема в $\vec{x}_0 \in X$, а $g$ дифференцируема в $\vec{y}_0 = f(\vec{x}_0)$\
+Тогда суперпозиция $h = g \circ f$ дифференцируема в $\vec{x}_0$ и:
+
+$$
+h'(\vec{x}_0) = g'(\vec{y}_0) \cdot f'(\vec{x}_0)
+$$
