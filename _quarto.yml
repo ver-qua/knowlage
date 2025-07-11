@@ -26,10 +26,18 @@ website:
                   - Lecture_notes/LinearAlgebra/P20_Several_real_variables_function.qmd
                   - Lecture_notes/LinearAlgebra/P21_SRVF_differentiation.qmd
                   - Lecture_notes/LinearAlgebra/P22_Rn_to_Rm_differentiation.qmd
+
               - section: "Диффуры"
                 href: Lecture_notes/DifferentialEquations/index.qmd
                 contents: 
                   - Lecture_notes/DifferentialEquations/P1_ODE_General_concepts.qmd
+
+              - section: "Матанализ"
+                href: Lecture_notes/Calculus/index.qmd
+                contents: 
+                  - Lecture_notes/Calculus/PX_integration_methods.qmd
+                  - Lecture_notes/Calculus/PX_definite_integral.qmd
+
               - section: "Физика"
                 href: Lecture_notes/Physics/index.qmd
                 contents:
@@ -41,6 +49,7 @@ website:
 
 format:
   html:
+    toc-expand: true
     toc-depth: 5
     toc-title: "На странице" # On this page перевод да
     crossref:
@@ -55,7 +64,7 @@ format:
       margin-width: 300px
       gutter-width: 1rem
     theme:
-      light: cosmo
-      dark: darkly
+      light: [cosmo, theme.scss]
+      dark: [darkly, theme-dark.scss]
     css: styles.css
     toc: true

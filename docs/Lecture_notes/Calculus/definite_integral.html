@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Параграф XXII: Дифференцируемость из Rn в Rm – Учения</title>
+<title>Параграф I: Определённый интеграл (ОИ) – Учения</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -308,7 +308,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../Lecture_notes/LinearAlgebra/index.html">Линейная Алгебра</a></li><li class="breadcrumb-item"><a href="../../Lecture_notes/LinearAlgebra/P22_Rn_to_Rm_differentiation.html">Параграф XXII: Дифференцируемость из R<sup>n</sup> в R<sup>m</sup></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../Lecture_notes/Calculus/index.html">Матанализ</a></li><li class="breadcrumb-item"><a href="../../Lecture_notes/Calculus/definite_integral.html">Параграф I: Определённый интеграл (ОИ)</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -352,7 +352,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/LinearAlgebra/P22_Rn_to_Rm_differentiation.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../Lecture_notes/LinearAlgebra/P22_Rn_to_Rm_differentiation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Параграф XXII: Дифференцируемость из R<sup>n</sup> в R<sup>m</sup></span></a>
   </div>
 </li>
@@ -386,14 +386,8 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Calculus/PX_integration_methods.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Основные методы интегрирования</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Calculus/PX_definite_integral.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Определённый интеграл (ОИ)</span></a>
+  <a href="../../Lecture_notes/Calculus/definite_integral.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Параграф I: Определённый интеграл (ОИ)</span></a>
   </div>
 </li>
       </ul>
@@ -444,13 +438,20 @@ window.Quarto = {
     <h2 id="toc-title">На странице</h2>
    
   <ul>
-  <li><a href="#определение-1-дифференцируемость-функции-из-mathbbrn-в-mathbbrm" id="toc-определение-1-дифференцируемость-функции-из-mathbbrn-в-mathbbrm" class="nav-link active" data-scroll-target="#определение-1-дифференцируемость-функции-из-mathbbrn-в-mathbbrm">Определение 1: Дифференцируемость функции из <span class="math inline">\(\mathbb{R}^n\)</span> в <span class="math inline">\(\mathbb{R}^m\)</span></a></li>
-  <li><a href="#определение-2-производная-функции-из-mathbbrn-в-mathbbrm-или-матрица-якоби" id="toc-определение-2-производная-функции-из-mathbbrn-в-mathbbrm-или-матрица-якоби" class="nav-link" data-scroll-target="#определение-2-производная-функции-из-mathbbrn-в-mathbbrm-или-матрица-якоби">Определение 2: Производная функции из <span class="math inline">\(\mathbb{R}^n\)</span> в <span class="math inline">\(\mathbb{R}^m\)</span> или матрица Якоби</a></li>
-  <li><a href="#теорема-1-формула-тейлора-1-го-порядка-для-vecf-в-vecx_0" id="toc-теорема-1-формула-тейлора-1-го-порядка-для-vecf-в-vecx_0" class="nav-link" data-scroll-target="#теорема-1-формула-тейлора-1-го-порядка-для-vecf-в-vecx_0">Теорема 1: Формула Тейлора 1-го порядка для <span class="math inline">\(\vec{f}\)</span> в <span class="math inline">\(\vec{x}_0\)</span></a>
+  <li><a href="#метод-замены-переменной" id="toc-метод-замены-переменной" class="nav-link active" data-scroll-target="#метод-замены-переменной">Метод замены переменной</a>
   <ul>
+  <li><a href="#пример" id="toc-пример" class="nav-link" data-scroll-target="#пример">Пример</a></li>
   <li><a href="#доказательство" id="toc-доказательство" class="nav-link" data-scroll-target="#доказательство">Доказательство</a></li>
   </ul></li>
-  <li><a href="#теорема-2-дифференцируемость-суперпозиции" id="toc-теорема-2-дифференцируемость-суперпозиции" class="nav-link" data-scroll-target="#теорема-2-дифференцируемость-суперпозиции">Теорема 2: Дифференцируемость суперпозиции</a></li>
+  <li><a href="#метод-интегрирования-по-частям" id="toc-метод-интегрирования-по-частям" class="nav-link" data-scroll-target="#метод-интегрирования-по-частям">Метод интегрирования по частям</a>
+  <ul>
+  <li><a href="#формула-интегрирования-по-частям" id="toc-формула-интегрирования-по-частям" class="nav-link" data-scroll-target="#формула-интегрирования-по-частям">Формула интегрирования по частям</a></li>
+  <li><a href="#доказательство-1" id="toc-доказательство-1" class="nav-link" data-scroll-target="#доказательство-1">Доказательство</a></li>
+  </ul></li>
+  <li><a href="#определённый-интеграл" id="toc-определённый-интеграл" class="nav-link" data-scroll-target="#определённый-интеграл">3. Определённый интеграл</a>
+  <ul>
+  <li><a href="#определение-1-разбиение-с-отмеченными-точками" id="toc-определение-1-разбиение-с-отмеченными-точками" class="nav-link" data-scroll-target="#определение-1-разбиение-с-отмеченными-точками">Определение 1: Разбиение с отмеченными точками</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -458,9 +459,9 @@ window.Quarto = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../Lecture_notes/LinearAlgebra/index.html">Линейная Алгебра</a></li><li class="breadcrumb-item"><a href="../../Lecture_notes/LinearAlgebra/P22_Rn_to_Rm_differentiation.html">Параграф XXII: Дифференцируемость из R<sup>n</sup> в R<sup>m</sup></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../Lecture_notes/Calculus/index.html">Матанализ</a></li><li class="breadcrumb-item"><a href="../../Lecture_notes/Calculus/definite_integral.html">Параграф I: Определённый интеграл (ОИ)</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Параграф XXII: Дифференцируемость из R<sup>n</sup> в R<sup>m</sup></h1>
+<h1 class="title">Параграф I: Определённый интеграл (ОИ)</h1>
 </div>
 
 
@@ -477,112 +478,88 @@ window.Quarto = {
 </header>
 
 
-<p><code>Лекция от 10.02.2025</code></p>
-<section id="определение-1-дифференцируемость-функции-из-mathbbrn-в-mathbbrm" class="level4">
-<h4 class="anchored" data-anchor-id="определение-1-дифференцируемость-функции-из-mathbbrn-в-mathbbrm">Определение 1: Дифференцируемость функции из <span class="math inline">\(\mathbb{R}^n\)</span> в <span class="math inline">\(\mathbb{R}^m\)</span></h4>
-<p>Пусть:</p>
-<div class="quarto-layout-panel" data-layout-ncol="3">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
-<p><span class="math inline">\(X \subset \mathbb{R}^n\)</span><br>
-<span class="math inline">\(\vec{f} : X \rightarrow \mathbb{R}^m\)</span><br>
-<span class="math inline">\(x_0\)</span> - предельная точка <span class="math inline">\(X\)</span></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
-<p><span class="math inline">\(\vec{x}_0 = \begin{pmatrix}x_0 \\ x_1 \\ \vdots \\ x_n\end{pmatrix} \in X\)</span></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
-<p><span class="math inline">\(\vec{f}(\vec{x}) = \begin{pmatrix}f_1(\vec{x}) \\ f_2(\vec{x}) \\ \vdots \\ f_m(\vec{x})\end{pmatrix}\)</span></p>
-</div>
-</div>
-</div>
-<p>Функция <span class="math inline">\(\vec{f}\)</span> называется дифференцируемой в <span class="math inline">\(\vec{x}_0\)</span>, если существует (<span class="math inline">\(\exists A = a_{ik}\)</span>) матрица <span class="math inline">\(m \times n\)</span> такая, что: <span class="math display">\[
-\vec{f}(\vec{x}) = \vec{f}(\vec{x}_0) + A(\vec{x} - \vec{x}_0) + o(\| \vec{x} - \vec{x}_0 \|)
+<p><em>Лекция 1 (07.02.2025)</em></p>
+<section id="метод-замены-переменной" class="level4">
+<h4 class="anchored" data-anchor-id="метод-замены-переменной">Метод замены переменной</h4>
+<p>Если <span class="math inline">\(f(x)\)</span> непрерывна, <span class="math inline">\(F(x)\)</span> - её первообразная, полагая что <span class="math inline">\(x = \varphi(t)\)</span>, где <span class="math inline">\(\varphi(t)\)</span> - непрерывно дифференцируема, получаем: <span class="math display">\[
+\int f(x)dx = \left[ x = \varphi(t) \right] = \int f(\varphi(t))d\varphi(t) = \int f(\varphi(t))\varphi'(t)dt = F(\varphi(t)) + C
 \]</span></p>
-<p>Или подробнее: <span class="math display">\[
-\begin{pmatrix} f_1(\vec{x}) \\ f_2(\vec{x}) \\ \vdots \\ f_m(\vec{x}) \end{pmatrix}
-=
-\begin{pmatrix} f_1(\vec{x}_0) \\ f_2(\vec{x}_0) \\ \vdots \\ f_m(\vec{x}_0) \end{pmatrix}
-+
-\begin{pmatrix}
-a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \\
-a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n} \\
-\vdots &amp; \vdots &amp; \cdots &amp; \vdots \\
-a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{mn}   
-\end{pmatrix}
-\cdot
-\begin{pmatrix}
-x_1 - x_{10} \\
-x_2 - x_{20} \\
-\vdots \\
-x_n - x_{n0}
-\end{pmatrix}
-+
-\begin{pmatrix}
-o_1(\| \vec{x} - \vec{x}_0 \|) \\
-o_2(\| \vec{x} - \vec{x}_0 \|) \\
-\vdots \\
-o_m(\| \vec{x} - \vec{x}_0 \|)
-\end{pmatrix}
+<p>На практике чаще используют следующие эквивалентные записи: <span class="math display">\[
+\varphi'(t)dt = d\varphi(t)
 \]</span></p>
-</section>
-<section id="определение-2-производная-функции-из-mathbbrn-в-mathbbrm-или-матрица-якоби" class="level4">
-<h4 class="anchored" data-anchor-id="определение-2-производная-функции-из-mathbbrn-в-mathbbrm-или-матрица-якоби">Определение 2: Производная функции из <span class="math inline">\(\mathbb{R}^n\)</span> в <span class="math inline">\(\mathbb{R}^m\)</span> или матрица Якоби</h4>
-<p>Пусть <span class="math inline">\(\vec{f}\)</span> имеет все частные производные в <span class="math inline">\(\vec{x}_0\)</span>. Матрица размера <span class="math inline">\(m \times n\)</span>:</p>
+<section id="пример" class="level5">
+<h5 class="anchored" data-anchor-id="пример">Пример</h5>
 <p><span class="math display">\[
-\begin{pmatrix}
-\frac{\partial f_1}{\partial x_1}(\vec{x}_0) &amp; \frac{\partial f_1}{\partial x_2}(\vec{x}_0) &amp; \cdots &amp; \frac{\partial f_1}{\partial x_n}(\vec{x}_0) \\
-\frac{\partial f_2}{\partial x_1}(\vec{x}_0) &amp; \frac{\partial f_2}{\partial x_2}(\vec{x}_0) &amp; \cdots &amp; \frac{\partial f_2}{\partial x_n}(\vec{x}_0) \\
-\vdots &amp; \vdots &amp; \cdots &amp; \vdots \\
-\frac{\partial f_m}{\partial x_1}(\vec{x}_0) &amp; \frac{\partial f_m}{\partial x_2}(\vec{x}_0) &amp; \cdots &amp; \frac{\partial f_m}{\partial x_n}(\vec{x}_0)
-\end{pmatrix}
-= \vec{f'}(\vec{x}_0) = J
+\int \sin(x^2)x\,dx = \int \frac{1}{2} \sin(x^2) \cdot 2x\,dx = \frac{1}{2} \int \sin(x^2)dx^2 = -\frac{1}{2} \cos(x^2) + C
 \]</span></p>
-<p>Называется производной <span class="math inline">\(\vec{f}\)</span> или матрицей Якоби <span class="math inline">\(\vec{f}\)</span> в <span class="math inline">\(\vec{x}_0\)</span>. <span class="math inline">\(|J|\)</span> называется якобианом.</p>
+<p>Здесь мы “внесли” <span class="math inline">\(2x\)</span> под дифференциал, так как <span class="math inline">\((x^2)' = 2x\)</span>.</p>
 </section>
-<section id="теорема-1-формула-тейлора-1-го-порядка-для-vecf-в-vecx_0" class="level4">
-<h4 class="anchored" data-anchor-id="теорема-1-формула-тейлора-1-го-порядка-для-vecf-в-vecx_0">Теорема 1: Формула Тейлора 1-го порядка для <span class="math inline">\(\vec{f}\)</span> в <span class="math inline">\(\vec{x}_0\)</span></h4>
-<p>Пусть: <span class="math inline">\(X \subset \mathbb{R}^n\)</span>, <span class="math inline">\(\vec{f} : X \rightarrow \mathbb{R}^m\)</span>. Если <span class="math inline">\(\vec{f}\)</span> дифференцируема в <span class="math inline">\(\vec{x}_0\)</span>, то:</p>
-<p><span class="math display">\[ \vec{f}(\vec{x}) = \vec{f}(\vec{x}_0) + \vec{f'}(\vec{x}_0)(\vec{x} - \vec{x}_0) + o(\| \vec{x} - \vec{x}_0 \|) \]</span></p>
 <section id="доказательство" class="level5">
 <h5 class="anchored" data-anchor-id="доказательство">Доказательство</h5>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p>По <a href="#определение-1-дифференцируемость-функции-из-mathbbrn-в-mathbbrm">определению 1</a>: <span class="math display">\[
-\vec{f}(\vec{x}) = \vec{f}(\vec{x}_0) + A(\vec{x} - \vec{x}_0) + o(\| \vec{x} - \vec{x}_0 \|)
-\]</span> Пусть <span class="math inline">\(A_k\)</span> - <span class="math inline">\(k\)</span>-ая строка матрицы <span class="math inline">\(A\)</span>. Тогда по <a href="../../Lecture_notes/LinearAlgebra/P21_SRVF_differentiation.html#теорема-1-формула-тейлора-для-функции-нескольких-переменных">теореме 1 параграфа 21</a>: <span class="math display">\[
-A_k = \begin{pmatrix}
-\frac{\partial f_k}{\partial x_1}(\vec{x}_0) &amp; \frac{\partial f_k}{\partial x_2}(\vec{x}_0) &amp; \cdots &amp; \frac{\partial f_k}{\partial x_n}(\vec{x}_0)
-\end{pmatrix}
+<p>Результат следует из формулы производной сложной функции. Пусть <span class="math inline">\(F(x)\)</span> - первообразная для <span class="math inline">\(f(x)\)</span>, тогда: <span class="math display">\[
+\left( F(\varphi(t)) \right)' = F'(\varphi(t)) \cdot \varphi'(t) = f(\varphi(t)) \cdot \varphi'(t)
 \]</span></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p>Следовательно: <span class="math display">\[ A = \begin{pmatrix}A_1 \\ A_2 \\ \vdots \\ A_m\end{pmatrix} = \vec{f'}(\vec{x}_0) \]</span></p>
-</div>
-</div>
-</div>
-<p>Значит справедлива формула Тейлора 1-го порядка. <span class="math inline">\(\blacksquare\)</span></p>
+<p>Это показывает, что <span class="math inline">\(F(\varphi(t))\)</span> является первообразной для <span class="math inline">\(f(\varphi(t))\varphi'(t)\)</span>.</p>
+</section>
+</section>
+<section id="метод-интегрирования-по-частям" class="level4">
+<h4 class="anchored" data-anchor-id="метод-интегрирования-по-частям">Метод интегрирования по частям</h4>
+<section id="формула-интегрирования-по-частям" class="level5">
+<h5 class="anchored" data-anchor-id="формула-интегрирования-по-частям">Формула интегрирования по частям</h5>
+<p>Если <span class="math inline">\(v(x)\)</span> и <span class="math inline">\(u(x)\)</span> - дифференцируемые функции, то справедливо: <span class="math display">\[
+\int u(x) v'(x) \, dx = u(x) v(x) - \int v(x) u'(x) \, dx
+\]</span></p>
+<p>На практике чаще используют компактную запись: <span class="math display">\[
+\int u \, dv = u \cdot v - \int v \, du
+\]</span></p>
+</section>
+<section id="доказательство-1" class="level5">
+<h5 class="anchored" data-anchor-id="доказательство-1">Доказательство</h5>
+<p>Формула следует из правила дифференцирования произведения функций: <span class="math display">\[
+(u(x)v(x))' = u'(x)v(x) + u(x)v'(x)
+\]</span></p>
+<p>Проинтегрировав обе части равенства, получаем: <span class="math display">\[
+u(x)v(x) = \int u'(x)v(x) \, dx + \int u(x)v'(x) \, dx
+\]</span></p>
+<p>После преобразования получаем искомую формулу: <span class="math display">\[
+\int u(x)v'(x) \, dx = u(x)v(x) - \int u'(x)v(x) \, dx
+\]</span></p>
+</section>
+</section>
+<section id="определённый-интеграл" class="level4">
+<h4 class="anchored" data-anchor-id="определённый-интеграл">3. Определённый интеграл</h4>
+<section id="определение-1-разбиение-с-отмеченными-точками" class="level5">
+<h5 class="anchored" data-anchor-id="определение-1-разбиение-с-отмеченными-точками">Определение 1: Разбиение с отмеченными точками</h5>
+<p>Пусть задан отрезок <span class="math inline">\([a, b]\)</span>, где <span class="math inline">\(a &lt; b\)</span>. Система точек <span class="math inline">\(x_0, x_1, ..., x_n\)</span>, такая что: <span class="math display">\[
+a = x_0 &lt; x_1 &lt; \cdots &lt; x_{n-1} &lt; x_n = b
+\]</span></p>
+<p>называется <strong>разбиением</strong> отрезка <span class="math inline">\([a, b]\)</span> на промежутки <span class="math inline">\([x_k, x_{k+1}]\)</span>, <span class="math inline">\(k = 0, 1, ..., n-1\)</span>. Разбиение обозначается <span class="math inline">\(\Pi\)</span>.<br>
+Если в каждом промежутке <span class="math inline">\([x_k, x_{k+1}]\)</span> выбрана точка <span class="math inline">\(\xi_k \in [x_k, x_{k+1}]\)</span>, то говорят о <strong>разбиении с отмеченными точками</strong>, обозначаемом <span class="math inline">\(\Pi_\xi\)</span></p>
+<p>Введём обозначения:</p>
+<ul>
+<li><span class="math inline">\(\Delta x_k = x_{k+1} - x_k\)</span> - <strong>длина</strong> k-го промежутка</li>
+<li><span class="math inline">\(\lambda(\Pi) = \max_{k=0,1,...,n} \Delta x_k\)</span> - <strong>ранг разбиения</strong></li>
+</ul>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Замечание 1
+Примечания
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Из доказательства теоремы следует, что дифференцируемость <span class="math inline">\(\vec{f}\)</span> из <span class="math inline">\(\mathbb{R}^n\)</span> в <span class="math inline">\(\mathbb{R}^m\)</span> равносильна дифференцируемости всех её координатных функций.</p>
+<ol type="1">
+<li>Длины отрезков разбиения <span class="math inline">\(\Delta x_k\)</span> не обязаны быть равными</li>
+<li>Точки <span class="math inline">\(\xi_k\)</span> не обязательно выбираются в середине промежутков</li>
+<li>В различных учебных материалах интегралы часто вводятся через равные отрезки, но это частный случай</li>
+</ol>
 </div>
 </div>
-</section>
-</section>
-<section id="теорема-2-дифференцируемость-суперпозиции" class="level4">
-<h4 class="anchored" data-anchor-id="теорема-2-дифференцируемость-суперпозиции">Теорема 2: Дифференцируемость суперпозиции</h4>
-<p>Пусть: <span class="math inline">\(X \subset \mathbb{R}^n\)</span>, <span class="math inline">\(Y \subset \mathbb{R}^m\)</span>, <span class="math inline">\(f: X \rightarrow Y\)</span></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
