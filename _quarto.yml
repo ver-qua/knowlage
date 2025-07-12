@@ -2,7 +2,13 @@ project:
   type: website
   output-dir: docs
 
+lang: ru
+
 website:
+  repo-url: https://github.com/ver-qua/knowlage
+  repo-branch: master
+  repo-link-target: "_blank"
+  repo-actions: [source, issue, edit]
   title: "Учения"
   navbar:
     left:
@@ -41,6 +47,15 @@ website:
               - section: "Физика"
                 href: Lecture_notes/Physics/index.qmd
                 contents:
+                  - section: "Электростатика"
+                    href: "Lecture_notes/Physics/Electrostatics/index.qmd"
+                    contents: 
+                      - Lecture_notes/Physics/Electrostatics/electric_feild.qmd
+                      - Lecture_notes/Physics/Electrostatics/gauss_theorem.qmd
+                      - Lecture_notes/Physics/Electrostatics/Coulombs_law.qmd
+                      - Lecture_notes/Physics/Electrostatics/electric_charge.qmd
+                      - Lecture_notes/Physics/Electrostatics/electric_potential.qmd
+
                   - section: "Электрические цепи"
                     href: "Lecture_notes/Physics/ElectricCircuits/index.qmd"
                     contents: 
@@ -51,13 +66,6 @@ format:
   html:
     toc-expand: true
     toc-depth: 5
-    toc-title: "На странице" # On this page перевод да
-    crossref:
-      ref-hyperlink: true
-      thm-prefix: "Теорема"
-      thm-title: "Теорема"
-      def-title: "Определение"
-      def-prefix: "Определение"
     grid:
       sidebar-width: 300px
       body-width: 900px
@@ -65,6 +73,6 @@ format:
       gutter-width: 1rem
     theme:
       light: [cosmo, theme.scss]
-      dark: [darkly, theme-dark.scss]
+      dark: [cosmo, theme-dark.scss]
     css: styles.css
     toc: true

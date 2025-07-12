@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Дифференциальные Уравнения – Учения</title>
+<title>Теорема Гаусса – Учения</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,27 +23,27 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-8ef56b68f8fa1e9d2ba328e99e439f80.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-c323d292bfb2abd8c20242df8f978628.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-e400a582076fcffc27701c3b1ff123b2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-c323d292bfb2abd8c20242df8f978628.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-8ef56b68f8fa1e9d2ba328e99e439f80.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-c323d292bfb2abd8c20242df8f978628.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-e400a582076fcffc27701c3b1ff123b2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-c323d292bfb2abd8c20242df8f978628.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,8 +72,37 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../../styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -245,7 +274,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Учения</span>
     </a>
   </div>
@@ -256,15 +285,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Дома</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../../Lecture_notes/index.html" aria-current="page"> 
+    <a class="nav-link active" href="../../../Lecture_notes/index.html" aria-current="page"> 
 <span class="menu-text">Конспекты</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
+    <a class="nav-link" href="../../../about.html"> 
 <span class="menu-text">О этом</span></a>
   </li>  
 </ul>
@@ -279,7 +308,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Переключить боковую панель навигации" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../Lecture_notes/DifferentialEquations/index.html">Диффуры</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/index.html">Физика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/index.html">Электростатика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/gauss_theorem.html">Теорема Гаусса</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Переключить боковую панель навигации" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -293,7 +322,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../Lecture_notes/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Конспекты</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Переключить раздел">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -302,7 +331,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/LinearAlgebra/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../Lecture_notes/LinearAlgebra/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Линейная Алгебра</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Переключить раздел">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -311,19 +340,19 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/LinearAlgebra/P20_Several_real_variables_function.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/LinearAlgebra/P20_Several_real_variables_function.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Параграф XX: Функции нескольких переменных</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/LinearAlgebra/P21_SRVF_differentiation.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/LinearAlgebra/P21_SRVF_differentiation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Параграф XXI: Дифференциируемость функции нескольких переменных</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/LinearAlgebra/P22_Rn_to_Rm_differentiation.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/LinearAlgebra/P22_Rn_to_Rm_differentiation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Параграф XXII: Дифференцируемость из R<sup>n</sup> в R<sup>m</sup></span></a>
   </div>
 </li>
@@ -331,7 +360,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/DifferentialEquations/index.html" class="sidebar-item-text sidebar-link active">
+            <a href="../../../Lecture_notes/DifferentialEquations/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Диффуры</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Переключить раздел">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -340,7 +369,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/DifferentialEquations/P1_ODE_General_concepts.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/DifferentialEquations/P1_ODE_General_concepts.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Параграф I: Обыкновенные Дифференциальные Уравнения. Общие Понятия</span></a>
   </div>
 </li>
@@ -348,7 +377,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/Calculus/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../Lecture_notes/Calculus/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Матанализ</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Переключить раздел">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -357,13 +386,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Calculus/PX_integration_methods.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Calculus/PX_integration_methods.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Основные методы интегрирования</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Calculus/PX_definite_integral.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Calculus/PX_definite_integral.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Определённый интеграл (ОИ)</span></a>
   </div>
 </li>
@@ -371,7 +400,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/Physics/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../Lecture_notes/Physics/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Физика</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Переключить раздел">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -380,40 +409,40 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/Physics/Electrostatics/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../Lecture_notes/Physics/Electrostatics/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Электростатика</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Переключить раздел">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Переключить раздел">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth3 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/electric_feild.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/electric_feild.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Электрическое Поле</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/gauss_theorem.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/gauss_theorem.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Теорема Гаусса</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/Coulombs_law.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/Coulombs_law.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Закон Кулона</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/electric_charge.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/electric_charge.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Электрический Заряд</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/electric_potential.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/electric_potential.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Электрический потенциал</span></a>
   </div>
 </li>
@@ -421,7 +450,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/Physics/ElectricCircuits/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../Lecture_notes/Physics/ElectricCircuits/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Электрические цепи</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Переключить раздел">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -430,13 +459,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/ElectricCircuits/Transition_processes_L_C.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/ElectricCircuits/Transition_processes_L_C.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Переходные процессы L и C</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/ElectricCircuits/RLC_circuit.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/ElectricCircuits/RLC_circuit.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Колебательный контур</span></a>
   </div>
 </li>
@@ -451,16 +480,23 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">Содержание</h2>
+   
+  <ul>
+  <li><a href="#поток-напряжённости-электростатического-поля" id="toc-поток-напряжённости-электростатического-поля" class="nav-link active" data-scroll-target="#поток-напряжённости-электростатического-поля">Поток Напряжённости Электростатического Поля</a></li>
+  <li><a href="#теорема-гаусса" id="toc-теорема-гаусса" class="nav-link" data-scroll-target="#теорема-гаусса">Теорема Гаусса</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/Physics/Electrostatics/gauss_theorem.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/Physics/Electrostatics/gauss_theorem.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../Lecture_notes/DifferentialEquations/index.html">Диффуры</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/index.html">Физика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/index.html">Электростатика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/gauss_theorem.html">Теорема Гаусса</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Дифференциальные Уравнения</h1>
+<h1 class="title">Теорема Гаусса</h1>
 </div>
 
 
@@ -477,8 +513,72 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="поток-напряжённости-электростатического-поля" class="level4">
+<h4 class="anchored" data-anchor-id="поток-напряжённости-электростатического-поля">Поток Напряжённости Электростатического Поля</h4>
+<p>Поток это общий термин для векторных полей. Но для нашего случая проще всего визуально дать представление.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="GaussTheorem/flux.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Для упрощения рассуждений, будем считать, что густота линий <span class="math inline">\(\vec{E}\)</span> равна модулю вектора <span class="math inline">\(\vec{E}\)</span>. Тогда число линий, пронизывающих элементарную площадку <span class="math inline">\(dS\)</span>, нормаль <span class="math inline">\(\vec{n}\)</span> которой составляет угол <span class="math inline">\(\alpha\)</span> с вектором <span class="math inline">\(\vec{E}\)</span>, определяется согласно рисунку как <span class="math inline">\(E\, dS\, cos\alpha\)</span>. Эта величина и есть поток <span class="math inline">\(d\Phi\)</span> вектора <span class="math inline">\(\vec{E}\)</span> сквозь площадку <span class="math inline">\(dS\)</span>. В более компактной форме:</p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><span class="math display">\[
+d\Phi = E_n dS = \vec{E} d\vec{S}
+\]</span></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><span class="math inline">\(E_n\)</span> - проекция вектора <span class="math inline">\(\vec{E}\)</span> на нормаль <span class="math inline">\(\vec{n}\)</span> к площадке <span class="math inline">\(dS\)</span><br>
+<span class="math inline">\(d\vec{S}\)</span> - вектор, модуль которого равен <span class="math inline">\(dS\)</span>, а направление совпадает с нормалью <span class="math inline">\(\vec{n}\)</span> к площадке.</p>
+</div>
+</div>
+</div>
+<p>Заметим, что выбор направления вектора <span class="math inline">\(\vec{n}\)</span> (а следовательно, и <span class="math inline">\(d\vec{S}\)</span>) условен, его можно было бы направить и в противоположную сторону.</p>
+<p>Если имеется некоторая произвольная поверхность <span class="math inline">\(S\)</span>, то поток вектора <span class="math inline">\(\vec{E}\)</span> сквозь нее: <span class="math display">\[
+\Phi = \int_S{\vec{E}d\vec{S}}
+\]</span></p>
+<p>Эта величина алгебраическая: она зависит не только от конфигурации поля <span class="math inline">\(\vec{E}\)</span>, но и от выбора направления нормали. В случае замкнутых поверхностей принято нормаль <span class="math inline">\(\vec{n}\)</span> брать наружу области, охватываемой этими поверхностями, т. е. выбирать внешнюю нормаль, что в дальнейшем будет всегда и подразумеваться.</p>
+</section>
+<section id="теорема-гаусса" class="level4">
+<h4 class="anchored" data-anchor-id="теорема-гаусса">Теорема Гаусса</h4>
+<p>Поток вектора <span class="math inline">\(\vec{E}\)</span> сквозь произвольную замкнутую поверхность <span class="math inline">\(S\)</span> обладает удивительным и замечательным свойством: он зависит только от алгебраической суммы зарядов, охватываемых этой поверхностью. А именно:</p>
+<div class="columns">
+<div class="column">
+<p><span class="math display">\[
+\oint{\vec{E}d\vec{S}} = \frac{1}{\varepsilon_0} q_{in}
+\]</span></p>
+</div><div class="column">
+<p>где кружок у интеграла означает, что интегрирование проводится по замкнутой поверхности.</p>
+</div>
+</div>
+<p>Это выражение и составляет суть теоремы Гаусса: поток вектора <span class="math inline">\(\vec{E}\)</span> сквозь замкнутую поверхность равен алгебраической сумме зарядов внутри этой поверхности, деленной на <span class="math inline">\(\varepsilon_0\)</span>.</p>
+<p>Теперь обратимся к случаю, когда электрическое поле создается системой точечных зарядов <span class="math inline">\(q_1\)</span>, <span class="math inline">\(q_2\)</span> и т. д. В этом случае согласно принципу суперпозиции:</p>
+<div class="columns">
+<div class="column">
+<p><span class="math display">\[
+\vec{E} = \vec{E}_1 + \vec{E}_2 + \dots
+\]</span></p>
+</div><div class="column">
+<p>где <span class="math inline">\(\vec{E}_1\)</span> — поле, создаваемое зарядом <span class="math inline">\(q_1\)</span>, и т. д.</p>
+</div>
+</div>
+<p>Тогда поток вектора <span class="math inline">\(\vec{E}\)</span> можно записать так: <span class="math display">\[
+\oint{\vec{E}d\vec{S}} = \oint{\left(\vec{E}_1 + \vec{E}_2 + ... \right) d\vec{S}}
+=
+\oint{\vec{E}_1 d\vec{S}} + \oint{\vec{E}_2 d\vec{S}} + ...
+=
+\Phi_1
++
+\Phi_2
++
+...
+\]</span></p>
+<p>Согласно предыдущему каждый интеграл в правой части равен <span class="math inline">\(\frac{q_{i}}{\varepsilon_0}\)</span>, если заряд <span class="math inline">\(q_{i}\)</span> находится внутри замкнутой поверхности <span class="math inline">\(S\)</span>, и нулю, если снаружи поверхности <span class="math inline">\(S\)</span>. Поэтому в правой части останется алгебраическая сумма только тех зарядов, которые находятся внутри поверхности <span class="math inline">\(S\)</span>.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -898,4 +998,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/DifferentialEquations/index.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/DifferentialEquations/index.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/Physics/Electrostatics/gauss_theorem.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/Physics/Electrostatics/gauss_theorem.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></div></div></footer></body></html>

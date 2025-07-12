@@ -9,7 +9,8 @@ title: "Параграф XX: Функции нескольких перемен�
 ##### 1. Если $X \subset \mathbb{R}^n$ и $Y \subset \mathbb{R}$
 В этом случае $f$ называется функцией $n$ вещественных переменных и обозначения таковы:
 
-::: {layout-ncol=2}
+::: {.columns}
+::: {.column}
 Переменная:
 $$
 \forall \vec{x} =
@@ -20,32 +21,35 @@ x_n
 \end{pmatrix}
 \in X$ 
 $$
-
+:::
+::: {.column}
 Значение:
 $$
 f \left( \vec{x} \right),f \left(  x_1, x_2, \dots , x_n  \right)
 $$
-
+:::
 :::
 
 Чаще всего вместо вектора $\vec{x}$, его называют точкой $n$ мерного пространства.
 
-::: {layout-ncol="2"}
-
+::: {.columns}
+::: {.column}
 | В случае $\mathbb{R}^2$:
 |	Tочка $M \left( x,  y \right)$ и $f \left( x, y \right)$, $f \left( M \right)$
-
+:::
+::: {.column}
 | В случае $\mathbb{R}^3$:
 |	Tочка $M \left( x, y, z \right)$ и $f \left( x, y, z \right)$, $f \left( M \right)$
-
+:::
 :::
 
+| 
 | 
 
 ##### 2. Если $X \subset \mathbb{R}^n$ и $Y \subset \mathbb{R}^m$
 
-::: {layout-ncol="2"}
-
+::: {.columns}
+::: {.column}
 Функцию называют из $\mathbb{R}^n$ в $\mathbb{R}^m$	
 $$
 \vec f \left( \vec{x} \right) = 
@@ -57,7 +61,8 @@ f_n \left( \vec{x} \right)
 \end{pmatrix}
 \in  \mathbb{R}^m
 $$
-
+:::
+::: {.column}
 Каждая $f_k$ - координата функции $\vec f$ и $f_k: X \to \mathbb{R}$, $k = 1, 2, \dots , m$
 $$
 f = 
@@ -68,24 +73,25 @@ f_2  \\
 f_n 
 \end{pmatrix}
 $$
-
+:::
 :::
 
 #### Определение 2: Окрестность точки $\vec{a}$
 Пусть: $\vec{a} \in \mathbb{R}^n, \; \varepsilon > 0$
 
-::: {layout-ncol="2"}
-
+::: {.columns}
+::: {.column}
 [1] $\varepsilon$ окрестность точки $\vec{a}$:	
 $$
 {K} _ \varepsilon \left( \vec{a} \right) = \lbrace \vec{x} \in \mathbb{R} \; | \; \| \vec{x} - \vec{a} \| < \varepsilon \rbrace
 $$
-
+:::
+::: {.column}
 [2] Проколотая $\varepsilon$ окрестность точки $\vec{a}$:	
 $$
 \dot{K} _ \varepsilon \left( \vec{a} \right) = \lbrace \vec{x} \in \mathbb{R} \; | \; 0 < \| \vec{x} - \vec{a} \| < \varepsilon \rbrace \Leftrightarrow {K} _ \varepsilon  \lbrace \vec{a} \rbrace \diagdown \lbrace \vec{a} \rbrace
 $$
-
+:::
 :::
 	
 #### Определение 3: Предельная точка
@@ -118,13 +124,14 @@ $$
 #### Определение 5: Предел функции из $\mathbb{R}^n$ в $\mathbb{R}^m$
 $X \subset \mathbb{R}^n$, $\vec{a} \in \mathbb{R}^n$, $\vec{a}$ - предельная точка $X$, $f: X \to \mathbb{R}$ и $\vec{b} \in \mathbb{R}^m$.
 
-::: {layout-ncol="2"}
-
+::: {.columns}
+::: {.column}
 Предел:
 $$
 \lim_{\vec{x} \to \vec{a}} f(\vec{x}) = \vec{b}
 $$
-
+:::
+::: {.column layout-valign="center"}
 где 
 $$
 \vec{b} = 
@@ -136,7 +143,7 @@ b_m
 \end{pmatrix}
 \in \mathbb{R}^m
 $$
-
+:::
 :::
 
 Cуществует если:	
