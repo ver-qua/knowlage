@@ -9,7 +9,11 @@ website:
   repo-branch: master
   repo-link-target: "_blank"
   repo-actions: [source, issue, edit]
+
+  page-navigation: true
+
   title: "Учения"
+
   navbar:
     left:
       - text: "Дома"
@@ -64,15 +68,18 @@ website:
 
 format:
   html:
+    toc: true
     toc-expand: true
     toc-depth: 5
+
     grid:
       sidebar-width: 300px
       body-width: 900px
       margin-width: 300px
       gutter-width: 1rem
+
     theme:
       light: [cosmo, theme.scss]
       dark: [cosmo, theme-dark.scss]
+
     css: styles.css
-    toc: true
