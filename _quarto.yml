@@ -54,11 +54,12 @@ website:
                   - section: "Электростатика"
                     href: "Lecture_notes/Physics/Electrostatics/index.qmd"
                     contents: 
-                      - Lecture_notes/Physics/Electrostatics/electric_feild.qmd
-                      - Lecture_notes/Physics/Electrostatics/gauss_theorem.qmd
-                      - Lecture_notes/Physics/Electrostatics/Coulombs_law.qmd
-                      - Lecture_notes/Physics/Electrostatics/electric_charge.qmd
-                      - Lecture_notes/Physics/Electrostatics/electric_potential.qmd
+                      - Lecture_notes/Physics/Electrostatics/P1_electric_feild.qmd
+                      - Lecture_notes/Physics/Electrostatics/P2_gauss_theorem.qmd
+                      - Lecture_notes/Physics/Electrostatics/P3_Coulombs_law.qmd
+                      - Lecture_notes/Physics/Electrostatics/P4_electric_charge.qmd
+                      - Lecture_notes/Physics/Electrostatics/P5_electric_potential.qmd
+                      - Lecture_notes/Physics/Electrostatics/P6_electric_dipole.qmd
 
                   - section: "Электрические цепи"
                     href: "Lecture_notes/Physics/ElectricCircuits/index.qmd"

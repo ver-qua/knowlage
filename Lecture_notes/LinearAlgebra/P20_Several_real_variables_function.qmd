@@ -19,7 +19,7 @@ x_1 \\
 \vdots \\
 x_n
 \end{pmatrix}
-\in X$ 
+\in X
 $$
 :::
 ::: {.column}
@@ -32,24 +32,19 @@ $$
 
 Чаще всего вместо вектора $\vec{x}$, его называют точкой $n$ мерного пространства.
 
-::: {.columns}
-::: {.column}
+::: {layout-ncol="2"}
 | В случае $\mathbb{R}^2$:
 |	Tочка $M \left( x,  y \right)$ и $f \left( x, y \right)$, $f \left( M \right)$
-:::
-::: {.column}
+
 | В случае $\mathbb{R}^3$:
 |	Tочка $M \left( x, y, z \right)$ и $f \left( x, y, z \right)$, $f \left( M \right)$
 :::
-:::
 
-| 
 | 
 
 ##### 2. Если $X \subset \mathbb{R}^n$ и $Y \subset \mathbb{R}^m$
 
-::: {.columns}
-::: {.column}
+::: {layout-ncol="2"}
 Функцию называют из $\mathbb{R}^n$ в $\mathbb{R}^m$	
 $$
 \vec f \left( \vec{x} \right) = 
@@ -61,8 +56,7 @@ f_n \left( \vec{x} \right)
 \end{pmatrix}
 \in  \mathbb{R}^m
 $$
-:::
-::: {.column}
+
 Каждая $f_k$ - координата функции $\vec f$ и $f_k: X \to \mathbb{R}$, $k = 1, 2, \dots , m$
 $$
 f = 
@@ -74,29 +68,31 @@ f_n
 \end{pmatrix}
 $$
 :::
-:::
 
 #### Определение 2: Окрестность точки $\vec{a}$
 Пусть: $\vec{a} \in \mathbb{R}^n, \; \varepsilon > 0$
 
-::: {.columns}
-::: {.column}
+::: {layout-ncol="2"}
 [1] $\varepsilon$ окрестность точки $\vec{a}$:	
 $$
 {K} _ \varepsilon \left( \vec{a} \right) = \lbrace \vec{x} \in \mathbb{R} \; | \; \| \vec{x} - \vec{a} \| < \varepsilon \rbrace
 $$
-:::
-::: {.column}
+
 [2] Проколотая $\varepsilon$ окрестность точки $\vec{a}$:	
 $$
-\dot{K} _ \varepsilon \left( \vec{a} \right) = \lbrace \vec{x} \in \mathbb{R} \; | \; 0 < \| \vec{x} - \vec{a} \| < \varepsilon \rbrace \Leftrightarrow {K} _ \varepsilon  \lbrace \vec{a} \rbrace \diagdown \lbrace \vec{a} \rbrace
+\begin{multline}
+\dot{K} _ \varepsilon \left( \vec{a} \right) = \lbrace \vec{x} \in \mathbb{R} \; | \; 0 < \| \vec{x} - \vec{a} \| < \varepsilon \rbrace \\
+\Leftrightarrow {K} _ \varepsilon  \lbrace \vec{a} \rbrace \diagdown \lbrace \vec{a} \rbrace
+\end{multline}
 $$
-:::
 :::
 	
 #### Определение 3: Предельная точка
 Пусть: $X \subset \mathbb{R}^n$ и $\vec{a} \in \mathbb{R}^n$\
-$\vec{a}$ - предельная точка множества $X$ если: $\forall \varepsilon > 0 \; \dot{K}_\varepsilon \left( \vec{a} \right) \cup X \neq \emptyset$
+$\vec{a}$ - предельная точка множества $X$ если: 
+$$
+\forall \varepsilon > 0 \; \dot{K}_\varepsilon \left( \vec{a} \right) \cup X \neq \emptyset
+$$
 
 	
 #### Определение 4: Предел функции нескольких пременных
@@ -122,7 +118,7 @@ $$
 
 
 #### Определение 5: Предел функции из $\mathbb{R}^n$ в $\mathbb{R}^m$
-$X \subset \mathbb{R}^n$, $\vec{a} \in \mathbb{R}^n$, $\vec{a}$ - предельная точка $X$, $f: X \to \mathbb{R}$ и $\vec{b} \in \mathbb{R}^m$.
+Пусть: $X \subset \mathbb{R}^n$, $\vec{a} \in \mathbb{R}^n$, $\vec{a}$ - предельная точка $X$, $f: X \to \mathbb{R}$ и $\vec{b} \in \mathbb{R}^m$.
 
 ::: {.columns}
 ::: {.column}

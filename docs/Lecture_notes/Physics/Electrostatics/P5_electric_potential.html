@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Электрическое Поле – Учения</title>
+<title>Электрический потенциал – Учения</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../Lecture_notes/Physics/Electrostatics/gauss_theorem.html" rel="next">
-<link href="../../../Lecture_notes/Physics/Electrostatics/index.html" rel="prev">
+<link href="../../../Lecture_notes/Physics/Electrostatics/P6_electric_dipole.html" rel="next">
+<link href="../../../Lecture_notes/Physics/Electrostatics/P4_electric_charge.html" rel="prev">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
@@ -310,7 +310,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Переключить боковую панель навигации" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/index.html">Физика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/index.html">Электростатика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/electric_feild.html">Электрическое Поле</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/index.html">Физика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/index.html">Электростатика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/P5_electric_potential.html">Электрический потенциал</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Переключить боковую панель навигации" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -420,32 +420,38 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth3 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../Lecture_notes/Physics/Electrostatics/electric_feild.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/P1_electric_feild.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Электрическое Поле</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../Lecture_notes/Physics/Electrostatics/gauss_theorem.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/P2_gauss_theorem.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Теорема Гаусса</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../Lecture_notes/Physics/Electrostatics/Coulombs_law.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/P3_Coulombs_law.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Закон Кулона</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../Lecture_notes/Physics/Electrostatics/electric_charge.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/P4_electric_charge.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Электрический Заряд</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../Lecture_notes/Physics/Electrostatics/electric_potential.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/P5_electric_potential.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Электрический потенциал</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../Lecture_notes/Physics/Electrostatics/P6_electric_dipole.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Электрический диполь</span></a>
   </div>
 </li>
       </ul>
@@ -487,17 +493,21 @@ window.Quarto = {
     <h2 id="toc-title">Содержание</h2>
    
   <ul>
-  <li><a href="#напряжённость" id="toc-напряжённость" class="nav-link active" data-scroll-target="#напряжённость">Напряжённость</a></li>
+  <li><a href="#работа" id="toc-работа" class="nav-link active" data-scroll-target="#работа">Работа</a></li>
+  <li><a href="#энергия" id="toc-энергия" class="nav-link" data-scroll-target="#энергия">Энергия</a></li>
+  <li><a href="#потенциал" id="toc-потенциал" class="nav-link" data-scroll-target="#потенциал">Потенциал</a></li>
+  <li><a href="#теорема-о-циркуляции" id="toc-теорема-о-циркуляции" class="nav-link" data-scroll-target="#теорема-о-циркуляции">Теорема о циркуляции</a></li>
+  <li><a href="#эквипотенциальные-поверхности" id="toc-эквипотенциальные-поверхности" class="nav-link" data-scroll-target="#эквипотенциальные-поверхности">Эквипотенциальные поверхности</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/Physics/Electrostatics/electric_feild.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/Physics/Electrostatics/electric_feild.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/Physics/Electrostatics/P5_electric_potential.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/Physics/Electrostatics/P5_electric_potential.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/index.html">Физика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/index.html">Электростатика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/electric_feild.html">Электрическое Поле</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/index.html">Физика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/index.html">Электростатика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/P5_electric_potential.html">Электрический потенциал</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Электрическое Поле</h1>
+<h1 class="title">Электрический потенциал</h1>
 </div>
 
 
@@ -514,26 +524,160 @@ window.Quarto = {
 </header>
 
 
-<p>Любой заряд является источником электромагнитного поля, распространяющегося в вакууме со скоростью света. В случае неподвижных зарядов такое поле называется электростатическим и его основное свойство заключается в том, что на всякий помещённый в него заряд действует сила. Электростатическое поле описывается двумя величинами: потенциалом и напряжённостью. Напряжённость - силовая характеристика, потенциал - энергетическая.</p>
-<section id="напряжённость" class="level4">
-<h4 class="anchored" data-anchor-id="напряжённость">Напряжённость</h4>
-<p>Напряжённость имеет размерность <span class="math inline">\([E] = В/м\)</span> и равна <span class="math inline">\(\vec{E} = \frac{\vec{F}}{q}\)</span>, где <span class="math inline">\(q\)</span> - пробный заряд не сильно искажающий общее поле, то есть апряжённость показывает куда и с какой силой поле будет действовать на точечный заряд. Для точечного заряда уравнение напряжённости электростатического поля будет выглядеть так:</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Заметтье
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>СТРАНИЦА В РАБОТЕ</p>
+</div>
+</div>
+<section id="работа" class="level4">
+<h4 class="anchored" data-anchor-id="работа">Работа</h4>
+<p>Для введение <strong>потенциала</strong> нужно ввести <strong>энергию</strong>, а для того, чтобы ввести энергию нужно ввести <strong>работу</strong>. Итак</p>
+<div class="columns">
+<div class="column">
+<p>Элементарная работа: <span class="math display">\[
+\delta A = \vec F \cdot d\vec r
+\]</span></p>
+<p>А значит:<br>
+<span class="math display">\[
+\delta A = \frac{k q_1 q_2}{r^3} \vec r \cdot  d \vec r
+\]</span></p>
+</div><div class="column">
+<p>Сила кулоновского взаимодействия двух зарядов: <span class="math display">\[
+\vec F = \frac{k q_1 q_2}{r^3} \vec r
+\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="P5_ElectricPotential/qqrdr.png" class="quarto-figure quarto-figure-center figure-img" width="100" height="100"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Так как <span class="math inline">\(\vec r \cdot d\vec r = r \,dr \cos\alpha\)</span>, но возникнет путаница. Обозначим <span class="math inline">\(|\vec r| = R\)</span>, а проекцию на него <span class="math inline">\(d\vec r\)</span> как <span class="math inline">\(d r \cos\alpha = dR\)</span>, так как нам оказывается важным только изменение радиуса из-за проекции. Это нужно чтобы перейти к удобному виду:</p>
 <div class="columns">
 <div class="column">
 <p><span class="math display">\[
-\vec{E} = \frac{1}{4 \pi \, \varepsilon_0 } \cdot \frac{q}{\varepsilon \, r^3} \vec{r}
+\delta A = \frac{k q_1 q_2}{R^2}dR
 \]</span></p>
 </div><div class="column">
-<p>где <span class="math inline">\(\vec{r}\)</span> - вектор от тела к точке наблюдения.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="P5_ElectricPotential/qqrdr_new.png" width="100" height="100" class="figure-img"></p>
+<figcaption>Как на картинке</figcaption>
+</figure>
 </div>
 </div>
-<p>Электростатическое поле можно изображать с помощью силовых линий. Их рисуют по очень простым правилам:</p>
-<ol type="1">
-<li>Они идут от плюса к минусу</li>
-<li>Чем больше модуль <span class="math inline">\(\vec{E}\)</span> тем они гуще</li>
-<li>Касательные к ним должны быть <span class="math inline">\(\vec{E}\)</span></li>
-</ol>
-<p>Для напряжённости электростатического поля совершенно спокойно работает принцип суперпозиции: напряжённость поля системы зарядов равна векторной сумме напряжённость полей, которые создавал бы каждый из зарядов системы в отдельности, <span class="math inline">\(\vec{E} = \sum{\vec{E}_i}\)</span>. Отсюда также следует, что и силы, от каждого заряда также будут подчиняться принципу суперпозиции <span class="math inline">\(\vec{F} = \sum{\vec{F}_i}\)</span>.</p>
+</div>
+</section>
+<section id="энергия" class="level4">
+<h4 class="anchored" data-anchor-id="энергия">Энергия</h4>
+<p>Если ранее полученное выражение <strong>проинтегрировать</strong>, то получится <span class="math display">\[
+A = \int \delta A =  \int_{R_1}^{R_2}{\frac{k q_1 q_2}{R^2}dR} = \frac{k q_1 q_2}{R_1} - \frac{k q_1 q_2}{R_2} = *
+\]</span></p>
+<p>Заметим, что работа зависит только от начального и конечного положения заряда, не зависит от траектории, а значит сила является <strong>потенциальной</strong>. Зная это мы можем ввести <strong>потенциальную энергию</strong> <span class="math display">\[
+* = \frac{k q_1 q_2}{R_1} - \frac{k q_1 q_2}{R_2} = -\Delta W_p = W_{p_1} - W_{p_2}
+\]</span></p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>Напрашивается определить потенциальную энергию как <span class="math display">\[
+W_{p} = \frac{k q_1 q_2}{r} + C
+\]</span></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>Но поскольку потенциальная энергия определяется через <strong>разность</strong> то по сути она определяется с точностью до <strong>произвольной постоянной</strong> <span class="math inline">\(C\)</span></p>
+</div>
+</div>
+</div>
+<p>Для того, чтобы избавиться от произвольности вводят калибровку. Она очень простая, примем, что <span class="math inline">\(C = 0\)</span>, когда <span class="math inline">\(F = 0\)</span>(можно и через <span class="math inline">\(r =  0\)</span>, но так проще), так как когда <span class="math inline">\(r \rightarrow +\infty\)</span>, то <span class="math inline">\(F = 0\)</span> и тогда <span class="math inline">\(C = 0\)</span>: <span class="math display">\[
+W_{p} = \frac{k q_1 q_2}{r}
+\]</span></p>
+<p>Если мы вернёмся к записям чуть ранее <span class="math display">\[
+\delta A = -dW_p  = \vec F \cdot d\vec r
+\]</span></p>
+<p>Это скалярное произведение можно раскрыть по координатам <span class="math display">\[
+-dW = F_x dx + F_y dy + F_z dz
+\]</span></p>
+<p>Отсюда если зафиксировать всё движение кроме по <span class="math inline">\(x\)</span> (<span class="math inline">\(dy = 0\)</span>, <span class="math inline">\(dz=0\)</span>), то можно выразить <span class="math display">\[
+F_x = -\frac{\partial W_p}{\partial x}
+\]</span></p>
+<p>И по <span class="math inline">\(y\)</span> и <span class="math inline">\(z\)</span> будет то же самое</p>
+<div class="columns">
+<div class="column">
+<p><span class="math display">\[
+F_y = -\frac{\partial W_p}{\partial y}
+\]</span></p>
+</div><div class="column">
+<p><span class="math display">\[
+F_z = -\frac{\partial W_p}{\partial z}
+\]</span></p>
+</div>
+</div>
+<p>Получается, что проекция силы по направлению осей будет частной производной функции потенциальной энергии, для упрощения записи вводят оператор набла и тогда <span class="math inline">\(\vec F = -\nabla W_p\)</span>. На всякий случай пометим, что <span class="math display">\[
+\nabla = \begin{pmatrix}
+\frac{\partial}{\partial x} \\
+\frac{\partial}{\partial y} \\
+\frac{\partial}{\partial z}
+\end{pmatrix}
+\]</span></p>
+<p>Ну или так как набла применяется к скалярной функции можно записать через градиент <span class="math display">\[
+\vec F = -grad (W_p)
+\]</span></p>
+</section>
+<section id="потенциал" class="level4">
+<h4 class="anchored" data-anchor-id="потенциал">Потенциал</h4>
+<p>Ну а теперь остаётся избавиться от <span class="math inline">\(q_2\)</span>, который мы назовём <strong>пробным</strong>. Для этого поделим обе части равенства на <span class="math inline">\(q_2\)</span> и получится <span class="math display">\[
+\varphi = \frac{W_p}{q}
+\]</span> <span class="math display">\[
+\frac{\vec F}{q} = \frac{-grad (W_p)}{q}
+\]</span></p>
+<p><span class="math display">\[
+\vec E = -grad(\varphi)
+\]</span></p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>Ну или можно записать в дифференциальной форме <span class="math display">\[
+d\varphi = -\vec E \cdot d\vec r
+\]</span></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>Эта формула выходит из <span class="math display">\[
+-dW_p  = \vec F \cdot d\vec r
+\]</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="теорема-о-циркуляции" class="level4">
+<h4 class="anchored" data-anchor-id="теорема-о-циркуляции">Теорема о циркуляции</h4>
+<p>Из <strong>потенциальности</strong> поля следует то, что <strong>криволинейный интеграл</strong> по замкнутой траектории будет равен нулю</p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><span class="math display">\[
+A = \oint_l{\vec F d\vec r} = W_{p1} - W_{p1} = 0
+\]</span></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><span class="math display">\[
+\oint_l{\vec E d\vec r} = 0
+\]</span></p>
+</div>
+</div>
+</div>
+<p>Это называется <strong>теоремой о циркуляции вектора напряжённости</strong>.</p>
+</section>
+<section id="эквипотенциальные-поверхности" class="level4">
+<h4 class="anchored" data-anchor-id="эквипотенциальные-поверхности">Эквипотенциальные поверхности</h4>
+<p>Существует понятие <strong>эквипотенциальной поверхности</strong>. Это такая поверхность, у которой <span class="math inline">\(\varphi = const\)</span>. Значит, что если двигаться по поверхности, то везде <span class="math inline">\(d\varphi = 0\)</span>, а следовательно так как это результат скалярного произведения, то <span class="math inline">\(\vec E\)</span> должен быть перпендикулярен <span class="math inline">\(d\vec r\)</span>, следовательно поверхности. А значит силовые линии и перпендикулярные поверхности параллельны.</p>
 
 
 </section>
@@ -953,13 +1097,13 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../Lecture_notes/Physics/Electrostatics/index.html" class="pagination-link" aria-label="Электростатика">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Электростатика</span>
+      <a href="../../../Lecture_notes/Physics/Electrostatics/P4_electric_charge.html" class="pagination-link" aria-label="Электрический Заряд">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Электрический Заряд</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../Lecture_notes/Physics/Electrostatics/gauss_theorem.html" class="pagination-link" aria-label="Теорема Гаусса">
-        <span class="nav-page-text">Теорема Гаусса</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../Lecture_notes/Physics/Electrostatics/P6_electric_dipole.html" class="pagination-link" aria-label="Электрический диполь">
+        <span class="nav-page-text">Электрический диполь</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -968,4 +1112,4 @@ window.Quarto = {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/Physics/Electrostatics/electric_feild.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/Physics/Electrostatics/electric_feild.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/Physics/Electrostatics/P5_electric_potential.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/Physics/Electrostatics/P5_electric_potential.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></div></div></footer></body></html>

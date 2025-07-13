@@ -420,32 +420,38 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/electric_feild.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Lecture_notes/Physics/Electrostatics/P1_electric_feild.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Электрическое Поле</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/gauss_theorem.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Lecture_notes/Physics/Electrostatics/P2_gauss_theorem.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Теорема Гаусса</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/Coulombs_law.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Lecture_notes/Physics/Electrostatics/P3_Coulombs_law.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Закон Кулона</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/electric_charge.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Lecture_notes/Physics/Electrostatics/P4_electric_charge.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Электрический Заряд</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/electric_potential.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Lecture_notes/Physics/Electrostatics/P5_electric_potential.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Электрический потенциал</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Lecture_notes/Physics/Electrostatics/P6_electric_dipole.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Электрический диполь</span></a>
   </div>
 </li>
       </ul>
@@ -538,7 +544,7 @@ x_1 \\
 \vdots \\
 x_n
 \end{pmatrix}
-\in X$
+\in X
 \]</span></p>
 </div><div class="column">
 <p>Значение: <span class="math display">\[
@@ -547,22 +553,25 @@ f \left( \vec{x} \right),f \left(  x_1, x_2, \dots , x_n  \right)
 </div>
 </div>
 <p>Чаще всего вместо вектора <span class="math inline">\(\vec{x}\)</span>, его называют точкой <span class="math inline">\(n\)</span> мерного пространства.</p>
-<div class="columns">
-<div class="column">
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="line-block">В случае <span class="math inline">\(\mathbb{R}^2\)</span>:<br>
 &nbsp;&nbsp;Tочка <span class="math inline">\(M \left( x,  y \right)\)</span> и <span class="math inline">\(f \left( x, y \right)\)</span>, <span class="math inline">\(f \left( M \right)\)</span></div>
-</div><div class="column">
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="line-block">В случае <span class="math inline">\(\mathbb{R}^3\)</span>:<br>
 &nbsp;&nbsp;Tочка <span class="math inline">\(M \left( x, y, z \right)\)</span> и <span class="math inline">\(f \left( x, y, z \right)\)</span>, <span class="math inline">\(f \left( M \right)\)</span></div>
 </div>
 </div>
-<div class="line-block"><br>
 </div>
+<div class="line-block"></div>
 </section>
 <section id="если-x-subset-mathbbrn-и-y-subset-mathbbrm" class="level5">
 <h5 class="anchored" data-anchor-id="если-x-subset-mathbbrn-и-y-subset-mathbbrm">2. Если <span class="math inline">\(X \subset \mathbb{R}^n\)</span> и <span class="math inline">\(Y \subset \mathbb{R}^m\)</span></h5>
-<div class="columns">
-<div class="column">
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p>Функцию называют из <span class="math inline">\(\mathbb{R}^n\)</span> в <span class="math inline">\(\mathbb{R}^m\)</span> <span class="math display">\[
 \vec f \left( \vec{x} \right) =
 \begin{pmatrix}
@@ -573,7 +582,8 @@ f_n \left( \vec{x} \right)
 \end{pmatrix}
 \in  \mathbb{R}^m
 \]</span></p>
-</div><div class="column">
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p>Каждая <span class="math inline">\(f_k\)</span> - координата функции <span class="math inline">\(\vec f\)</span> и <span class="math inline">\(f_k: X \to \mathbb{R}\)</span>, <span class="math inline">\(k = 1, 2, \dots , m\)</span> <span class="math display">\[
 f =
 \begin{pmatrix}
@@ -585,29 +595,38 @@ f_n
 \]</span></p>
 </div>
 </div>
+</div>
 </section>
 </section>
 <section id="определение-2-окрестность-точки-veca" class="level4">
 <h4 class="anchored" data-anchor-id="определение-2-окрестность-точки-veca">Определение 2: Окрестность точки <span class="math inline">\(\vec{a}\)</span></h4>
 <p>Пусть: <span class="math inline">\(\vec{a} \in \mathbb{R}^n, \; \varepsilon &gt; 0\)</span></p>
-<div class="columns">
-<div class="column">
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p>[1] <span class="math inline">\(\varepsilon\)</span> окрестность точки <span class="math inline">\(\vec{a}\)</span>:<br>
 <span class="math display">\[
 {K} _ \varepsilon \left( \vec{a} \right) = \lbrace \vec{x} \in \mathbb{R} \; | \; \| \vec{x} - \vec{a} \| &lt; \varepsilon \rbrace
 \]</span></p>
-</div><div class="column">
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p>[2] Проколотая <span class="math inline">\(\varepsilon\)</span> окрестность точки <span class="math inline">\(\vec{a}\)</span>:<br>
 <span class="math display">\[
-\dot{K} _ \varepsilon \left( \vec{a} \right) = \lbrace \vec{x} \in \mathbb{R} \; | \; 0 &lt; \| \vec{x} - \vec{a} \| &lt; \varepsilon \rbrace \Leftrightarrow {K} _ \varepsilon  \lbrace \vec{a} \rbrace \diagdown \lbrace \vec{a} \rbrace
+\begin{multline}
+\dot{K} _ \varepsilon \left( \vec{a} \right) = \lbrace \vec{x} \in \mathbb{R} \; | \; 0 &lt; \| \vec{x} - \vec{a} \| &lt; \varepsilon \rbrace \\
+\Leftrightarrow {K} _ \varepsilon  \lbrace \vec{a} \rbrace \diagdown \lbrace \vec{a} \rbrace
+\end{multline}
 \]</span></p>
+</div>
 </div>
 </div>
 </section>
 <section id="определение-3-предельная-точка" class="level4">
 <h4 class="anchored" data-anchor-id="определение-3-предельная-точка">Определение 3: Предельная точка</h4>
 <p>Пусть: <span class="math inline">\(X \subset \mathbb{R}^n\)</span> и <span class="math inline">\(\vec{a} \in \mathbb{R}^n\)</span><br>
-<span class="math inline">\(\vec{a}\)</span> - предельная точка множества <span class="math inline">\(X\)</span> если: <span class="math inline">\(\forall \varepsilon &gt; 0 \; \dot{K}_\varepsilon \left( \vec{a} \right) \cup X \neq \emptyset\)</span></p>
+<span class="math inline">\(\vec{a}\)</span> - предельная точка множества <span class="math inline">\(X\)</span> если: <span class="math display">\[
+\forall \varepsilon &gt; 0 \; \dot{K}_\varepsilon \left( \vec{a} \right) \cup X \neq \emptyset
+\]</span></p>
 </section>
 <section id="определение-4-предел-функции-нескольких-пременных" class="level4">
 <h4 class="anchored" data-anchor-id="определение-4-предел-функции-нескольких-пременных">Определение 4: Предел функции нескольких пременных</h4>
@@ -638,7 +657,7 @@ f ( \vec{x} ) = o ( g ( \vec{x} ) )
 </section>
 <section id="определение-5-предел-функции-из-mathbbrn-в-mathbbrm" class="level4">
 <h4 class="anchored" data-anchor-id="определение-5-предел-функции-из-mathbbrn-в-mathbbrm">Определение 5: Предел функции из <span class="math inline">\(\mathbb{R}^n\)</span> в <span class="math inline">\(\mathbb{R}^m\)</span></h4>
-<p><span class="math inline">\(X \subset \mathbb{R}^n\)</span>, <span class="math inline">\(\vec{a} \in \mathbb{R}^n\)</span>, <span class="math inline">\(\vec{a}\)</span> - предельная точка <span class="math inline">\(X\)</span>, <span class="math inline">\(f: X \to \mathbb{R}\)</span> и <span class="math inline">\(\vec{b} \in \mathbb{R}^m\)</span>.</p>
+<p>Пусть: <span class="math inline">\(X \subset \mathbb{R}^n\)</span>, <span class="math inline">\(\vec{a} \in \mathbb{R}^n\)</span>, <span class="math inline">\(\vec{a}\)</span> - предельная точка <span class="math inline">\(X\)</span>, <span class="math inline">\(f: X \to \mathbb{R}\)</span> и <span class="math inline">\(\vec{b} \in \mathbb{R}^m\)</span>.</p>
 <div class="columns">
 <div class="column">
 <p>Предел: <span class="math display">\[
