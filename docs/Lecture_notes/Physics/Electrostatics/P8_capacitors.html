@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Матанализ – Учения</title>
+<title>Конденсаторы – Учения</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,29 +23,29 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../Lecture_notes/Calculus/PX_integration_methods.html" rel="next">
-<link href="../../Lecture_notes/DifferentialEquations/P1_ODE_General_concepts.html" rel="prev">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-8ef56b68f8fa1e9d2ba328e99e439f80.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-c323d292bfb2abd8c20242df8f978628.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-e400a582076fcffc27701c3b1ff123b2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-c323d292bfb2abd8c20242df8f978628.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../Lecture_notes/Physics/ElectricCircuits/index.html" rel="next">
+<link href="../../../Lecture_notes/Physics/Electrostatics/P7_electric_capacity.html" rel="prev">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-8ef56b68f8fa1e9d2ba328e99e439f80.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-c323d292bfb2abd8c20242df8f978628.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-e400a582076fcffc27701c3b1ff123b2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-c323d292bfb2abd8c20242df8f978628.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,8 +74,37 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../../styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -247,7 +276,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Учения</span>
     </a>
   </div>
@@ -258,15 +287,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Дома</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../../Lecture_notes/index.html" aria-current="page"> 
+    <a class="nav-link active" href="../../../Lecture_notes/index.html" aria-current="page"> 
 <span class="menu-text">Конспекты</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
+    <a class="nav-link" href="../../../about.html"> 
 <span class="menu-text">О этом</span></a>
   </li>  
 </ul>
@@ -281,7 +310,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Переключить боковую панель навигации" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../Lecture_notes/Calculus/index.html">Матанализ</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/index.html">Физика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/index.html">Электростатика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/P8_capacitors.html">Конденсаторы</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Переключить боковую панель навигации" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -295,7 +324,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../Lecture_notes/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Конспекты</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Переключить раздел">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -304,7 +333,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/LinearAlgebra/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../Lecture_notes/LinearAlgebra/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Линейная Алгебра</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Переключить раздел">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -313,19 +342,19 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/LinearAlgebra/P20_Several_real_variables_function.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/LinearAlgebra/P20_Several_real_variables_function.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Параграф XX: Функции нескольких переменных</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/LinearAlgebra/P21_SRVF_differentiation.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/LinearAlgebra/P21_SRVF_differentiation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Параграф XXI: Дифференциируемость функции нескольких переменных</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/LinearAlgebra/P22_Rn_to_Rm_differentiation.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/LinearAlgebra/P22_Rn_to_Rm_differentiation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Параграф XXII: Дифференцируемость из R<sup>n</sup> в R<sup>m</sup></span></a>
   </div>
 </li>
@@ -333,7 +362,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/DifferentialEquations/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../Lecture_notes/DifferentialEquations/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Диффуры</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Переключить раздел">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -342,7 +371,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/DifferentialEquations/P1_ODE_General_concepts.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/DifferentialEquations/P1_ODE_General_concepts.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Параграф I: Обыкновенные Дифференциальные Уравнения. Общие Понятия</span></a>
   </div>
 </li>
@@ -350,7 +379,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/Calculus/index.html" class="sidebar-item-text sidebar-link active">
+            <a href="../../../Lecture_notes/Calculus/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Матанализ</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Переключить раздел">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -359,13 +388,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Calculus/PX_integration_methods.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Calculus/PX_integration_methods.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Основные методы интегрирования</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Calculus/PX_definite_integral.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Calculus/PX_definite_integral.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Определённый интеграл (ОИ)</span></a>
   </div>
 </li>
@@ -373,7 +402,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/Physics/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../Lecture_notes/Physics/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Физика</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Переключить раздел">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -382,7 +411,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/Physics/Electrostatics/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../Lecture_notes/Physics/Electrostatics/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Электростатика</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Переключить раздел">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -391,49 +420,49 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth3 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/P1_electric_feild.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/P1_electric_feild.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Электрическое Поле</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/P2_gauss_theorem.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/P2_gauss_theorem.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Теорема Гаусса</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/P3_Coulombs_law.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/P3_Coulombs_law.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Закон Кулона</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/P4_electric_charge.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/P4_electric_charge.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Электрический Заряд</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/P5_electric_potential.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/P5_electric_potential.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Электрический потенциал</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/P6_electric_dipole.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/P6_electric_dipole.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Электрический диполь</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/P7_electric_capacity.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/P7_electric_capacity.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Электроёмкость</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/P8_capacitors.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/P8_capacitors.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Конденсаторы</span></a>
   </div>
 </li>
@@ -441,7 +470,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/Physics/ElectricCircuits/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../Lecture_notes/Physics/ElectricCircuits/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Электрические цепи</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Переключить раздел">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -450,13 +479,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth3 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/ElectricCircuits/Transition_processes_L_C.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/ElectricCircuits/Transition_processes_L_C.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Переходные процессы L и C</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/ElectricCircuits/RLC_circuit.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/ElectricCircuits/RLC_circuit.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Колебательный контур</span></a>
   </div>
 </li>
@@ -471,16 +500,29 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">Содержание</h2>
+   
+  <ul>
+  <li><a href="#определение" id="toc-определение" class="nav-link active" data-scroll-target="#определение">Определение</a></li>
+  <li><a href="#ёмкости-самых-частых-симметрий" id="toc-ёмкости-самых-частых-симметрий" class="nav-link" data-scroll-target="#ёмкости-самых-частых-симметрий">Ёмкости самых частых симметрий</a>
+  <ul>
+  <li><a href="#плоский-конденсатор" id="toc-плоский-конденсатор" class="nav-link" data-scroll-target="#плоский-конденсатор">Плоский конденсатор</a></li>
+  <li><a href="#сферический-конденсатор" id="toc-сферический-конденсатор" class="nav-link" data-scroll-target="#сферический-конденсатор">Сферический конденсатор</a></li>
+  <li><a href="#цилиндрический-конденсатор" id="toc-цилиндрический-конденсатор" class="nav-link" data-scroll-target="#цилиндрический-конденсатор">Цилиндрический конденсатор</a></li>
+  <li><a href="#двупроводная-линия" id="toc-двупроводная-линия" class="nav-link" data-scroll-target="#двупроводная-линия">Двупроводная линия</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/Physics/Electrostatics/P8_capacitors.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/Physics/Electrostatics/P8_capacitors.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../Lecture_notes/Calculus/index.html">Матанализ</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/index.html">Физика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/index.html">Электростатика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/P8_capacitors.html">Конденсаторы</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Матанализ</h1>
+<h1 class="title">Конденсаторы</h1>
 </div>
 
 
@@ -497,8 +539,186 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="определение" class="level3">
+<h3 class="anchored" data-anchor-id="определение">Определение</h3>
+<p>На практике часто используют такие приборы как конденсаторы. <strong>Конденсатор</strong> - устройство из двух проводников заряженных одинаковыми по модулю и разными по знаку зарядами <span class="math inline">\(q_1 = -q_2 = q\)</span>. Обычно между проводниками диэлектрик. Используют конденсаторы для того, чтобы накапливать электрический заряд - электрическую энергию.</p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>Рассмотрим такую систему <span class="math display">\[
+\begin{cases}
+\varphi_1 = \alpha_{11}q_1 + \alpha_{12}q_2 \\
+\varphi_2 = \alpha_{21}q_1 + \alpha_{22}q_2
+\end{cases}
+\]</span></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>Так как заряда равны по модулю, то: <span class="math display">\[
+\begin{cases}
+\varphi_1 = (\alpha_{11} - \alpha_{12})q \\
+\varphi_2 = (\alpha_{21} - \alpha_{22})q
+\end{cases}
+\]</span></p>
+</div>
+</div>
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>Вводят такое понятие, как ёмкость конденсатора: <span class="math display">\[
+C = \frac{q}{U}
+\]</span></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>Где <span class="math inline">\(U\)</span> – напряжение между проводниками, <span class="math inline">\(U = - \Delta \varphi\)</span> (тут периодически возникает путаница, потому что напряжение тоже иногда называют разность потенциалов)</p>
+</div>
+</div>
+</div>
+<p>Из нашей системы мы можем выразить напряжение <span class="math display">\[
+\varphi_1 - \varphi_2 = (\alpha_{11} -\alpha_{12} - \alpha_{21} + \alpha_{22})q
+\]</span></p>
+<p>И отсюда, учитывая симметрию <span class="math display">\[
+U =  (\alpha_{11} -\alpha_{22} - 2\alpha_{12})q
+\]</span></p>
+<p>И тогда ёмкость через ёмкостные коэффициенты <span class="math display">\[
+C = \frac{1}{ \alpha_{11} -\alpha_{22} - 2\alpha_{12}}
+\]</span></p>
+<p>То же самое можно провернуть и с ёмкостными коэффициентами.</p>
+</section>
+<section id="ёмкости-самых-частых-симметрий" class="level3">
+<h3 class="anchored" data-anchor-id="ёмкости-самых-частых-симметрий">Ёмкости самых частых симметрий</h3>
+<section id="плоский-конденсатор" class="level4">
+<h4 class="anchored" data-anchor-id="плоский-конденсатор">Плоский конденсатор</h4>
+<p>Пусть у нас есть две пластинки площадью <span class="math inline">\(S\)</span> с поверхностным зарядом в простейшем варианте <span class="math inline">\(-\sigma, \sigma\)</span> с расстоянием <span class="math inline">\(d\)</span> между ними. Между такими пластинами получается практически однородное поле, и заряды по пластинам распределяются равномерно.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="P8_Capacitors/1.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<div class="columns">
+<div class="column">
+<p>Напишем напряжённости для пластин <span class="math display">\[
+E_1 = \frac{\sigma}{2\varepsilon \varepsilon_0}
+\]</span></p>
+</div><div class="column">
+<p>И суммарное от двух пластин поле будет равно <span class="math display">\[
+E_ = \frac{\sigma}{\varepsilon \varepsilon_0}
+\]</span></p>
+</div>
+</div>
+<p>Выразим напряжение, так как напряжённость поля везде константа, его можно вынести за интеграл <span class="math display">\[
+U = -\Delta\varphi = \int_o^d{E dr} =
+{\frac{\sigma}{\varepsilon \varepsilon_0}}d = \frac{qd}{S\varepsilon \varepsilon_0}
+\]</span></p>
+<p>Откуда ёмкость будет: <span class="math display">\[
+C = \frac{S\varepsilon \varepsilon_0}{d}
+\]</span></p>
+</section>
+<section id="сферический-конденсатор" class="level4">
+<h4 class="anchored" data-anchor-id="сферический-конденсатор">Сферический конденсатор</h4>
+<p>Пусть даны две сферы одна в другой с радиусами <span class="math inline">\(R_1\)</span>, <span class="math inline">\(R_2\)</span> и общим центром и зарядами <span class="math inline">\(+q\)</span>, <span class="math inline">\(-q\)</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="P8_Capacitors/2.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Через теорему гаусса выразим напряжённость поля между обкладками</p>
+<div class="columns">
+<div class="column">
+<p><span class="math display">\[
+\oint_S{\vec D d\vec S} = q
+\]</span></p>
+</div><div class="column">
+<p><span class="math display">\[
+D \cdot 4\pi r^2 = q
+\]</span></p>
+</div>
+</div>
+<p>Откуда <span class="math display">\[
+E = \frac{q}{4\pi\varepsilon_0 \varepsilon r^2} = \frac{kq}{\varepsilon r^2}
+\]</span></p>
+<p>Найдём напряжение через интеграл <span class="math display">\[
+U = \int_{R_1}^{R_2}{E dr} = \frac{kq}{\varepsilon}\left(\frac{1}{R_1} - \frac{1}{R_2}\right)
+\]</span></p>
+<p>Тогда ёмкость:<br>
+<span class="math display">\[
+C = \frac{q}{U} = \frac{\varepsilon}{k\left(\frac{1}{R_1} - \frac{1}{R_2}\right)}
+=
+\frac{4\pi\varepsilon_0\varepsilon R_1 R_2}{R_2 - R_1}
+\]</span></p>
+</section>
+<section id="цилиндрический-конденсатор" class="level4">
+<h4 class="anchored" data-anchor-id="цилиндрический-конденсатор">Цилиндрический конденсатор</h4>
+<p>Пусть даны два полых цилиндра, один в другом с общей осью. Радиусы <span class="math inline">\(R_1\)</span>, <span class="math inline">\(R_2\)</span> и заряды <span class="math inline">\(+q\)</span>, <span class="math inline">\(-q\)</span>. Длинна одинакова.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="P8_Capacitors/3.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Выводить всё не будем, оно очевидно, пусть тот же, напряжённость -&gt; интеграл -&gt; напряжение -&gt; ёмкость</p>
+<div class="columns">
+<div class="column">
+<p><span class="math display">\[
+E = \frac{2k\tau}{\varepsilon r}
+\]</span></p>
+</div><div class="column">
+<p><span class="math display">\[
+U = \frac{2k\tau}{\varepsilon} \ln{\frac{R_2}{R_1}}
+\]</span></p>
+</div>
+</div>
+<p>И ёмкость <span class="math display">\[
+C = \frac{q}{U} = \frac{l \varepsilon}{2k \ln{\frac{R_2}{R_1}}}
+\]</span></p>
+<p>Но тут удобно использовать понятие погонной ёмкости как и погонного заряда <span class="math display">\[
+C_n = \frac{\tau}{U} = \frac{C}{l} = \frac{2\pi \varepsilon_0\varepsilon}{\ln{\frac{R_2}{R_1}}}
+\]</span></p>
+<p>Но это всё просто и по-сути дело техники, рассмотрим что-нибудь <code>ИНТЕРЕСНОЕ</code></p>
+</section>
+<section id="двупроводная-линия" class="level4">
+<h4 class="anchored" data-anchor-id="двупроводная-линия">Двупроводная линия</h4>
+<p>Пусть у нас есть два цилиндра, находящиеся на расстоянии <span class="math inline">\(l\)</span> друг от друга с одинаковым радиусом <span class="math inline">\(R\)</span>. Учтём, что <span class="math inline">\(l\)</span> сравнимо с <span class="math inline">\(R\)</span>. Вспомним метод зеркальных отображений. Цилиндры заряжены с линейной плотностью <span class="math inline">\(\tau\)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="P8_Capacitors/4.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Вспомним вывод перераспределения заряда в незаряженном проводящем цилиндре(напомните мне кто-нибудь добавить про это статью). Инверсия <span class="math inline">\(x\)</span> будет <span class="math display">\[
+\begin{flalign}
+\left(l - x \right) = R^2\\
+x^2 - l x + R^2 = 0 \\
+x = \frac{l +- \sqrt{l^2 - 4 R^2}}{2}
+\end{flalign}
+\]</span></p>
+<p>И нужно взять <span class="math inline">\(x\)</span> меньше <span class="math inline">\(R\)</span> <span class="math display">\[
+x = \frac{l - \sqrt{l^2 - 4 R^2}}{2}
+\]</span></p>
+<p>Теперь зная новое положение зарядов можно посчитать напряжение, проще всего его посчитать напряжение создаваемое одним зарядом на другом <span class="math display">\[
+U_1 = \int{E dr} = \int_{R-x}^{l-2x}{\frac{2k\tau}{r}}
+\]</span></p>
+<p>Ноль у нас в левом заряде. Интегрируем <span class="math display">\[
+U_1 = 2k\tau \ln{\frac{l-2x}{R-x}} = 2k\tau \ln{\frac{2\sqrt{l^2-4R^2}}{2R-l+\sqrt{l^2-4R^2}}}
+\]</span></p>
+<p>И если всё прибрать(домноженные на сопряжённое), выйдет <span class="math display">\[
+U_1 = 2k\tau \ln{\frac{2R+l+\sqrt{l^2+4R^2}}{2R}}
+\]</span></p>
+<p>Второй цилиндр будет создавать такое же напряжение межу, поэтому суммарное напряжение <span class="math inline">\(U=2U_1\)</span></p>
+<div class="columns">
+<div class="column">
+<p>Первый цилиндр создаёт<br>
+<span class="math inline">\(\varphi_1 - \varphi_2 = U_1\)</span></p>
+</div><div class="column">
+<p>Второй цилиндр создаёт<br>
+<span class="math inline">\(\varphi_2 - \varphi_1 = -U_1\)</span></p>
+</div>
+</div>
+<p>Знаки противоположны и тогда <span class="math inline">\(2(\varphi_1 - \varphi_2) = 2U_1\)</span>. Такое есть в случае плоского конденсатора. Первая обкладка создаёт разность потенциалов и вторая такую же и в общем из-за суммирования получается напряжение в два раза. Найдём погонную ёмкость <span class="math display">\[
+C = \frac{\tau}{U} = \frac{\pi \varepsilon \varepsilon_0}{\ln{\frac{\ 2R+l+\sqrt{l^2+4R^2}}{2R} }}
+\]</span></p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -915,13 +1135,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../Lecture_notes/DifferentialEquations/P1_ODE_General_concepts.html" class="pagination-link" aria-label="Параграф I: Обыкновенные Дифференциальные Уравнения. Общие Понятия">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Параграф I: Обыкновенные Дифференциальные Уравнения. Общие Понятия</span>
+      <a href="../../../Lecture_notes/Physics/Electrostatics/P7_electric_capacity.html" class="pagination-link" aria-label="Электроёмкость">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Электроёмкость</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../Lecture_notes/Calculus/PX_integration_methods.html" class="pagination-link" aria-label="Основные методы интегрирования">
-        <span class="nav-page-text">Основные методы интегрирования</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../Lecture_notes/Physics/ElectricCircuits/index.html" class="pagination-link" aria-label="Электрические цепи">
+        <span class="nav-page-text">Электрические цепи</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -930,4 +1150,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/Calculus/index.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/Calculus/index.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/Physics/Electrostatics/P8_capacitors.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/Physics/Electrostatics/P8_capacitors.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></div></div></footer></body></html>
