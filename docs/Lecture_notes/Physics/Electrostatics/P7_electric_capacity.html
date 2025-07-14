@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Электрический диполь – Учения</title>
+<title>Электроёмкость – Учения</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../Lecture_notes/Physics/Electrostatics/P7_electric_capacity.html" rel="next">
-<link href="../../../Lecture_notes/Physics/Electrostatics/P5_electric_potential.html" rel="prev">
+<link href="../../../Lecture_notes/Physics/ElectricCircuits/index.html" rel="next">
+<link href="../../../Lecture_notes/Physics/Electrostatics/P6_electric_dipole.html" rel="prev">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
@@ -310,7 +310,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Переключить боковую панель навигации" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/index.html">Физика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/index.html">Электростатика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/P6_electric_dipole.html">Электрический диполь</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/index.html">Физика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/index.html">Электростатика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/P7_electric_capacity.html">Электроёмкость</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Переключить боковую панель навигации" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -450,13 +450,13 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../Lecture_notes/Physics/Electrostatics/P6_electric_dipole.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/P6_electric_dipole.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Электрический диполь</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../Lecture_notes/Physics/Electrostatics/P7_electric_capacity.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/P7_electric_capacity.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Электроёмкость</span></a>
   </div>
 </li>
@@ -499,21 +499,19 @@ window.Quarto = {
     <h2 id="toc-title">Содержание</h2>
    
   <ul>
-  <li><a href="#определение" id="toc-определение" class="nav-link active" data-scroll-target="#определение">Определение</a></li>
-  <li><a href="#потенциал-диполя" id="toc-потенциал-диполя" class="nav-link" data-scroll-target="#потенциал-диполя">Потенциал диполя</a></li>
-  <li><a href="#напряжённость-поля-диполя" id="toc-напряжённость-поля-диполя" class="nav-link" data-scroll-target="#напряжённость-поля-диполя">Напряжённость поля диполя</a></li>
-  <li><a href="#дипольный-момент" id="toc-дипольный-момент" class="nav-link" data-scroll-target="#дипольный-момент">Дипольный момент</a></li>
-  <li><a href="#формула-через-частные-случаи" id="toc-формула-через-частные-случаи" class="nav-link" data-scroll-target="#формула-через-частные-случаи">Формула через частные случаи</a></li>
+  <li><a href="#из-потенциала-в-электроёмкость" id="toc-из-потенциала-в-электроёмкость" class="nav-link active" data-scroll-target="#из-потенциала-в-электроёмкость">Из потенциала в электроёмкость</a></li>
+  <li><a href="#теорема-взаимности" id="toc-теорема-взаимности" class="nav-link" data-scroll-target="#теорема-взаимности">Теорема взаимности</a></li>
+  <li><a href="#пример" id="toc-пример" class="nav-link" data-scroll-target="#пример">Пример</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/Physics/Electrostatics/P6_electric_dipole.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/Physics/Electrostatics/P6_electric_dipole.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/Physics/Electrostatics/P7_electric_capacity.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/Physics/Electrostatics/P7_electric_capacity.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/index.html">Физика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/index.html">Электростатика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/P6_electric_dipole.html">Электрический диполь</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/index.html">Физика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/index.html">Электростатика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/P7_electric_capacity.html">Электроёмкость</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Электрический диполь</h1>
+<h1 class="title">Электроёмкость</h1>
 </div>
 
 
@@ -530,188 +528,138 @@ window.Quarto = {
 </header>
 
 
-<section id="определение" class="level4">
-<h4 class="anchored" data-anchor-id="определение">Определение</h4>
-<p><strong>Электрический диполь</strong> — это система из двух одинаковых по модулю разноименных точечных зарядов <span class="math inline">\(+q\)</span> и <span class="math inline">\(-q\)</span>, находящихся на некотором расстоянии <span class="math inline">\(l\)</span> друг от друга.</p>
-<p>Введём понятия</p>
-<ul>
-<li>Дальняя зона диполя - такая зона, у которой расстояние от точки наблюдения до диполя намного больше длинны диполя <span class="math inline">\(l &lt;&lt; r\)</span></li>
-<li>Ближняя зона - где это не выполнено.</li>
-</ul>
+<section id="из-потенциала-в-электроёмкость" class="level4">
+<h4 class="anchored" data-anchor-id="из-потенциала-в-электроёмкость">Из потенциала в электроёмкость</h4>
+<p>Потенциал для проводящей поверхности равен потенциалу который создаёт его заряд, умноженный на коэффициент, зависящий от формы, плюс потенциал, созданный другими зарядами.</p>
+<p>Для одного проводника <span class="math inline">\(\varphi = \alpha \cdot q\)</span>, ну и достаточно часто <span class="math inline">\(\alpha\)</span> записывают в виде обратной величины <span class="math inline">\(C\)</span>, которую называют уединённой ёмкостью уединённого проводника <span class="math inline">\(\varphi = \frac{q}{C}\)</span>. Таким образом ёмкость можно определить как отношения заряда тела к создаваемому им потенциалу <span class="math display">\[
+C = \frac{q}{\varphi}
+\]</span></p>
+<p>Если у нас есть сколько то проводников, то для какого-то i-го проводника: <span class="math display">\[
+\varphi = \sum_{j = 1}^{N}{\alpha_{ij}q_i}
+\]</span></p>
+<p>То есть потенциал i-го проводника, создаётся всевозможными зарядами, умноженными на коэффициенты. Эти <span class="math inline">\(\alpha_{ij}\)</span> называют потенциальными коэффициентами, тогда <span class="math inline">\(\alpha_{ii}\)</span> можно рассмотреть как коэффициент для собственного заряда тела.</p>
 </section>
-<section id="потенциал-диполя" class="level4">
-<h4 class="anchored" data-anchor-id="потенциал-диполя">Потенциал диполя</h4>
-<p>Определим поле в дальней зоне, так как это проще</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="P6_ElectricDipole/1.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-<p>Проведём в точку наблюдения вектора <span class="math inline">\(\vec{r}_+\)</span> и <span class="math inline">\(\vec{r}_-\)</span> и угол <span class="math inline">\(\theta\)</span> от центра диполя до точки наблюдения. Так как диполь очень далеко или очень маленький то углы от каждого заряда будут <span class="math inline">\(\approx \theta\)</span></p>
-<p>Так очень просто можно выразить потенциал поля диполя: <span class="math display">\[
-\varphi = \frac{kq}{r_+} - \frac{kq}{r_-} = kq\frac{r_- -r_+}{r_- r_+}
-\]</span></p>
-<p>Выразим <span class="math inline">\(r_- - r_+\)</span>, для этого проведём перпендикуляр к <span class="math inline">\(\vec{r}_+\)</span> и если <span class="math inline">\(l &lt;&lt; r\)</span>, то можно считать, что расстояние от точки куда ложится перпендикуляр к точке измерения примерно равно <span class="math inline">\(r_+\)</span>, а оставшийся кусок <span class="math inline">\(r_- - r_+\)</span> и его можно выразить из прямоугольного треугольника</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="P6_ElectricDipole/2.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-<div class="columns">
-<div class="column">
-<p>Получается <span class="math display">\[
-r_- - r_+ \approx l \cos\theta
-\]</span></p>
-</div><div class="column">
-<p>Произведение же <span class="math display">\[
-r_- r_+ \approx r^2
-\]</span></p>
-</div>
-</div>
-<p>Таким образом из всего этого выходит, что потенциал диполя равен</p>
-<p><span class="math display">\[
-\varphi = \frac{k\,q\,l \cos\theta}{r^2}
-\]</span></p>
-<p>Отсюда виден интересный факт, заключающийся в том, что на большом расстоянии потенциал диполя убывает с квадратом расстояния. Также потенциал диполя можно выразить через скалярное произведение</p>
+<section id="теорема-взаимности" class="level4">
+<h4 class="anchored" data-anchor-id="теорема-взаимности">Теорема взаимности</h4>
+<p>Пусть есть два проводника</p>
 <div class="columns">
 <div class="column">
 <p><span class="math display">\[
-\vec{l} \cdot \vec{r} = l \, r \cos\theta
-\]</span></p>
-</div><div class="column">
-<p><span class="math display">\[
-\varphi = \frac{k \, q\, \vec{l} \cdot \vec{r}}{r^3}
-\]</span></p>
-</div>
-</div>
-<p>Так как выражение потенциала каждого заряда удовлетворяет уравнению Пуассона, то и получившийся потенциал диполя удовлетворяет уравнению Пуассона, а следовательно единственно определяет напряжённость в пространстве.</p>
-</section>
-<section id="напряжённость-поля-диполя" class="level4">
-<h4 class="anchored" data-anchor-id="напряжённость-поля-диполя">Напряжённость поля диполя</h4>
-<p>Запишем уравнение Пуассона <span class="math inline">\(\vec{E} = -\nabla \varphi\)</span>. Также заметим, что потенциал диполя мы описали в сферической системе координат <span class="math inline">\((r, \theta, \alpha)\)</span>, где</p>
-<ul>
-<li><span class="math inline">\(r\)</span> – длинна радиус вектора от центра диполя</li>
-<li><span class="math inline">\(\theta\)</span> – угол между вектором диполя и <span class="math inline">\(\vec{r}\)</span></li>
-<li><span class="math inline">\(\alpha\)</span> – угол связанный с поворотом вокруг оси диполя, но так как диполь образует симметричное вокруг его оси поле, то потенциал от <span class="math inline">\(\alpha\)</span> не зависит.</li>
-</ul>
-<p>Найдём бесконечно малое приращение для производной в нашей системе координат:</p>
-<p><span class="math display">\[
-\nabla =
-\begin{pmatrix}
-\frac{\partial}{\partial r} &amp; \frac{1}{r}\frac{\partial}{\partial \theta} &amp;
-\frac{1}{r \sin\theta}\frac{\partial}{\partial \alpha}
-\end{pmatrix}
-\]</span></p>
-<p>Объясняем прирощения</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="P6_ElectricDipole/3.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-<ul>
-<li>По <span class="math inline">\(r\)</span> – простое линейное приращение</li>
-<li>По <span class="math inline">\(\theta\)</span> – длинна дуги</li>
-<li>По <span class="math inline">\(\alpha\)</span> длинна дуги проекции <span class="math inline">\(r\)</span></li>
-</ul>
-<p>Отсюда получается, что <span class="math display">\[
-\vec E =
 \begin{cases}
-E_r = -\frac{\partial \varphi}{\partial r} = \frac{2kql\cos\theta}{r^3} \\
-E_\theta = - \frac{1}{r}\frac{\partial \varphi}{\partial \theta} = \frac{kql\sin\theta}{r^3}\\
-E_\alpha = - \frac{1}{r \sin\theta}\frac{\partial \varphi}{\partial \alpha}= 0
+\varphi_1 = \alpha_{11}q_1 + \alpha_{12}q_2 \\
+\varphi_2 = \alpha_{21}q_1 + \alpha_{22}q_2
 \end{cases}
 \]</span></p>
-<p>Найдём модуль напряжённости <span class="math display">\[
-E = \sqrt{E_r^2 + E_\theta^2} = \frac{kql}{r^3}\sqrt{4\cos^2{\theta} + \sin^2{\theta}} = \frac{kql}{r^3}\sqrt{1+3\cos^2{\theta}}
-\]</span></p>
-<p><span class="math display">\[
-E = \frac{kql}{r^3}\sqrt{1+3\cos^2{\theta}}
-\]</span></p>
-</section>
-<section id="дипольный-момент" class="level4">
-<h4 class="anchored" data-anchor-id="дипольный-момент">Дипольный момент</h4>
-<p>Заметим, что везде в выражении поля диполя появляется произведение <span class="math inline">\(q\cdot l\)</span> или в векторном виде <span class="math inline">\(q\cdot \vec l\)</span>, введём величину дипольный момент. Итак, дипольный момент – произведение модуля заряда одного его заряда на вектор между ними направленный от минуса к плюсу. <span class="math display">\[
-\vec{p}_e = q \vec l
-\]</span></p>
-<p>Напряжённость диполя будет выглядеть примерно так:</p>
+</div><div class="column">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="P6_ElectricDipole/4.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="P7_ElectricCapacity/1.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
-<p>Выразим <span class="math inline">\(\vec E\)</span> как функцию <span class="math inline">\(\vec E(\vec l, \vec r)\)</span> для частных случаев:</p>
-<ol type="1">
-<li>Если мы рассматриваем напряжённость вдоль дипольного момента, то <span class="math inline">\(\theta = 0\)</span>, а следовательно</li>
-</ol>
+</div>
+</div>
+<p>Рассмотрим такие случаи</p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>Пусть у нас есть пара зарядов, которым соответствуют потенциалы <span class="math display">\[
+\varphi_1, \varphi_2 \rightarrow q_1, q_2
+\]</span></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>И также: <span class="math display">\[
+\varphi'_1, \varphi'_2 \rightarrow q'_1, q'_2
+\]</span></p>
+</div>
+</div>
+</div>
+<p>То есть мы просто заменили заряды оставив те же самые <span class="math inline">\(\alpha\)</span> (зависит от формы и геометрии). Соответственно изменятся и потенциалы. Если переписать пару этих уравнений <span class="math display">\[
+\begin{cases}
+\varphi'_1 = \alpha_{11}q'_1 + \alpha_{12}q'_2 \\
+\varphi'_2 = \alpha_{21}q'_1 + \alpha_{22}q'_2
+\end{cases}
+\]</span></p>
+<p>Так вот, если скомбинировать системы получившиеся, то можно показать, что <span class="math display">\[
+q'_1\varphi_1 + q'_2\varphi_2 = q_1\varphi'_1 + q_2\varphi'_2
+\]</span></p>
+<p>Это выражение называют <code>теоремой взаимности</code>. И в общем виде, если у нас есть <span class="math inline">\(q_i, \varphi_1\)</span> и <span class="math inline">\(q'_i, \varphi'_1\)</span>, она выглядит <span class="math display">\[
+\sum_i{q'_i\varphi_i} = \sum_i{q_i\varphi'_i}
+\]</span></p>
+<p>Также если подставить теорему взаимности в ранее описанные системы, то можно доказать, что <span class="math inline">\(\alpha_{ij} = \alpha_{ji}\)</span>.</p>
+<p>То есть они симметричны относительно главной диагонали (если всёх их записать как матрицу). Но часто вместо потенциальных коэффициентов используют ёмкостные, и в системе выражают <span class="math inline">\(q_1\)</span>, <span class="math inline">\(q_2\)</span> и получается, что <span class="math display">\[
+\begin{cases}
+q_1 = C_{11} \varphi_1 + C_{12} \varphi_2 \\
+q_2 = C_{21} \varphi_1 + C_{22} \varphi_2
+\end{cases}
+\]</span></p>
+<p>Где, к слову <span class="math inline">\(C\)</span> симметричны относительно главной диагонали. И в общем виде это будет выглядеть так <span class="math display">\[
+q_i = \sum_j{C_{ij}\varphi_j}
+\]</span></p>
+</section>
+<section id="пример" class="level4">
+<h4 class="anchored" data-anchor-id="пример">Пример</h4>
+<p>Рассмотрим простой пример с двумя шариками радиусами <span class="math inline">\(R\)</span> с расстоянием между ними <span class="math inline">\(l\)</span> и зарядами <span class="math inline">\(q_1\)</span> и <span class="math inline">\(q_2\)</span>. Дабы не усложнять сильно задачу методами зеркальных отображений, будем считать, что шарики очень далеко друг от друга(<span class="math inline">\(l&gt;&gt;R\)</span>), а следовательно не вызывают перераспределение зарядов у друг друга</p>
+<div class="columns">
+<div class="column">
+<p>Потенциал шаров: <span class="math display">\[
+\begin{cases}
+\varphi_1 = \frac{k q_1}{R} + \frac{k q_2}{l} \\
+\varphi_2 = \frac{k q_1}{l} + \frac{k q_2}{R}
+\end{cases}
+\]</span></p>
+</div><div class="column">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="P7_ElectricCapacity/2.png" class="img-fluid quarto-figure quarto-figure-left figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Отсюда можно выразить потенциальные коэффициента</p>
+<div class="columns">
+<div class="column">
+<p>Cобственные <span class="math display">\[
+\alpha_{11} = \alpha_{22} = \frac{k}{R}
+\]</span></p>
+</div><div class="column">
+<p>Взаимные <span class="math display">\[
+\alpha_{12} = \alpha_{21} = \frac{k}{l}
+\]</span></p>
+</div>
+</div>
+<p>Ёмкостные коэффициенты можно выразить, решив описанную систему. В данном случае проще всего это сделать методом Крамера</p>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p><span class="math display">\[
-E = E_r = \frac{2kql}{r^3}
+q_1 = \frac{\varphi_1 \alpha_{22} - \varphi_2 \alpha_{12}}{\alpha_{11}\alpha_{22} - \alpha_{21}\alpha_{12}}
 \]</span></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p><span class="math display">\[
-\vec{E} = \frac{2k\vec{p_e}}{r^3}
+q_2 = \frac{\varphi_1 \alpha_{21} - \varphi_2 \alpha_{11}}{\alpha_{11}\alpha_{22} - \alpha_{21}\alpha_{12}}
 \]</span></p>
 </div>
 </div>
 </div>
-<ol start="2" type="1">
-<li>Если же рассмотреть ось перпендикулярную моменту диполя то <span class="math inline">\(\theta = \frac{\pi}{2}\)</span>, а следовательно</li>
-</ol>
+<p>И соответственно ёмкостные коэффициенты будут</p>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p><span class="math display">\[
-E = E_\theta = -\frac{kql}{r^3}
+C_{11} = \frac{\alpha_{22}}{{\alpha_{11}\alpha_{22} - \alpha_{21}\alpha_{12}}}
 \]</span></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p><span class="math display">\[
-\vec E = -\frac{k\vec p_e}{r^3}
+C_{22} = \frac{\alpha_{11}}{{\alpha_{11}\alpha_{22} - \alpha_{21}\alpha_{12}}}
 \]</span></p>
 </div>
 </div>
 </div>
-<p>То есть перпендикулярно напряжённость в 2 раза меньше.</p>
-</section>
-<section id="формула-через-частные-случаи" class="level4">
-<h4 class="anchored" data-anchor-id="формула-через-частные-случаи">Формула через частные случаи</h4>
-<p>Выведем напряжённость поля диполя через частные случаи полученные ранее. В общем случае где <span class="math inline">\(l &lt;&lt; r\)</span></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="P6_ElectricDipole/5.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-<p>Проведём перпендикуляр на линию соединяющую <span class="math inline">\(-q\)</span> и <span class="math inline">\(\vec{r}\)</span> и на место их пресечения установим сразу два заряда <span class="math inline">\(+q\)</span> и <span class="math inline">\(-q\)</span>. Тогда поле можно будет выразить через два новых получившихся диполя один из которых перпендикулярен <span class="math inline">\(\vec{r}\)</span> а другой параллелен так как <span class="math inline">\(\vec{r}\)</span> много больше <span class="math inline">\(\vec{l}\)</span></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="P6_ElectricDipole/6.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-<p>Интересно, что сумма <span class="math inline">\(\vec p_1\)</span> и <span class="math inline">\(\vec p_2\)</span> как раз даст нам оригинальный <span class="math inline">\(\vec p\)</span>. В итоге получается <span class="math display">\[
-\vec E = \vec E_{r1} + \vec E_{\theta 2}
-\]</span></p>
-<p>И следовательно по частным случаям можно выразить <span class="math inline">\(\vec E\)</span> как</p>
 <p><span class="math display">\[
-\vec E = \frac{2k\vec p_1}{r^3} - \frac{k\vec p_2}{r^3} = \frac{k}{r^3} \left(2\vec p_1 - \vec p_2\right)
+C_{12} = C_{21} = \frac{-\alpha_{12}}{{\alpha_{11}\alpha_{22} - \alpha_{21}\alpha_{12}}} = \frac{-\alpha_{21}}{{\alpha_{11}\alpha_{22} - \alpha_{21}\alpha_{12}}}
 \]</span></p>
-<p>Но так как <span class="math inline">\(\vec p_2 = \vec p - \vec p_1\)</span> <span class="math display">\[
-\vec E = \frac{k}{r^3} \left(3\vec p_1 - \vec p\right)
-\]</span></p>
-<p>Но здесь нам не известно <span class="math inline">\(\vec p_1\)</span>, его модуль можно выразить через скалярное произведение <span class="math inline">\(\vec p \cdot \vec r\)</span> так как он по сути проекция <span class="math inline">\(\vec p\)</span> на <span class="math inline">\(\vec r\)</span> <span class="math display">\[
-p_1 = p \cos\theta = \frac{\vec p \cdot \vec r}{r}
-\]</span></p>
-<p>Ну а для того чтобы добавить ему направление можно просто домножить его на нормированный <span class="math inline">\(\frac{\vec{r}}{r}\)</span> так как <span class="math inline">\(l &lt;&lt; r\)</span>. Отсюда выходит, что <span class="math display">\[
-\vec E(\vec l, \vec r) = \frac{k}{r^3} \left( \frac{3(\vec p \cdot \vec r) \cdot \vec r}{r^2} - \vec p \right)
-\]</span></p>
-<p>Есть ещё способ, но мне было лень его записать в <span class="math inline">\(\LaTeX\)</span></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="P6_ElectricDipole/7.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
 
 
 </section>
@@ -1131,13 +1079,13 @@ p_1 = p \cos\theta = \frac{\vec p \cdot \vec r}{r}
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../Lecture_notes/Physics/Electrostatics/P5_electric_potential.html" class="pagination-link" aria-label="Электрический потенциал">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Электрический потенциал</span>
+      <a href="../../../Lecture_notes/Physics/Electrostatics/P6_electric_dipole.html" class="pagination-link" aria-label="Электрический диполь">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Электрический диполь</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../Lecture_notes/Physics/Electrostatics/P7_electric_capacity.html" class="pagination-link" aria-label="Электроёмкость">
-        <span class="nav-page-text">Электроёмкость</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../Lecture_notes/Physics/ElectricCircuits/index.html" class="pagination-link" aria-label="Электрические цепи">
+        <span class="nav-page-text">Электрические цепи</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1146,4 +1094,4 @@ p_1 = p \cos\theta = \frac{\vec p \cdot \vec r}{r}
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/Physics/Electrostatics/P6_electric_dipole.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/Physics/Electrostatics/P6_electric_dipole.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/Physics/Electrostatics/P7_electric_capacity.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/Physics/Electrostatics/P7_electric_capacity.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></div></div></footer></body></html>
