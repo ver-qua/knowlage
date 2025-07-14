@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Электрическое Поле – Учения</title>
+<title>Энергия электростатического поля дифференциальная форма – Учения</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../Lecture_notes/Physics/Electrostatics/P2_gauss_theorem.html" rel="next">
-<link href="../../../Lecture_notes/Physics/Electrostatics/index.html" rel="prev">
+<link href="../../../Lecture_notes/Physics/ElectricCircuits/index.html" rel="next">
+<link href="../../../Lecture_notes/Physics/Electrostatics/P9_energy_of_electrostatic_feild.html" rel="prev">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
@@ -310,7 +310,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Переключить боковую панель навигации" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/index.html">Физика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/index.html">Электростатика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/P1_electric_feild.html">Электрическое Поле</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/index.html">Физика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/index.html">Электростатика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/P10_el_stat_eng_diffform.html">Энергия электростатического поля дифференциальная форма</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Переключить боковую панель навигации" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -420,7 +420,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth3 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../Lecture_notes/Physics/Electrostatics/P1_electric_feild.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/P1_electric_feild.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Электрическое Поле</span></a>
   </div>
 </li>
@@ -472,6 +472,12 @@ window.Quarto = {
  <span class="menu-text">Энергия электростатического поля и системы зарядов</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../Lecture_notes/Physics/Electrostatics/P10_el_stat_eng_diffform.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Энергия электростатического поля дифференциальная форма</span></a>
+  </div>
+</li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
@@ -511,17 +517,17 @@ window.Quarto = {
     <h2 id="toc-title">Содержание</h2>
    
   <ul>
-  <li><a href="#напряжённость" id="toc-напряжённость" class="nav-link active" data-scroll-target="#напряжённость">Напряжённость</a></li>
+  <li><a href="#объёмная-плотность-заряда" id="toc-объёмная-плотность-заряда" class="nav-link active" data-scroll-target="#объёмная-плотность-заряда">Объёмная плотность заряда</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/Physics/Electrostatics/P1_electric_feild.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/Physics/Electrostatics/P1_electric_feild.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/Physics/Electrostatics/P10_el_stat_eng_diffform.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/Physics/Electrostatics/P10_el_stat_eng_diffform.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/index.html">Физика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/index.html">Электростатика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/P1_electric_feild.html">Электрическое Поле</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/index.html">Физика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/index.html">Электростатика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/Electrostatics/P10_el_stat_eng_diffform.html">Энергия электростатического поля дифференциальная форма</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Электрическое Поле</h1>
+<h1 class="title">Энергия электростатического поля дифференциальная форма</h1>
 </div>
 
 
@@ -538,26 +544,70 @@ window.Quarto = {
 </header>
 
 
-<p>Любой заряд является источником электромагнитного поля, распространяющегося в вакууме со скоростью света. В случае неподвижных зарядов такое поле называется электростатическим и его основное свойство заключается в том, что на всякий помещённый в него заряд действует сила. Электростатическое поле описывается двумя величинами: потенциалом и напряжённостью. Напряжённость - силовая характеристика, потенциал - энергетическая.</p>
-<section id="напряжённость" class="level4">
-<h4 class="anchored" data-anchor-id="напряжённость">Напряжённость</h4>
-<p>Напряжённость имеет размерность <span class="math inline">\([E] = В/м\)</span> и равна <span class="math inline">\(\vec{E} = \frac{\vec{F}}{q}\)</span>, где <span class="math inline">\(q\)</span> - пробный заряд не сильно искажающий общее поле, то есть апряжённость показывает куда и с какой силой поле будет действовать на точечный заряд. Для точечного заряда уравнение напряжённости электростатического поля будет выглядеть так:</p>
-<div class="columns">
-<div class="column">
-<p><span class="math display">\[
-\vec{E} = \frac{1}{4 \pi \, \varepsilon_0 } \cdot \frac{q}{\varepsilon \, r^3} \vec{r}
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Заметтье
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Статья в работе</p>
+</div>
+</div>
+<section id="объёмная-плотность-заряда" class="level4">
+<h4 class="anchored" data-anchor-id="объёмная-плотность-заряда">Объёмная плотность заряда</h4>
+<p>Рассмотрим каое-то пространство, может и с диэлектриком, и оно заполнено полем, может и неоднородным. Мы можем всегда в этом поле выделить маленькую область в которой поле будет однородно, так как функция поля дифференциируема. Эту область можно представить как маленький плоский конденсатор, то есть две площадки <span class="math inline">\(S\)</span> с расстоянием между ними <span class="math inline">\(h\)</span>, при этом <span class="math inline">\(h &lt;&lt; \sqrt S\)</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="P10_ElStatEngDiffform/1.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Получается очень маленький объем <span class="math inline">\(\Delta V\)</span>. Для такой системы плоского конденсатора мы можем сказать, что у нас с одной стороны есть <span class="math inline">\(+ \sigma\)</span> и с другой <span class="math inline">\(- \sigma\)</span>, и тогда и поле между пластинками. Заряд конденсатора <span class="math inline">\(q = \sigma \cdot S\)</span>, но это если он заряжен. Скажем сначала, что он не заряжен, попробуем его постепенно заряжать добавляя <span class="math inline">\(dq\)</span> и смотреть какую работу мы выполняем <span class="math display">\[
+dq = S \cdot d\sigma
 \]</span></p>
-</div><div class="column">
-<p>где <span class="math inline">\(\vec{r}\)</span> - вектор от тела к точке наблюдения.</p>
-</div>
-</div>
-<p>Электростатическое поле можно изображать с помощью силовых линий. Их рисуют по очень простым правилам:</p>
-<ol type="1">
-<li>Они идут от плюса к минусу</li>
-<li>Чем больше модуль <span class="math inline">\(\vec{E}\)</span> тем они гуще</li>
-<li>Касательные к ним должны быть <span class="math inline">\(\vec{E}\)</span></li>
-</ol>
-<p>Для напряжённости электростатического поля совершенно спокойно работает принцип суперпозиции: напряжённость поля системы зарядов равна векторной сумме напряжённость полей, которые создавал бы каждый из зарядов системы в отдельности, <span class="math inline">\(\vec{E} = \sum{\vec{E}_i}\)</span>. Отсюда также следует, что и силы, от каждого заряда также будут подчиняться принципу суперпозиции <span class="math inline">\(\vec{F} = \sum{\vec{F}_i}\)</span>.</p>
+<p>Поле плоского конденсатора <span class="math display">\[
+E = \frac{\sigma}{\varepsilon_0 \varepsilon}
+\]</span></p>
+<p>С другой стороны, запасённая энергия(напряжение это просто высота на напряжённость). Как я понял, в качестве энергии конденсатора мы рассматриваем работу по перенесению заряда с одной обкладки на другую то есть разность потенциалов на заряд <span class="math display">\[
+dW = dq \cdot U = dq \,E \,h
+\]</span></p>
+<p>Тогда: <span class="math display">\[
+dW = \frac{\sigma}{\varepsilon_0 \varepsilon} \,h S \, d\sigma
+\]</span></p>
+<p>Интегрируем!!(<span class="math inline">\(V = S\cdot h\)</span>) <span class="math display">\[
+W = \int dW = \frac{V}{\varepsilon_0 \varepsilon} \int{\sigma d\sigma} = \frac{V \sigma^2}{2\varepsilon_0 \varepsilon}
+\]</span></p>
+<p>И если всё поделить на объём, то мы получим объёмную плотность энергии: <span class="math display">\[
+w = \frac{W}{V} = \frac{\sigma^2}{2\varepsilon_0\varepsilon}
+\]</span></p>
+<p>Осталось только связать поверхностную плотность заряда связать с напряжённостью поля. Возьмём её из напряжённости в конденсаторе таком. И тогда <span class="math display">\[
+w = \frac{E^2\varepsilon_0\varepsilon}{2}
+\]</span></p>
+<p>Получилось выразить объёмную плотность энергии через напряжённость. Это же можно выразить иначе, если вспомнить про такую вещь как поток, то <span class="math display">\[
+w = \frac{ED}{2} = \frac{D^2}{\varepsilon_0\varepsilon}
+\]</span></p>
+<p>То есть объёмная плотность энергии это локальная величина, которая характеризует запас энергии на единицу объёма вблизи данной точки. И всю энергию можно найти проинтегрировав нашу функцию: <span class="math display">\[
+W = \int{w \, dw}
+\]</span></p>
+<p>Интересно, что с одной стороны у нас есть заряд который порождает энергию, но с другой стороны энергию можно выразить лишь через напряжённость поля. Получается, что в электростатике нельзя понять, что первично, а что вторично, заряд или поле и что несёт энергию. Так в электродинамике вообще пропадут заряды и получится, что энергия несётся чисто полем. Короче, ключ в поле, в его энергии.</p>
+<p>Вспомним и теорему Гаусса:</p>
+<p><span class="math inline">\(dW = E \, V\,d\sigma\)</span></p>
+<p>И запишем теорему Гаусса:</p>
+<p><span class="math inline">\(\oint_S {D_n \,ds} = q_{in}\)</span></p>
+<p>Нарисуем поверхность <span class="math inline">\(S\)</span> , охватывающую один из электродов конденсатора маленького нашего:</p>
+<p>Рассмотрим, что получается у нас справа от конденсатора. Запишем граничные условия( <span class="math inline">\(D_n\)</span> - нормальная составляющая):</p>
+<p><span class="math inline">\(D_n \cdot S = q_{in} \implies D_n = \sigma \implies dD_n = d\sigma\)</span></p>
+<p>Когда мы начинаем заряжать конденсатор у нас так будет меняться индукция. Соответственно:</p>
+<p><span class="math inline">\(dW = E \, V\,d\sigma = E \, V\,dD_n\)</span></p>
+<p>И при делении всего на объём:</p>
+<p><span class="math inline">\(dw = \frac{dW}{V} = E \, dD_n\)</span></p>
+<p>Интегрируем и получаем, что:</p>
+<p><span class="math inline">\(w = \int{E \, dD_n}\)</span></p>
+<p>Также можно обобщить немного для анизотропных диэлектриков просто поменяв всё на скалярное произведение:</p>
+<p><span class="math inline">\(w = \int{\vec E \cdot  d \vec D}\)</span></p>
 
 
 </section>
@@ -977,13 +1027,13 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../Lecture_notes/Physics/Electrostatics/index.html" class="pagination-link" aria-label="Электростатика">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Электростатика</span>
+      <a href="../../../Lecture_notes/Physics/Electrostatics/P9_energy_of_electrostatic_feild.html" class="pagination-link" aria-label="Энергия электростатического поля и системы зарядов">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Энергия электростатического поля и системы зарядов</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../Lecture_notes/Physics/Electrostatics/P2_gauss_theorem.html" class="pagination-link" aria-label="Теорема Гаусса">
-        <span class="nav-page-text">Теорема Гаусса</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../Lecture_notes/Physics/ElectricCircuits/index.html" class="pagination-link" aria-label="Электрические цепи">
+        <span class="nav-page-text">Электрические цепи</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -992,4 +1042,4 @@ window.Quarto = {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/Physics/Electrostatics/P1_electric_feild.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/Physics/Electrostatics/P1_electric_feild.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/Physics/Electrostatics/P10_el_stat_eng_diffform.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/Physics/Electrostatics/P10_el_stat_eng_diffform.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></div></div></footer></body></html>

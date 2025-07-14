@@ -1,9 +1,9 @@
 ---
 title: Электрические цепи
 subtitle: Домашняя страница введения в электрические цепи
-search: true
-
-
-listing: 
-    - title
 ---
+
+::: {.callout-important}
+## Заметтье
+Всё здесь в основном записано по лекциям Ильи Львовича Шеймана с `youtube`: [https://www.youtube.com/@I_Sheinman](https://www.youtube.com/@I_Sheinman)
+:::

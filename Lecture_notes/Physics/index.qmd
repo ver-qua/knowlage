@@ -2,3 +2,7 @@
 title: "Физика"
 ---
 
+::: {.callout-important}
+## Заметтье
+Всё здесь в основном записано по лекциям Ильи Львовича Шеймана с `youtube`: [https://www.youtube.com/@I_Sheinman](https://www.youtube.com/@I_Sheinman)
+:::

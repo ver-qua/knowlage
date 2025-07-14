@@ -62,6 +62,8 @@ website:
                       - Lecture_notes/Physics/Electrostatics/P6_electric_dipole.qmd
                       - Lecture_notes/Physics/Electrostatics/P7_electric_capacity.qmd
                       - Lecture_notes/Physics/Electrostatics/P8_capacitors.qmd
+                      - Lecture_notes/Physics/Electrostatics/P9_energy_of_electrostatic_feild.qmd
+                      - Lecture_notes/Physics/Electrostatics/P10_el_stat_eng_diffform.qmd
 
                   - section: "Электрические цепи"
                     href: "Lecture_notes/Physics/ElectricCircuits/index.qmd"
