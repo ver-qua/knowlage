@@ -497,6 +497,7 @@ window.Quarto = {
   <li><a href="#потенциал-диполя" id="toc-потенциал-диполя" class="nav-link" data-scroll-target="#потенциал-диполя">Потенциал диполя</a></li>
   <li><a href="#напряжённость-поля-диполя" id="toc-напряжённость-поля-диполя" class="nav-link" data-scroll-target="#напряжённость-поля-диполя">Напряжённость поля диполя</a></li>
   <li><a href="#дипольный-момент" id="toc-дипольный-момент" class="nav-link" data-scroll-target="#дипольный-момент">Дипольный момент</a></li>
+  <li><a href="#формула-через-частные-случаи" id="toc-формула-через-частные-случаи" class="nav-link" data-scroll-target="#формула-через-частные-случаи">Формула через частные случаи</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/Physics/Electrostatics/P6_electric_dipole.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/Physics/Electrostatics/P6_electric_dipole.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></nav>
     </div>
@@ -596,6 +597,11 @@ r_- r_+ \approx r^2
 \end{pmatrix}
 \]</span></p>
 <p>Объясняем прирощения</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="P6_ElectricDipole/3.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
 <ul>
 <li>По <span class="math inline">\(r\)</span> – простое линейное приращение</li>
 <li>По <span class="math inline">\(\theta\)</span> – длинна дуги</li>
@@ -618,14 +624,88 @@ E = \frac{kql}{r^3}\sqrt{1+3\cos^2{\theta}}
 </section>
 <section id="дипольный-момент" class="level4">
 <h4 class="anchored" data-anchor-id="дипольный-момент">Дипольный момент</h4>
-<p>Заметим, что везде в выражении поля диполя появляется произведение <span class="math inline">\(q\cdot l\)</span> или в векторном виде <span class="math inline">\(q\cdot \vec l\)</span>, введём величину дипольный момент. Итак, дипольный момент – произведение модуля заряда одного его заряда на расстояние между ними <span class="math display">\[
+<p>Заметим, что везде в выражении поля диполя появляется произведение <span class="math inline">\(q\cdot l\)</span> или в векторном виде <span class="math inline">\(q\cdot \vec l\)</span>, введём величину дипольный момент. Итак, дипольный момент – произведение модуля заряда одного его заряда на вектор между ними направленный от минуса к плюсу. <span class="math display">\[
 \vec{p}_e = q \vec l
 \]</span></p>
-<p>Напряжённость диполя будет выглядеть примерно так</p>
-<p>Выразим <span class="math inline">\(\vec E\)</span> как функцию <span class="math inline">\(\vec E(\vec l, \vec r)\)</span> Для частных случаев: 1. Если мы рассматриваем напряжённость вдоль дипольного момента, то <span class="math inline">\(\theta = 0\)</span> , а следовательно <span class="math inline">\(E = E_r = \frac{2kql}{r^3}\)</span>, <span class="math inline">\(\vec{E} = \frac{2k\vec{p_e}}{r^3}\)</span>. 2. Если же рассмотреть ось перпендикулярную моменту диполя то <span class="math inline">\(\theta = \frac{\pi}{2}\)</span>, а следовательно <span class="math inline">\(E = E_\theta = -\frac{kql}{r^3}\)</span>, <span class="math inline">\(\vec E = -\frac{k\vec p_e}{r^3}\)</span>. То есть перпендикулярно напряжённость в 2 раза меньше.</p>
-<p>В общем случае где <span class="math inline">\(l &lt;&lt; r\)</span> :</p>
-<p>Дано изображённое на картинке. Проведём перпендикуляр на линию соединяющую <span class="math inline">\(-q\)</span> и <span class="math inline">\(\vec{r}\)</span> и на место их пресечения установим сразу два заряда <span class="math inline">\(+q\)</span> и <span class="math inline">\(-q\)</span> . Тогда поле можно будет выразить через два новых получившихся диполя:</p>
-<p><span class="math inline">\(\vec E = \vec E_{r1} + \vec E_{\theta 2}\)</span> Отсюда можно представить <span class="math inline">\(\vec{p}_2 = \vec p - \vec p_1\)</span> и следовательно по частным случаям можно выразить <span class="math inline">\(\vec E\)</span> как: <span class="math inline">\(\vec E = \frac{2k\vec p_1}{r^3} -  \frac{k\vec p_2}{r^3} = \frac{k}{r^3} \left(3\vec p_1 - \vec p\right)\)</span> Но здесь нам не известно <span class="math inline">\(\vec p _1\)</span> , его модуль можно выразить через скалярное произведение <span class="math inline">\(\vec p \cdot \vec r\)</span> : <span class="math inline">\(p_1 = p \cos\theta = \frac{\vec p \cdot \vec r}{r}\)</span> Ну а для того чтобы добавить ему направление можно просто домножить его на нормированный <span class="math inline">\(\frac{\vec{r}}{r}\)</span> так как <span class="math inline">\(l &lt;&lt; r\)</span> . Отсюда выходит, что: <span class="math inline">\(\vec E(\vec l, \vec r) = \frac{k}{r^3} \left( \frac{3(\vec p \cdot \vec r) \cdot \vec r}{r^2} - \vec p \right)\)</span> Есть ещё способ, но мне было лень его записать:</p>
+<p>Напряжённость диполя будет выглядеть примерно так:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="P6_ElectricDipole/4.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Выразим <span class="math inline">\(\vec E\)</span> как функцию <span class="math inline">\(\vec E(\vec l, \vec r)\)</span> для частных случаев:</p>
+<ol type="1">
+<li>Если мы рассматриваем напряжённость вдоль дипольного момента, то <span class="math inline">\(\theta = 0\)</span>, а следовательно</li>
+</ol>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><span class="math display">\[
+E = E_r = \frac{2kql}{r^3}
+\]</span></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><span class="math display">\[
+\vec{E} = \frac{2k\vec{p_e}}{r^3}
+\]</span></p>
+</div>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Если же рассмотреть ось перпендикулярную моменту диполя то <span class="math inline">\(\theta = \frac{\pi}{2}\)</span>, а следовательно</li>
+</ol>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><span class="math display">\[
+E = E_\theta = -\frac{kql}{r^3}
+\]</span></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><span class="math display">\[
+\vec E = -\frac{k\vec p_e}{r^3}
+\]</span></p>
+</div>
+</div>
+</div>
+<p>То есть перпендикулярно напряжённость в 2 раза меньше.</p>
+</section>
+<section id="формула-через-частные-случаи" class="level4">
+<h4 class="anchored" data-anchor-id="формула-через-частные-случаи">Формула через частные случаи</h4>
+<p>Выведем напряжённость поля диполя через частные случаи полученные ранее. В общем случае где <span class="math inline">\(l &lt;&lt; r\)</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="P6_ElectricDipole/5.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Проведём перпендикуляр на линию соединяющую <span class="math inline">\(-q\)</span> и <span class="math inline">\(\vec{r}\)</span> и на место их пресечения установим сразу два заряда <span class="math inline">\(+q\)</span> и <span class="math inline">\(-q\)</span>. Тогда поле можно будет выразить через два новых получившихся диполя один из которых перпендикулярен <span class="math inline">\(\vec{r}\)</span> а другой параллелен так как <span class="math inline">\(\vec{r}\)</span> много больше <span class="math inline">\(\vec{l}\)</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="P6_ElectricDipole/6.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Интересно, что сумма <span class="math inline">\(\vec p_1\)</span> и <span class="math inline">\(\vec p_2\)</span> как раз даст нам оригинальный <span class="math inline">\(\vec p\)</span>. В итоге получается <span class="math display">\[
+\vec E = \vec E_{r1} + \vec E_{\theta 2}
+\]</span></p>
+<p>И следовательно по частным случаям можно выразить <span class="math inline">\(\vec E\)</span> как</p>
+<p><span class="math display">\[
+\vec E = \frac{2k\vec p_1}{r^3} - \frac{k\vec p_2}{r^3} = \frac{k}{r^3} \left(2\vec p_1 - \vec p_2\right)
+\]</span></p>
+<p>Но так как <span class="math inline">\(\vec p_2 = \vec p - \vec p_1\)</span> <span class="math display">\[
+\vec E = \frac{k}{r^3} \left(3\vec p_1 - \vec p\right)
+\]</span></p>
+<p>Но здесь нам не известно <span class="math inline">\(\vec p_1\)</span>, его модуль можно выразить через скалярное произведение <span class="math inline">\(\vec p \cdot \vec r\)</span> так как он по сути проекция <span class="math inline">\(\vec p\)</span> на <span class="math inline">\(\vec r\)</span> <span class="math display">\[
+p_1 = p \cos\theta = \frac{\vec p \cdot \vec r}{r}
+\]</span></p>
+<p>Ну а для того чтобы добавить ему направление можно просто домножить его на нормированный <span class="math inline">\(\frac{\vec{r}}{r}\)</span> так как <span class="math inline">\(l &lt;&lt; r\)</span>. Отсюда выходит, что <span class="math display">\[
+\vec E(\vec l, \vec r) = \frac{k}{r^3} \left( \frac{3(\vec p \cdot \vec r) \cdot \vec r}{r^2} - \vec p \right)
+\]</span></p>
+<p>Есть ещё способ, но мне было лень его записать в <span class="math inline">\(\LaTeX\)</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="P6_ElectricDipole/7.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
 
 
 </section>
