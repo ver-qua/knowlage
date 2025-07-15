@@ -517,7 +517,8 @@ window.Quarto = {
     <h2 id="toc-title">Содержание</h2>
    
   <ul>
-  <li><a href="#объёмная-плотность-заряда" id="toc-объёмная-плотность-заряда" class="nav-link active" data-scroll-target="#объёмная-плотность-заряда">Объёмная плотность заряда</a></li>
+  <li><a href="#объёмная-плотность-энергии" id="toc-объёмная-плотность-энергии" class="nav-link active" data-scroll-target="#объёмная-плотность-энергии">Объёмная плотность энергии</a></li>
+  <li><a href="#другой-вариант-формулы" id="toc-другой-вариант-формулы" class="nav-link" data-scroll-target="#другой-вариант-формулы">Другой вариант формулы</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/Physics/Electrostatics/P10_el_stat_eng_diffform.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/Physics/Electrostatics/P10_el_stat_eng_diffform.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></nav>
     </div>
@@ -544,28 +545,15 @@ window.Quarto = {
 </header>
 
 
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Заметтье
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Статья в работе</p>
-</div>
-</div>
-<section id="объёмная-плотность-заряда" class="level4">
-<h4 class="anchored" data-anchor-id="объёмная-плотность-заряда">Объёмная плотность заряда</h4>
+<section id="объёмная-плотность-энергии" class="level4">
+<h4 class="anchored" data-anchor-id="объёмная-плотность-энергии">Объёмная плотность энергии</h4>
 <p>Рассмотрим каое-то пространство, может и с диэлектриком, и оно заполнено полем, может и неоднородным. Мы можем всегда в этом поле выделить маленькую область в которой поле будет однородно, так как функция поля дифференциируема. Эту область можно представить как маленький плоский конденсатор, то есть две площадки <span class="math inline">\(S\)</span> с расстоянием между ними <span class="math inline">\(h\)</span>, при этом <span class="math inline">\(h &lt;&lt; \sqrt S\)</span></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="P10_ElStatEngDiffform/1.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
-<p>Получается очень маленький объем <span class="math inline">\(\Delta V\)</span>. Для такой системы плоского конденсатора мы можем сказать, что у нас с одной стороны есть <span class="math inline">\(+ \sigma\)</span> и с другой <span class="math inline">\(- \sigma\)</span>, и тогда и поле между пластинками. Заряд конденсатора <span class="math inline">\(q = \sigma \cdot S\)</span>, но это если он заряжен. Скажем сначала, что он не заряжен, попробуем его постепенно заряжать добавляя <span class="math inline">\(dq\)</span> и смотреть какую работу мы выполняем <span class="math display">\[
+<p>Получается очень маленький объем <span class="math inline">\(\Delta V\)</span>. Для такой системы плоского конденсатора мы можем сказать, что у нас с одной стороны есть <span class="math inline">\(+ \sigma\)</span> и с другой <span class="math inline">\(- \sigma\)</span>, а тогда и поле между пластинками. Заряд конденсатора <span class="math inline">\(q = \sigma \cdot S\)</span>, но это если он заряжен. Скажем сначала, что он не заряжен, попробуем его постепенно заряжать добавляя <span class="math inline">\(dq\)</span> и смотреть какую работу мы выполняем <span class="math display">\[
 dq = S \cdot d\sigma
 \]</span></p>
 <p>Поле плоского конденсатора <span class="math display">\[
@@ -593,21 +581,42 @@ w = \frac{ED}{2} = \frac{D^2}{\varepsilon_0\varepsilon}
 W = \int{w \, dw}
 \]</span></p>
 <p>Интересно, что с одной стороны у нас есть заряд который порождает энергию, но с другой стороны энергию можно выразить лишь через напряжённость поля. Получается, что в электростатике нельзя понять, что первично, а что вторично, заряд или поле и что несёт энергию. Так в электродинамике вообще пропадут заряды и получится, что энергия несётся чисто полем. Короче, ключ в поле, в его энергии.</p>
-<p>Вспомним и теорему Гаусса:</p>
-<p><span class="math inline">\(dW = E \, V\,d\sigma\)</span></p>
-<p>И запишем теорему Гаусса:</p>
-<p><span class="math inline">\(\oint_S {D_n \,ds} = q_{in}\)</span></p>
-<p>Нарисуем поверхность <span class="math inline">\(S\)</span> , охватывающую один из электродов конденсатора маленького нашего:</p>
-<p>Рассмотрим, что получается у нас справа от конденсатора. Запишем граничные условия( <span class="math inline">\(D_n\)</span> - нормальная составляющая):</p>
-<p><span class="math inline">\(D_n \cdot S = q_{in} \implies D_n = \sigma \implies dD_n = d\sigma\)</span></p>
-<p>Когда мы начинаем заряжать конденсатор у нас так будет меняться индукция. Соответственно:</p>
-<p><span class="math inline">\(dW = E \, V\,d\sigma = E \, V\,dD_n\)</span></p>
-<p>И при делении всего на объём:</p>
-<p><span class="math inline">\(dw = \frac{dW}{V} = E \, dD_n\)</span></p>
-<p>Интегрируем и получаем, что:</p>
-<p><span class="math inline">\(w = \int{E \, dD_n}\)</span></p>
-<p>Также можно обобщить немного для анизотропных диэлектриков просто поменяв всё на скалярное произведение:</p>
-<p><span class="math inline">\(w = \int{\vec E \cdot  d \vec D}\)</span></p>
+</section>
+<section id="другой-вариант-формулы" class="level4">
+<h4 class="anchored" data-anchor-id="другой-вариант-формулы">Другой вариант формулы</h4>
+<p>Вспомним и теорему Гаусса: <span class="math display">\[
+\oint_S {D_n \,ds} = q_{in}
+\]</span></p>
+<p>Нарисуем поверхность <span class="math inline">\(S\)</span>, охватывающую проходящую через электроды конденсатора</p>
+<p><img src="P10_ElStatEngDiffform/2.png" class="img-fluid"></p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>Тогда по теореме Гаусса <span class="math display">\[
+D_n \cdot S = q_{in}
+\]</span></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><span class="math inline">\(D_n\)</span> – нормальная составляющая индукции электрического поля<br>
+<span class="math inline">\(S\)</span> – площадь пересечения объёма проведённой нами поверхности и пластины конденсатора</p>
+</div>
+</div>
+</div>
+<p>Из этого следует, так как <span class="math inline">\(\sigma = \frac{q}{S}\)</span> <span class="math display">\[
+D_n = \sigma \implies dD_n = d\sigma
+\]</span></p>
+<p>Когда мы начинаем заряжать конденсатор у нас так будет меняться индукция, а соответственно и энергия <span class="math display">\[
+dW = E \, V\,d\sigma = E \, V\,dD_n
+\]</span></p>
+<p>Делим всё на объём <span class="math display">\[
+dw = \frac{dW}{V} = E \, dD_n
+\]</span></p>
+<p>Интегрируем и получаем, что: <span class="math display">\[
+w = \int{E \, dD_n}
+\]</span></p>
+<p>Также можно обобщить немного для анизотропных диэлектриков просто поменяв всё на скалярное произведение <span class="math display">\[
+w = \int{\vec E \cdot  d \vec D}
+\]</span></p>
 
 
 </section>
