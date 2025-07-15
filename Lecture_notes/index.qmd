@@ -1,9 +1,4 @@
 ---
 title: Конпекты
 subtitle: Домашняя страница всех конспектов
-search: true
-
-
-listing: 
-    - title
 ---

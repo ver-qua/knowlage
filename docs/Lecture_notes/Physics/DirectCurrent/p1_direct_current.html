@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Физика – Учения</title>
+<title>Постоянный ток – Учения</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,29 +23,29 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../Lecture_notes/Physics/Electrostatics/index.html" rel="next">
-<link href="../../Lecture_notes/Calculus/PX_definite_integral.html" rel="prev">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-8ef56b68f8fa1e9d2ba328e99e439f80.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-c323d292bfb2abd8c20242df8f978628.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-e400a582076fcffc27701c3b1ff123b2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-c323d292bfb2abd8c20242df8f978628.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../Lecture_notes/Physics/ElectricCircuits/index.html" rel="next">
+<link href="../../../Lecture_notes/Physics/DirectCurrent/index.html" rel="prev">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-8ef56b68f8fa1e9d2ba328e99e439f80.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-c323d292bfb2abd8c20242df8f978628.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-e400a582076fcffc27701c3b1ff123b2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-c323d292bfb2abd8c20242df8f978628.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,8 +74,37 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../../styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -247,7 +276,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Учения</span>
     </a>
   </div>
@@ -258,15 +287,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Дома</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../../Lecture_notes/index.html" aria-current="page"> 
+    <a class="nav-link active" href="../../../Lecture_notes/index.html" aria-current="page"> 
 <span class="menu-text">Конспекты</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
+    <a class="nav-link" href="../../../about.html"> 
 <span class="menu-text">О этом</span></a>
   </li>  
 </ul>
@@ -281,7 +310,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Переключить боковую панель навигации" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../Lecture_notes/Physics/index.html">Физика</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/index.html">Физика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/DirectCurrent/index.html">Постоянный ток</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/DirectCurrent/p1_direct_current.html">Постоянный ток</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Переключить боковую панель навигации" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -295,7 +324,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../Lecture_notes/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Конспекты</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Переключить раздел">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -304,7 +333,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/LinearAlgebra/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../Lecture_notes/LinearAlgebra/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Линейная Алгебра</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Переключить раздел">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -313,19 +342,19 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/LinearAlgebra/P20_Several_real_variables_function.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/LinearAlgebra/P20_Several_real_variables_function.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Параграф XX: Функции нескольких переменных</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/LinearAlgebra/P21_SRVF_differentiation.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/LinearAlgebra/P21_SRVF_differentiation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Параграф XXI: Дифференциируемость функции нескольких переменных</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/LinearAlgebra/P22_Rn_to_Rm_differentiation.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/LinearAlgebra/P22_Rn_to_Rm_differentiation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Параграф XXII: Дифференцируемость из R<sup>n</sup> в R<sup>m</sup></span></a>
   </div>
 </li>
@@ -333,7 +362,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/DifferentialEquations/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../Lecture_notes/DifferentialEquations/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Диффуры</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Переключить раздел">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -342,7 +371,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/DifferentialEquations/P1_ODE_General_concepts.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/DifferentialEquations/P1_ODE_General_concepts.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Параграф I: Обыкновенные Дифференциальные Уравнения. Общие Понятия</span></a>
   </div>
 </li>
@@ -350,7 +379,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/Calculus/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../Lecture_notes/Calculus/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Матанализ</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Переключить раздел">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -359,13 +388,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Calculus/PX_integration_methods.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Calculus/PX_integration_methods.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Основные методы интегрирования</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Calculus/PX_definite_integral.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Calculus/PX_definite_integral.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Определённый интеграл (ОИ)</span></a>
   </div>
 </li>
@@ -373,7 +402,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/Physics/index.html" class="sidebar-item-text sidebar-link active">
+            <a href="../../../Lecture_notes/Physics/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Физика</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Переключить раздел">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -382,7 +411,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/Physics/Electrostatics/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../Lecture_notes/Physics/Electrostatics/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Электростатика</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Переключить раздел">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -391,61 +420,61 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth3 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/P1_electric_feild.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/P1_electric_feild.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Электрическое Поле</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/P2_gauss_theorem.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/P2_gauss_theorem.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Теорема Гаусса</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/P3_Coulombs_law.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/P3_Coulombs_law.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Закон Кулона</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/P4_electric_charge.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/P4_electric_charge.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Электрический Заряд</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/P5_electric_potential.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/P5_electric_potential.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Электрический потенциал</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/P6_electric_dipole.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/P6_electric_dipole.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Электрический диполь</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/P7_electric_capacity.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/P7_electric_capacity.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Электроёмкость</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/P8_capacitors.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/P8_capacitors.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Конденсаторы</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/P9_energy_of_electrostatic_feild.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/P9_energy_of_electrostatic_feild.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Энергия электростатического поля и системы зарядов</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/P10_el_stat_eng_diffform.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/Electrostatics/P10_el_stat_eng_diffform.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Энергия электростатического поля дифференциальная форма</span></a>
   </div>
 </li>
@@ -453,7 +482,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/Physics/DirectCurrent/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../Lecture_notes/Physics/DirectCurrent/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Постоянный ток</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Переключить раздел">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -462,7 +491,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth3 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/DirectCurrent/p1_direct_current.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/DirectCurrent/p1_direct_current.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Постоянный ток</span></a>
   </div>
 </li>
@@ -470,7 +499,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/Physics/ElectricCircuits/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../Lecture_notes/Physics/ElectricCircuits/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Электрические цепи</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Переключить раздел">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -479,13 +508,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth3 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/ElectricCircuits/Transition_processes_L_C.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/ElectricCircuits/Transition_processes_L_C.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Переходные процессы L и C</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/ElectricCircuits/RLC_circuit.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Lecture_notes/Physics/ElectricCircuits/RLC_circuit.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Колебательный контур</span></a>
   </div>
 </li>
@@ -500,16 +529,24 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">Содержание</h2>
+   
+  <ul>
+  <li><a href="#определение" id="toc-определение" class="nav-link active" data-scroll-target="#определение">Определение</a></li>
+  <li><a href="#плотность-тока" id="toc-плотность-тока" class="nav-link" data-scroll-target="#плотность-тока">Плотность тока</a></li>
+  <li><a href="#скорость-частиц" id="toc-скорость-частиц" class="nav-link" data-scroll-target="#скорость-частиц">Скорость частиц</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/Physics/DirectCurrent/p1_direct_current.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/Physics/DirectCurrent/p1_direct_current.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../Lecture_notes/Physics/index.html">Физика</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/index.html">Физика</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/DirectCurrent/index.html">Постоянный ток</a></li><li class="breadcrumb-item"><a href="../../../Lecture_notes/Physics/DirectCurrent/p1_direct_current.html">Постоянный ток</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Физика</h1>
+<h1 class="title">Постоянный ток</h1>
 </div>
 
 
@@ -526,21 +563,109 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<section id="определение" class="level4">
+<h4 class="anchored" data-anchor-id="определение">Определение</h4>
+<p><strong>Постоянный ток</strong> – любое упорядоченное движение зарядов. Для характерезации тока вводят понятие силы тока. <strong>Сила тока</strong> – количество заряда прошедшее через поперечное сечение проводника, которое перпендикулярно потоку <span class="math display">\[
+I = \frac{dq}{qt} \quad \left[ \frac{Кл}{с} \right]
+\]</span></p>
+<p>Сейчас ампер - производная единица определяемая через секунду(атом цезия) и элементарный заряд. Но такое определение не характеризует распределение протекания заряда через сечение. Поэтому вводят понятие плотность тока.</p>
+</section>
+<section id="плотность-тока" class="level4">
+<h4 class="anchored" data-anchor-id="плотность-тока">Плотность тока</h4>
+<div class="columns">
+<div class="column">
+<p><span class="math display">\[
+j = \frac{dI}{dS}
+\]</span></p>
+<p><span class="math inline">\(dS\)</span> - площадь перпендикулярная потоку</p>
+</div><div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="p1DirectCurrent/1.png" class="quarto-figure quarto-figure-center figure-img" width="100" height="100"></p>
+</figure>
 </div>
-<div class="callout-title-container flex-fill">
-Заметтье
 </div>
 </div>
-<div class="callout-body-container callout-body">
-<p>Всё здесь в основном записано по лекциям Ильи Львовича Шеймана с <code>youtube</code>: <a href="https://www.youtube.com/@I_Sheinman">https://www.youtube.com/<span class="citation" data-cites="I_Sheinman">@I_Sheinman</span></a></p>
+<p>Также плотность тока удобно представить в виде вектора. <strong>Вектор плотности потока</strong> – как плотность потока на <strong>сонаправлен движению положительных</strong> зарядов <span class="math inline">\(\vec i \uparrow\uparrow \vec v\)</span>.</p>
+<p>Найдём другое выражение для плотности тока. Для этого выполним несколько преобразований. Для начала</p>
+<div class="columns">
+<div class="column">
+<p><span class="math inline">\(dq = \rho \cdot dV\)</span></p>
+</div><div class="column">
+<p><span class="math inline">\(dV = dS \cdot v \cdot dt\)</span></p>
 </div>
 </div>
+<p>Тогда <span class="math display">\[
+j = \frac{dI}{dS} = \frac{dq}{dt\, dS} = \frac{\rho \, dV}{dt\, dS} = \frac{\rho \, dS\, v \, dt}{dt\, dS}
+\]</span></p>
+<p>Тут всё сокращается и если скорость у нас вектор, то всё можно записать в векторном виде:</p>
+<p><span class="math display">\[
+\vec j = \rho \vec v
+\]</span></p>
+<p>Также, если <span class="math inline">\(\rho\)</span> представить как концентрацию на заряд одной частицы <span class="math display">\[
+\rho = n \cdot q_1
+\]</span></p>
+<p>То мы получаем выражение: <span class="math display">\[
+\vec j = q_1 \, n\, \vec v
+\]</span></p>
+<p>Но важно, что данная формула справедлива лишь в случае, когда двигаются заряды лишь одного типа. Но это легко исправить, если определить суммарную плотность тока как сумму всех плотностей <span class="math display">\[
+\vec j =\sum {q_i \, n_i, {\vec v}_i}
+\]</span></p>
+<p>До этого мы везде рассматривали <span class="math inline">\(dS\)</span> как площадку перпендикулярную потоку, но если это будет не так, то ток можно определить через скалярное произведение</p>
+<div class="columns">
+<div class="column">
+<p><span class="math display">\[
+dI = j \, dS = \vec j \cdot \vec dS
+\]</span> <span class="math inline">\(\vec dS\)</span> – по направлению нормали</p>
+</div><div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="p1DirectCurrent/2.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>И тогда полный ток будет определяться</p>
+<p><span class="math display">\[
+I = \int{\vec j \cdot d \vec S}
+\]</span></p>
+<p>Теперь возьмём какой-нибудь замкнутый объём <span class="math inline">\(V\)</span> с зарядом <span class="math inline">\(q\)</span>. Пусть из этого объёма вытекает заряд, тогда в каждой точке поверхности можно задать плотность тока <span class="math inline">\(\vec j\)</span></p>
+<div class="columns">
+<div class="column">
+<p><span class="math display">\[
+-\frac{\partial q}{\partial t} = \oint{\vec j \cdot d\vec S}
+\]</span></p>
+</div><div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="p1DirectCurrent/3.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Так как у нас объём не двигается, то нужно считать производную частной. Продифференцируем <span class="math display">\[
+-\frac{\partial \rho}{\partial t} = \frac{d}{dV}\oint{\vec j \cdot d\vec S} = \nabla \cdot (\vec j)
+\]</span></p>
+<p>В итоге получаем, что <span class="math display">\[
+\nabla \cdot \vec j = -\frac{\partial\rho}{\partial t}
+\]</span></p>
+<p>Или же иначе, это получается <strong>дифференциальная форма закона сохранения заряда</strong>.</p>
+</section>
+<section id="скорость-частиц" class="level4">
+<h4 class="anchored" data-anchor-id="скорость-частиц">Скорость частиц</h4>
+<p>Пусть у нас ток будет 100 А($I A $). Пусть проводник будет <span class="math inline">\(S = 1 \, см^2\)</span> Также будем считать, что каждый атом проводника отдаёт в общее пользование по одному электрону, тогда <span class="math display">\[
+n = \frac{N}{V}= \frac{\nu \, N_A}{V} = \frac{m}{M}\frac{N_A}{V} = \frac{\rho \, N_A}{M}
+\]</span></p>
+<p>И если подставить значения для меди, <span class="math inline">\(n \approx 0.75 \cdot 10^{29}  \;m^{-3}\)</span> <span class="math display">\[
+j = q_1 \,n \, v = \frac{I}{S}
+\]</span></p>
+<p>И тогда <span class="math display">\[
+v = \frac{I}{S\,q_1\,n}
+\]</span></p>
+<p>Получается, что <span class="math inline">\(v \approx \frac{1}{12} \cdot 10^{-3}\; \frac{m}{s}\)</span>. То есть скорость порядка <span class="math inline">\(10^{-4}\)</span> м в секунду. Что очень мало, при том, что тепловая скорость <span class="math inline">\(v_t \approx \sqrt{\frac{3\,k\,T}{m_e}} \approx 1.2 \cdot 10^5 \frac{m}{s}\)</span>. Что намного больше. Но важна не скорость, а то, что движение упорядоченно что и приводит к переносу большого заряда.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -957,13 +1082,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../Lecture_notes/Calculus/PX_definite_integral.html" class="pagination-link" aria-label="Определённый интеграл (ОИ)">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Определённый интеграл (ОИ)</span>
+      <a href="../../../Lecture_notes/Physics/DirectCurrent/index.html" class="pagination-link" aria-label="Постоянный ток">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Постоянный ток</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../Lecture_notes/Physics/Electrostatics/index.html" class="pagination-link" aria-label="Электростатика">
-        <span class="nav-page-text">Электростатика</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../Lecture_notes/Physics/ElectricCircuits/index.html" class="pagination-link" aria-label="Электрические цепи">
+        <span class="nav-page-text">Электрические цепи</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -972,4 +1097,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/Physics/index.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/Physics/index.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/Physics/DirectCurrent/p1_direct_current.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/Physics/DirectCurrent/p1_direct_current.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></div></div></footer></body></html>
