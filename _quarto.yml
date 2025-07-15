@@ -69,6 +69,7 @@ website:
                     href: Lecture_notes/Physics/DirectCurrent/index.qmd
                     contents: 
                       - Lecture_notes/Physics/DirectCurrent/p1_direct_current.qmd
+                      - Lecture_notes/Physics/DirectCurrent/p2_Ohms_law.qmd
 
                   - section: "Электрические цепи"
                     href: "Lecture_notes/Physics/ElectricCircuits/index.qmd"
@@ -78,6 +79,9 @@ website:
 
 format:
   html:
+    html-math-method: 
+      method: mathjax
+      
     toc: true
     toc-expand: true
     toc-depth: 5
