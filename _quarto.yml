@@ -70,6 +70,9 @@ website:
                     contents: 
                       - Lecture_notes/Physics/DirectCurrent/p1_direct_current.qmd
                       - Lecture_notes/Physics/DirectCurrent/p2_Ohms_law.qmd
+                      - Lecture_notes/Physics/DirectCurrent/p3_Joule_Lenz_law.qmd
+                      - Lecture_notes/Physics/DirectCurrent/p4_Drudus_Lorenz_theory_disaster.qmd
+                      - Lecture_notes/Physics/DirectCurrent/p5_electromotive_force.qmd
 
                   - section: "Электрические цепи"
                     href: "Lecture_notes/Physics/ElectricCircuits/index.qmd"
