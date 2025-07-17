@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Матанализ – Учения</title>
+<title>Комплесные числа – Учения</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../Lecture_notes/Calculus/p1_complex_numbers.html" rel="next">
-<link href="../../Lecture_notes/DifferentialEquations/P1_ODE_General_concepts.html" rel="prev">
+<link href="../../Lecture_notes/Calculus/PX_integration_methods.html" rel="next">
+<link href="../../Lecture_notes/Calculus/index.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -281,7 +310,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Переключить боковую панель навигации" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../Lecture_notes/Calculus/index.html">Матанализ</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../Lecture_notes/Calculus/index.html">Матанализ</a></li><li class="breadcrumb-item"><a href="../../Lecture_notes/Calculus/p1_complex_numbers.html">Комплесные числа</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Переключить боковую панель навигации" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -350,7 +379,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/Calculus/index.html" class="sidebar-item-text sidebar-link active">
+            <a href="../../Lecture_notes/Calculus/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Матанализ</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Переключить раздел">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -359,7 +388,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Calculus/p1_complex_numbers.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Lecture_notes/Calculus/p1_complex_numbers.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Комплесные числа</span></a>
   </div>
 </li>
@@ -530,16 +559,38 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">Содержание</h2>
+   
+  <ul>
+  <li><a href="#мотив" id="toc-мотив" class="nav-link active" data-scroll-target="#мотив">Мотив</a></li>
+  <li><a href="#определение" id="toc-определение" class="nav-link" data-scroll-target="#определение">Определение</a></li>
+  <li><a href="#свойство-1" id="toc-свойство-1" class="nav-link" data-scroll-target="#свойство-1">Свойство 1</a></li>
+  <li><a href="#действия-операции" id="toc-действия-операции" class="nav-link" data-scroll-target="#действия-операции">Действия / Операции</a>
+  <ul>
+  <li><a href="#сложение" id="toc-сложение" class="nav-link" data-scroll-target="#сложение">Сложение</a></li>
+  <li><a href="#умножение" id="toc-умножение" class="nav-link" data-scroll-target="#умножение">Умножение</a></li>
+  <li><a href="#деление" id="toc-деление" class="nav-link" data-scroll-target="#деление">Деление</a></li>
+  </ul></li>
+  <li><a href="#дополнительные-определения" id="toc-дополнительные-определения" class="nav-link" data-scroll-target="#дополнительные-определения">Дополнительные определения</a>
+  <ul>
+  <li><a href="#алгебраический-вид-комплексного-числа" id="toc-алгебраический-вид-комплексного-числа" class="nav-link" data-scroll-target="#алгебраический-вид-комплексного-числа">Алгебраический вид комплексного числа</a></li>
+  <li><a href="#сопряжённое-комплексное-число" id="toc-сопряжённое-комплексное-число" class="nav-link" data-scroll-target="#сопряжённое-комплексное-число">Сопряжённое комплексное число</a></li>
+  <li><a href="#модуль-комлексного-числа" id="toc-модуль-комлексного-числа" class="nav-link" data-scroll-target="#модуль-комлексного-числа">Модуль комлексного числа</a></li>
+  <li><a href="#агрумент-комплексного-числа" id="toc-агрумент-комплексного-числа" class="nav-link" data-scroll-target="#агрумент-комплексного-числа">Агрумент комплексного числа</a></li>
+  </ul></li>
+  <li><a href="#ещё-свойства" id="toc-ещё-свойства" class="nav-link" data-scroll-target="#ещё-свойства">Ещё свойства</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/Calculus/p1_complex_numbers.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/Calculus/p1_complex_numbers.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../Lecture_notes/Calculus/index.html">Матанализ</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../Lecture_notes/Calculus/index.html">Матанализ</a></li><li class="breadcrumb-item"><a href="../../Lecture_notes/Calculus/p1_complex_numbers.html">Комплесные числа</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Матанализ</h1>
+<h1 class="title">Комплесные числа</h1>
 </div>
 
 
@@ -556,8 +607,159 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="мотив" class="level4">
+<h4 class="anchored" data-anchor-id="мотив">Мотив</h4>
+<p>Есть уравнения, которые не имеют решения среди вещественых чисел <span class="math display">\[
+x^2 + 1 = 0 \Rightarrow x^2 = -1 \; ?
+\]</span></p>
+<p>Значит что можно сделать, попробовать рассширить <strong>домен</strong>, область определения функции а следовательно и её корней</p>
+</section>
+<section id="определение" class="level4">
+<h4 class="anchored" data-anchor-id="определение">Определение</h4>
+<p><strong>Комплеское число</strong> – упорядоченная пара вещественных чисел <span class="math inline">\((x, y) \in \mathbb{R}\)</span>. Эти числа можно представить как точки на плоскости с осями вещественной обозначаемой <span class="math inline">\(\mathcal{Re}\)</span> или <span class="math inline">\(\Re\)</span> и мнимой – <span class="math inline">\(\mathcal{Re}\)</span> или <span class="math inline">\(\Im\)</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="p1ComplexNumbers/1.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Из того факта, что они упорядоченны следует первое свойство</p>
+</section>
+<section id="свойство-1" class="level4">
+<h4 class="anchored" data-anchor-id="свойство-1">Свойство 1</h4>
+<p>Вероятно его можно обозвать <code>некоммутативность</code>, но суть в том, что <span class="math display">\[
+(x,y) \neq (y,x)
+\]</span></p>
+<p>Интересно, что именно это свойство даёт нам целую плоскость, потому, что неупорядоченные пары чисел, где <span class="math inline">\((a,b) = (b,a)\)</span> дадут нам лишь полуплоскость, выше или ниже <span class="math inline">\(y = x\)</span> (зависит от того как вы определите)</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="p1ComplexNumbers/2.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="действия-операции" class="level4">
+<h4 class="anchored" data-anchor-id="действия-операции">Действия / Операции</h4>
+<section id="сложение" class="level5">
+<h5 class="anchored" data-anchor-id="сложение">Сложение</h5>
+<p>Его определить для комплексных чисел достаточно просто и логично, мы просто складываем соответствующие числа <span class="math display">\[
+(x_1;y_1) \pm (x_2; y_2) = (x_1 \pm x_2; y_1 \pm y_2)
+\]</span></p>
+</section>
+<section id="умножение" class="level5">
+<h5 class="anchored" data-anchor-id="умножение">Умножение</h5>
+<p>Определить умножение комплексных числе уже сложнее, но что просто определить, так это умножение комплексного числа на вещественное число <span class="math display">\[
+a \, (x;y) = (a \, x; a \, y)
+\]</span></p>
+<p>И что же нам это даёт, скажете вы, а вот что. Запишем коплексное число как сумму двух вида <span class="math display">\[
+z = (x;0) +(0;y)
+\]</span></p>
+<p>В каждом можно вынести число <span class="math display">\[
+z = x \, (1;0) + y \, (0;1)
+\]</span></p>
+<p>И всё становится яснее, вот это <span class="math inline">\((1;0)\)</span> выглядит знакомо, это ведь знакомая всем <code>единица</code>! А горизонтальная ось <span class="math inline">\(\mathcal{Re}\)</span> в таком случае приобретает смысл давно известной с школы вещественной оси. Но у нас всё ещё осталась константа <span class="math inline">\((0;1)\)</span> и с ней мы ничего не можем поделать, кроме того, чтобы взять и обозначить её буквой <span class="math inline">\(i\)</span> и назавём <code>мнимой единицой</code>. Таким образом мы получаем другой вид записи коплексного числа, <code>алгебраический</code> <span class="math display">\[
+z = x + i \, y
+\]</span></p>
+<p>Также есть важный факт про мнимую единицу, <span class="math inline">\(i^2 = -1\)</span>, который я не могу доказать это слишком круто для меня</p>
+<p>А собственно и всё, осталось только перемножить два комплексных числа в таком виде и получить итоговую формулу <span class="math display">\[
+\begin{align}
+z_1 \, z_2 = (x_1 + iy_1) \, (x_2 + iy_2) = \\
+= x_1 \, x_2 + x_1 \, iy_2 + iy_1 \, x_2 + iy_1 \, iy_2 = \\
+= x_1 \, x_2 + i^2 \, y_1 \, y_2 + i(x_1\,y_2 + x_2 \, y_1) = \\
+= x_1 \, x_2 - \, y_1 \, y_2 + i(x_1\,y_2 + x_2 \, y_1)
+\end{align}
+\]</span></p>
+<p>Итого <span class="math display">\[
+z_1 \, z_2 = (x_1 + iy_1) \, (x_2 + iy_2) = x_1 \, x_2 - \, y_1 \, y_2 + i(x_1\,y_2 + x_2 \, y_1)
+\]</span></p>
+</section>
+<section id="деление" class="level5">
+<h5 class="anchored" data-anchor-id="деление">Деление</h5>
+<p>Для определения деления мы имеем практически всё нужное. Осталось только добавить понятие <code>сопряжённого</code> числа.</p>
+<div class="columns">
+<div class="column">
+<p>Если дано коплесное число <span class="math display">\[
+z = x + iy
+\]</span></p>
+</div><div class="column">
+<p>То сопряжённое ему <span class="math display">\[
+\overline{z} = x - iy
+\]</span></p>
+</div>
+</div>
+<p>По сути опирация сопряжения отражает комплексное число относительно вещественной оси</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="p1ComplexNumbers/3.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Также у сопряжённых чисел есть важное свойство <span class="math display">\[
+z \, \overline{z} = (x + iy) \, (x - iy) = x^2 + y^2
+\]</span></p>
+<p>Тогда для нормального определения деления нужно просто домножить на попряжённое знаменателя. Таким образом мы избавимся от мнимой единицы снизу <span class="math display">\[
+\begin{align}
+\frac{z_1}{z_2} = \frac{z_1 \, \overline{z_2}}{z_2 \, \overline{z_2}} = \frac{(x_1 + iy_1) \, (x_2 - iy_2)}{x_2^2 + y_2^2} = \\
+= \frac{x_1 \, x_2 - i \, y_2 \, x_1 + i \, y_1 \, x_2 - i^2 \, y_1 \, y_2}{x_2^2 + y_2^2} = \\
+= \frac{x_1 \, x_2 + \, y_1 \, y_2 - i(y_2 \, x_1 + y_1 \, x_2)}{x_2^2 + y_2^2} = \\
+= \frac{x_1 \, x_2 + \, y_1 \, y_2}{x_2^2 + y_2^2} - i \frac{y_2 \, x_1 + y_1 \, x_2}{x_2^2 + y_2^2}
+\end{align}
+\]</span></p>
+<p>Итого <span class="math display">\[
+\frac{z_1}{z_2} = \frac{z_1 \, \overline{z_2}}{z_2 \, \overline{z_2}}= \frac{x_1 \, x_2 + \, y_1 \, y_2}{x_2^2 + y_2^2} - i \frac{y_2 \, x_1 + y_1 \, x_2}{x_2^2 + y_2^2}
+\]</span></p>
+</section>
+</section>
+<section id="дополнительные-определения" class="level4">
+<h4 class="anchored" data-anchor-id="дополнительные-определения">Дополнительные определения</h4>
+<p>Выпишим важные новые определения</p>
+<section id="алгебраический-вид-комплексного-числа" class="level5">
+<h5 class="anchored" data-anchor-id="алгебраический-вид-комплексного-числа">Алгебраический вид комплексного числа</h5>
+<p><span class="math display">\[
+z = x + i \, y
+\]</span></p>
+</section>
+<section id="сопряжённое-комплексное-число" class="level5">
+<h5 class="anchored" data-anchor-id="сопряжённое-комплексное-число">Сопряжённое комплексное число</h5>
+<p><span class="math display">\[
+\begin{align}
+z = x + iy \\
+\overline{z} = x - iy
+\end{align}
+\]</span></p>
+<p>Ну и можно ввести новые</p>
+</section>
+<section id="модуль-комлексного-числа" class="level5">
+<h5 class="anchored" data-anchor-id="модуль-комлексного-числа">Модуль комлексного числа</h5>
+<p>Как и модуль вещественный эта функция возвращает нам расстояние до начала координат <span class="math inline">\((0;0)\)</span>. Думаю все знают и умеют, что пифагоровы штаны во все стороны равны, так что <span class="math display">\[
+|z| = \sqrt{x^2 + y^2}
+\]</span></p>
+</section>
+<section id="агрумент-комплексного-числа" class="level5">
+<h5 class="anchored" data-anchor-id="агрумент-комплексного-числа">Агрумент комплексного числа</h5>
+<p>Достаточно простое понятие. Функция угла комлексного числа к оси <span class="math inline">\(\mathcal{Re}\)</span>. Вроде возвращает значения от <span class="math inline">\(-\pi\)</span> до <span class="math inline">\(\pi\)</span> и обозначается <span class="math inline">\(\arg(z)\)</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="p1ComplexNumbers/4.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<blockquote class="blockquote">
+<p>Только сейчас заметил. Получается, что <span class="math inline">\(\arg(z) = - \arg(\overline{z})\)</span></p>
+</blockquote>
+</section>
+</section>
+<section id="ещё-свойства" class="level4">
+<h4 class="anchored" data-anchor-id="ещё-свойства">Ещё свойства</h4>
+<p>Небольшое перечесление свойств коплексных чисел</p>
+<p><strong>Сопряжение суммы</strong> <span class="math display">\[
+\overline{z_1 \pm z_2} = \overline{z_1} + \overline{z_2}
+\]</span></p>
+<p><strong>Сопряжение произведения</strong> <span class="math display">\[
+\overline{z_1 \cdot z_2} = \overline{z_1} \cdot \overline{z_2}
+\]</span></p>
+<p><strong>Сопряжение частного</strong> <span class="math display">\[
+\overline{\frac{z_1}{z_2}} = \frac{\overline{z_1}}{\overline{z_2}}\, ,\; z_2 \neq 0
+\]</span></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -974,13 +1176,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../Lecture_notes/DifferentialEquations/P1_ODE_General_concepts.html" class="pagination-link" aria-label="Параграф I: Обыкновенные Дифференциальные Уравнения. Общие Понятия">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Параграф I: Обыкновенные Дифференциальные Уравнения. Общие Понятия</span>
+      <a href="../../Lecture_notes/Calculus/index.html" class="pagination-link" aria-label="Матанализ">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Матанализ</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../Lecture_notes/Calculus/p1_complex_numbers.html" class="pagination-link" aria-label="Комплесные числа">
-        <span class="nav-page-text">Комплесные числа</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../Lecture_notes/Calculus/PX_integration_methods.html" class="pagination-link" aria-label="Основные методы интегрирования">
+        <span class="nav-page-text">Основные методы интегрирования</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -989,4 +1191,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/Calculus/index.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/Calculus/index.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/Calculus/p1_complex_numbers.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/Calculus/p1_complex_numbers.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></div></div></footer></body></html>

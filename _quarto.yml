@@ -45,6 +45,7 @@ website:
               - section: "Матанализ"
                 href: Lecture_notes/Calculus/index.qmd
                 contents: 
+                  - Lecture_notes/Calculus/p1_complex_numbers.qmd
                   - Lecture_notes/Calculus/PX_integration_methods.qmd
                   - Lecture_notes/Calculus/PX_definite_integral.qmd
 

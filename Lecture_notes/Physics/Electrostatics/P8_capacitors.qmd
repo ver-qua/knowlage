@@ -169,7 +169,7 @@ $$
 \begin{flalign}
 \left(l - x \right) = R^2\\
 x^2 - l x + R^2 = 0 \\
-x = \frac{l +- \sqrt{l^2 - 4 R^2}}{2}
+x = \frac{l \pm \sqrt{l^2 - 4 R^2}}{2}
 \end{flalign}
 $$
 

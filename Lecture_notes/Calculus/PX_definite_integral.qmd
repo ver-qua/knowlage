@@ -46,7 +46,7 @@ $$
 Интересно, как это похоже на определение предела, но суть в том, при $\delta \rightarrow 0$ у нас как бы площадь получается под графиком.
 :::
 
-![](Img/int_vis.png){fig-align="center"}
+![](pXDefiniteIntegral/int_vis.png){fig-align="center"}
 
 Определенный интеграл обозначается:
 $$
