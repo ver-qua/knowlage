@@ -1,5 +1,6 @@
 ---
 title: "Физика"
+date: "24 05 2025"
 ---
 
 ::: {.callout-important}

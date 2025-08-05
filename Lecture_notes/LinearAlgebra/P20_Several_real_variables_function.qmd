@@ -1,5 +1,6 @@
 ---
 title: "Параграф XX: Функции нескольких переменных"
+date: "24 06 2025"
 ---
 `Лекция от 03.02.2025`
 
@@ -34,10 +35,10 @@ $$
 
 ::: {layout-ncol="2"}
 | В случае $\mathbb{R}^2$:
-|	Tочка $M \left( x,  y \right)$ и $f \left( x, y \right)$, $f \left( M \right)$
+|	Точка $M \left( x,  y \right)$ и $f \left( x, y \right)$, $f \left( M \right)$
 
 | В случае $\mathbb{R}^3$:
-|	Tочка $M \left( x, y, z \right)$ и $f \left( x, y, z \right)$, $f \left( M \right)$
+|	Точка $M \left( x, y, z \right)$ и $f \left( x, y, z \right)$, $f \left( M \right)$
 :::
 
 | 
@@ -95,7 +96,7 @@ $$
 $$
 
 	
-#### Определение 4: Предел функции нескольких пременных
+#### Определение 4: Предел функции нескольких переменных
 Пусть: $X \subset \mathbb{R}^n$, $\vec{a} \in \mathbb{R}^n$, $\vec{a}$ - предельная точка $X$, $f: X \to \mathbb{R}$ и $\vec{b} \in \mathbb{R}$\
 $b$ называется пределом $f$ в точке $\vec{a}$ или при $\vec{x} \to \vec{a}$ если:
 $$
@@ -142,15 +143,14 @@ $$
 :::
 :::
 
-Cуществует если:	
+Существует если:	
 $$
 \lim_{\vec{x} \to \vec{a}} f_k(\vec{x}) = b_k
 \;\;
 k=1,2,...,m
 $$
-
 	
-#### Определение 6: Неприрывность функции из $\mathbb{R}^n$ в $\mathbb{R}^m$
+#### Определение 6: Непрерывность функции из $\mathbb{R}^n$ в $\mathbb{R}^m$
 Пусть: $X \subset \mathbb{R}^n$, $\vec{a} \in X$, $\vec{a}$ - предельная точка $X$, $f: X \to \mathbb{R}$\
 Если 
 $$

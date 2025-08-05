@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Определённый интеграл (ОИ) – Учения</title>
+<title>Немного теории множеств – Учения</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../Lecture_notes/Physics/index.html" rel="next">
-<link href="../../Lecture_notes/Calculus/PX_integration_methods.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -107,7 +105,7 @@ window.Quarto = {
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -291,7 +289,7 @@ window.Quarto = {
 <span class="menu-text">Дома</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../../Lecture_notes/index.html" aria-current="page"> 
+    <a class="nav-link" href="../../Lecture_notes/index.html"> 
 <span class="menu-text">Конспекты</span></a>
   </li>  
   <li class="nav-item">
@@ -305,280 +303,40 @@ window.Quarto = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Переключить боковую панель навигации" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../Lecture_notes/Calculus/index.html">Матанализ</a></li><li class="breadcrumb-item"><a href="../../Lecture_notes/Calculus/PX_definite_integral.html">Определённый интеграл (ОИ)</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Переключить боковую панель навигации" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Конспекты</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Переключить раздел">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/LinearAlgebra/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Линейная Алгебра</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Переключить раздел">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/LinearAlgebra/P20_Several_real_variables_function.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Параграф XX: Функции нескольких переменных</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/LinearAlgebra/P21_SRVF_differentiation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Параграф XXI: Дифференциируемость функции нескольких переменных</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/LinearAlgebra/P22_Rn_to_Rm_differentiation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Параграф XXII: Дифференцируемость из R<sup>n</sup> в R<sup>m</sup></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/DifferentialEquations/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Диффуры</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Переключить раздел">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/DifferentialEquations/P1_ODE_General_concepts.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Параграф I: Обыкновенные Дифференциальные Уравнения. Общие Понятия</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/Calculus/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Матанализ</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Переключить раздел">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Calculus/p1_complex_numbers.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Комплесные числа</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Calculus/PX_integration_methods.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Основные методы интегрирования</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Calculus/PX_definite_integral.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Определённый интеграл (ОИ)</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/Physics/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Физика</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Переключить раздел">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 show">  
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/Physics/Electrostatics/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Электростатика</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Переключить раздел">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth3 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/P1_electric_feild.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Электрическое Поле</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/P2_gauss_theorem.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Теорема Гаусса</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/P3_Coulombs_law.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Закон Кулона</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/P4_electric_charge.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Электрический Заряд</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/P5_electric_potential.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Электрический потенциал</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/P6_electric_dipole.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Электрический диполь</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/P7_electric_capacity.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Электроёмкость</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/P8_capacitors.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Конденсаторы</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/P9_energy_of_electrostatic_feild.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Энергия электростатического поля и системы зарядов</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/Electrostatics/P10_el_stat_eng_diffform.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Энергия электростатического поля дифференциальная форма</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/Physics/DirectCurrent/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Постоянный ток</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Переключить раздел">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth3 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/DirectCurrent/p1_direct_current.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Постоянный ток</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/DirectCurrent/p2_Ohms_law.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Закон Ома, Сопротивление</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/DirectCurrent/p3_Joule_Lenz_law.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Закон Джоуля-Ленца</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/DirectCurrent/p4_Drudus_Lorenz_theory_disaster.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Катастрофа Теории Друды-Лоренца</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/DirectCurrent/p5_electromotive_force.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Электродвижущая сила</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../Lecture_notes/Physics/ElectricCircuits/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Электрические цепи</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Переключить раздел">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth3 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/ElectricCircuits/Transition_processes_L_C.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Переходные процессы L и C</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Lecture_notes/Physics/ElectricCircuits/RLC_circuit.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Колебательный контур</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-      </ul>
-  </li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Содержание</h2>
    
   <ul>
-  <li><a href="#определение-1-разбиение-с-отмеченными-точками" id="toc-определение-1-разбиение-с-отмеченными-точками" class="nav-link active" data-scroll-target="#определение-1-разбиение-с-отмеченными-точками">Определение 1: Разбиение с отмеченными точками</a></li>
-  <li><a href="#определение-2-интегральная-сумма-функции" id="toc-определение-2-интегральная-сумма-функции" class="nav-link" data-scroll-target="#определение-2-интегральная-сумма-функции">Определение 2: Интегральная сумма функции</a></li>
-  <li><a href="#определение-4-кусочно-неприрывная-функция" id="toc-определение-4-кусочно-неприрывная-функция" class="nav-link" data-scroll-target="#определение-4-кусочно-неприрывная-функция">Определение 4: Кусочно-неприрывная функция</a></li>
-  <li><a href="#теорема-1-cуществования" id="toc-теорема-1-cуществования" class="nav-link" data-scroll-target="#теорема-1-cуществования">Теорема 1: Cуществования:</a></li>
-  <li><a href="#теорема-2-ньютоналейбница" id="toc-теорема-2-ньютоналейбница" class="nav-link" data-scroll-target="#теорема-2-ньютоналейбница">Теорема 2: Ньютона–Лейбница</a></li>
+  <li><a href="#определение" id="toc-определение" class="nav-link active" data-scroll-target="#определение">Определение</a></li>
+  <li><a href="#операции-над-множествами" id="toc-операции-над-множествами" class="nav-link" data-scroll-target="#операции-над-множествами">Операции над множествами</a>
+  <ul>
+  <li><a href="#объединение" id="toc-объединение" class="nav-link" data-scroll-target="#объединение">Объединение</a></li>
+  <li><a href="#пересечение" id="toc-пересечение" class="nav-link" data-scroll-target="#пересечение">Пересечение</a></li>
+  <li><a href="#разность" id="toc-разность" class="nav-link" data-scroll-target="#разность">Разность</a></li>
+  <li><a href="#декартово-произведение" id="toc-декартово-произведение" class="nav-link" data-scroll-target="#декартово-произведение">Декартово произведение</a></li>
+  </ul></li>
+  <li><a href="#связи-множеств-и-не-множеств" id="toc-связи-множеств-и-не-множеств" class="nav-link" data-scroll-target="#связи-множеств-и-не-множеств">Связи множеств и не множеств</a>
+  <ul>
+  <li><a href="#прендадлежность-элемента-множеству" id="toc-прендадлежность-элемента-множеству" class="nav-link" data-scroll-target="#прендадлежность-элемента-множеству">Прендадлежность элемента множеству</a></li>
+  <li><a href="#подмножество" id="toc-подмножество" class="nav-link" data-scroll-target="#подмножество">Подмножество</a></li>
+  <li><a href="#равенство" id="toc-равенство" class="nav-link" data-scroll-target="#равенство">Равенство</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/Calculus/PX_definite_integral.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/Calculus/PX_definite_integral.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/Calculus/p3_about_set_theory.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/Calculus/p3_about_set_theory.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Lecture_notes/index.html">Конспекты</a></li><li class="breadcrumb-item"><a href="../../Lecture_notes/Calculus/index.html">Матанализ</a></li><li class="breadcrumb-item"><a href="../../Lecture_notes/Calculus/PX_definite_integral.html">Определённый интеграл (ОИ)</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Определённый интеграл (ОИ)</h1>
+<h1 class="title">Немного теории множеств</h1>
 </div>
 
 
@@ -601,93 +359,64 @@ window.Quarto = {
 </header>
 
 
-<p><code>Лекция 1 (07.02.2025)</code></p>
-<section id="определение-1-разбиение-с-отмеченными-точками" class="level4">
-<h4 class="anchored" data-anchor-id="определение-1-разбиение-с-отмеченными-точками">Определение 1: Разбиение с отмеченными точками</h4>
-<p>Пусть задан отрезок <span class="math inline">\([a, b]\)</span>, где <span class="math inline">\(a &lt; b\)</span> и система точек <span class="math inline">\(x_0, x_1, ..., x_n\)</span>, такая что <span class="math display">\[
-a = x_0 &lt; x_1 &lt; \cdots &lt; x_{n-1} &lt; x_n = b
-\]</span></p>
-<p>то говорят, что задано разбиение отрезка <span class="math inline">\([a, b]\)</span> на промежутки <span class="math inline">\([x_k, x_{k+1}]\)</span>, <span class="math inline">\(k = 0, 1, ..., n-1\)</span>. Разбиение обозначается <span class="math inline">\(\Pi\)</span>. Если, кроме того, в каждом промежутке <span class="math inline">\([x_k, x_{k+1}]\)</span> выбрана точка <span class="math inline">\(\xi_k \in [x_k, x_{k+1}]\)</span>, то говорят о <strong>разбиении с отмеченными точками</strong>, обозначаемом <span class="math inline">\(\Pi_\xi\)</span></p>
-<p>Введём обозначения:</p>
-<ul>
-<li><span class="math inline">\(\Delta x_k = x_{k+1} - x_k\)</span> - <strong>длина</strong> k-го промежутка</li>
-<li><span class="math inline">\(\lambda(\Pi) = \max_{k=0,1,...,n} \Delta x_k\)</span> - <strong>ранг разбиения</strong></li>
-</ul>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Важно
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Отрезки не обязательно одинаковые! Много где интегралы визуализируют через одинаковые отрезки, но из определения видно, что чёткое положение точек не указано, а также в нём не говорится о том, что <span class="math inline">\(\xi_k\)</span> выбирается посередине!</p>
-</div>
-</div>
+<section id="определение" class="level4">
+<h4 class="anchored" data-anchor-id="определение">Определение</h4>
+<p><strong>Множество</strong> – совокупность объектов, обладающих общим свойством. Множеством могут быть все машины на планете у которых сломался правый задний датчик АБС или все натуральные числа. Обычно множества обозначают большими латинскими символами <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>, <span class="math inline">\(C\)</span> и т.д.</p>
+<p>Создатель теории множеств – <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BD%D1%82%D0%BE%D1%80,_%D0%93%D0%B5%D0%BE%D1%80%D0%B3">Георг Кантор</a>, интересно, что когда он её представил, много математиков того времени были с ним совсем не согласны в том, что это полезно, а кто-то даже называл его научным шарлатаном. Ну да ту самую теорию на которой держится вся современная математика тогда принимали со скрежетом.</p>
 </section>
-<section id="определение-2-интегральная-сумма-функции" class="level4">
-<h4 class="anchored" data-anchor-id="определение-2-интегральная-сумма-функции">Определение 2: Интегральная сумма функции</h4>
-<p>Пусть <span class="math inline">\(f : [a, b] \rightarrow \mathbb{R}\)</span> – ограниченная функция.<br>
-Число <span class="math display">\[
-S_{\Pi_\xi}(f) = \sum_{k=0}^{n-1}{f(\xi_k)\Delta x_k}
-\]</span> Называется интегральной суммой функции<span class="math inline">\(f\)</span> , соответствующей разбиению с отмеченными точками<span class="math inline">\(\Pi_\xi\)</span>.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Заметка
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Опять же важно, что то на какие отрезки мы разбиваем не важно (и куда пихаем <span class="math inline">\(\xi_k\)</span>).</p>
-</div>
-</div>
-<p>Определение 3: Определённый интеграл Число <span class="math inline">\(I\)</span> называется определенным интегралом от ограниченной функции <span class="math inline">\(f\)</span> по отрезку <span class="math inline">\([a, b]\)</span>, если для любого <span class="math inline">\(\varepsilon &gt; 0\)</span> существует <span class="math inline">\(\delta &gt; 0\)</span>, такое, то для любого разбиения <span class="math inline">\(\Pi\)</span> с <span class="math inline">\(\lambda(\Pi) &lt; \delta\)</span> справедливо неравенство: <span class="math display">\[
-\vert S_{\Pi_\xi}(f) - I \vert &lt; \varepsilon
-\]</span></p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Заметка
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Интересно, как это похоже на определение предела, но суть в том, при <span class="math inline">\(\delta \rightarrow 0\)</span> у нас как бы площадь получается под графиком.</p>
-</div>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="pXDefiniteIntegral/int_vis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-<p>Определенный интеграл обозначается: <span class="math display">\[
-I = \int_a^b{f(x)\,dx}
-\]</span></p>
-<p>Числа <span class="math inline">\(a\)</span> и <span class="math inline">\(b\)</span> называются, соответственно, нижним и верхним пределами интегрирования, <span class="math inline">\(f\)</span> называется подынтегральной функцией. Если определенный интеграл <span class="math inline">\(\int_a^b{f(x)\,dx}\)</span> существует, то функция <span class="math inline">\(f\)</span> называется интегрируемой на <span class="math inline">\([a, b]\)</span>.</p>
+<section id="операции-над-множествами" class="level4">
+<h4 class="anchored" data-anchor-id="операции-над-множествами">Операции над множествами</h4>
+<p>Существуют операции которые мы можем к ним применять</p>
+<section id="объединение" class="level5">
+<h5 class="anchored" data-anchor-id="объединение">Объединение</h5>
+<p><span class="math inline">\(A \cup B\)</span> – множество содержащее все элементы и из <span class="math inline">\(A\)</span> и из <span class="math inline">\(B\)</span></p>
+<blockquote class="blockquote">
+<p>Чтобы запомнить символ этой операции я обычно представляю, как два множества будто вместе наливают в один стакан <span class="math inline">\(\cup\)</span></p>
+</blockquote>
 </section>
-<section id="определение-4-кусочно-неприрывная-функция" class="level4">
-<h4 class="anchored" data-anchor-id="определение-4-кусочно-неприрывная-функция">Определение 4: Кусочно-неприрывная функция</h4>
-<p>Функция <span class="math inline">\(f : X \rightarrow \mathbb{R}\)</span> называется кусочно-непрерывной на множестве <span class="math inline">\(X\)</span>, если она имеет только конечное число точек разрыва, принадлежащих <span class="math inline">\(X\)</span>, и эти точки являются либо точками устранимого разрыва, либо точками разрыва 1-го рода.</p>
+<section id="пересечение" class="level5">
+<h5 class="anchored" data-anchor-id="пересечение">Пересечение</h5>
+<p><span class="math inline">\(A \cap B\)</span> – множетсво элементов, которые есть как в <span class="math inline">\(A\)</span> так и в и <span class="math inline">\(B\)</span></p>
+<blockquote class="blockquote">
+<p>А здесь наборот, если представить два множества как, например, две кучки каких-то круп, то мы одним стаканом <span class="math inline">\(\cap\)</span> накрываем пересекающиеся их части</p>
+</blockquote>
 </section>
-<section id="теорема-1-cуществования" class="level4">
-<h4 class="anchored" data-anchor-id="теорема-1-cуществования">Теорема 1: Cуществования:</h4>
-<p>Если функция <span class="math inline">\(f\)</span> кусочно-непрерывна на <span class="math inline">\([a, b]\)</span>, то она интегрируема на <span class="math inline">\([a, b]\)</span>.</p>
+<section id="разность" class="level5">
+<h5 class="anchored" data-anchor-id="разность">Разность</h5>
+<p><span class="math inline">\(A \setminus B\)</span> – множество элементов <span class="math inline">\(A\)</span>, что не содержатся в <span class="math inline">\(B\)</span></p>
+<blockquote class="blockquote">
+<p>Ну здесь, мне кажется ни с чем не перепутать</p>
+</blockquote>
+<p>Также можно обозначить вычитание определённого элемента из множества <span class="math inline">\(A \setminus \lbrace x \rbrace\)</span></p>
+<blockquote class="blockquote">
+<p>К слову как я понял, окружая элемент фигурными скобками мы будто записываем его как множество из одного элемента, потому вычитать можно только множества? Ну в общем для операций объединения, пересечения (хотя пересекать множество с одним единственным элементом странно) и вычитания так принято</p>
+</blockquote>
 </section>
-<section id="теорема-2-ньютоналейбница" class="level4">
-<h4 class="anchored" data-anchor-id="теорема-2-ньютоналейбница">Теорема 2: Ньютона–Лейбница</h4>
-<p>Пусть <span class="math inline">\(G\)</span> – некоторая первообразная на отрезке <span class="math inline">\([a, b]\)</span> к кусочно-непрерывной функции <span class="math inline">\(f\)</span>, тогда: <span class="math display">\[
-\int_a^b{f(x)dx} = G(b) - G(a)
-\]</span> Формула Ньютона-Лейбница<br>
-Разность <span class="math inline">\(G(b) - G(a)\)</span> называется подстановкой и сокращённо записывается <span class="math inline">\(G(b) - G(a) = G(x)\Big|_a^b\)</span></p>
+<section id="декартово-произведение" class="level5">
+<h5 class="anchored" data-anchor-id="декартово-произведение">Декартово произведение</h5>
+<p><span class="math inline">\(A \times B\)</span> – множество упорядоченных всех пар элементов из <span class="math inline">\(A\)</span> и <span class="math inline">\(B\)</span>. Упорядоченных значит, что <span class="math inline">\((x;y) \neq (y;x)\)</span> Или по другому <span class="math inline">\(A \times B = \lbrace (x;y) \; \vert \; x \in A \; \wedge \; y \in B \rbrace\)</span></p>
+</section>
+</section>
+<section id="связи-множеств-и-не-множеств" class="level4">
+<h4 class="anchored" data-anchor-id="связи-множеств-и-не-множеств">Связи множеств и не множеств</h4>
+<p>Вы вероятно уже заметили несколько новых символов, так вот</p>
+<section id="прендадлежность-элемента-множеству" class="level5">
+<h5 class="anchored" data-anchor-id="прендадлежность-элемента-множеству">Прендадлежность элемента множеству</h5>
+<p>Символом <span class="math inline">\(\in\)</span> обозначают то, что определённый элемент содержится в определённом множестве например <span class="math inline">\(\xi \in Z\)</span> – элемент <span class="math inline">\(\xi\)</span> принадлижит множеству <span class="math inline">\(Z\)</span>.</p>
+<blockquote class="blockquote">
+<p>А вот сдесь фигурные скобки не нужны, да, потому что тут принадлежность</p>
+</blockquote>
+</section>
+<section id="подмножество" class="level5">
+<h5 class="anchored" data-anchor-id="подмножество">Подмножество</h5>
+<p>Символом <span class="math inline">\(\subset\)</span> обозначают, что одно множество полностью содержится в другом. <span class="math inline">\(Q \subset D\)</span> множество <span class="math inline">\(Q\)</span> подмножество <span class="math inline">\(D\)</span></p>
+</section>
+<section id="равенство" class="level5">
+<h5 class="anchored" data-anchor-id="равенство">Равенство</h5>
+<p>Мне кажется, что это достаточно очевидная связь. <span class="math inline">\(A = W\)</span> множество <span class="math inline">\(A\)</span> равно множеству <span class="math inline">\(W\)</span>. Интересный факт заключается в том, что из равенства множеств</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -1103,21 +832,9 @@ I = \int_a^b{f(x)\,dx}
     }
   });
   </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../../Lecture_notes/Calculus/PX_integration_methods.html" class="pagination-link" aria-label="Основные методы интегрирования">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Основные методы интегрирования</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../../Lecture_notes/Physics/index.html" class="pagination-link" aria-label="Физика">
-        <span class="nav-page-text">Физика</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/Calculus/PX_definite_integral.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/Calculus/PX_definite_integral.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/Calculus/p3_about_set_theory.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/Calculus/p3_about_set_theory.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></div></div></footer></body></html>
