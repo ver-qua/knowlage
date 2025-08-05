@@ -349,7 +349,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../Lecture_notes/LinearAlgebra/P21_SRVF_differentiation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Параграф XXI: Дифференциируемость функции нескольких переменных</span></a>
+ <span class="menu-text">Параграф XXI: Дифференцируемость функции нескольких переменных</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -389,7 +389,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../Lecture_notes/Calculus/p1_complex_numbers.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Комплесные числа</span></a>
+ <span class="menu-text">Комплексные числа</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -609,14 +609,14 @@ window.Quarto = {
 <p>Напряжение на конденсаторе определяется через заряд <span class="math inline">\(q=c\,U_c\)</span> и тогда: <span class="math display">\[
 I = \frac{dq}{dt} = C\cdot dU_C
 \]</span></p>
-<p>Ну а согласно первому правилу Киргоффа сумма всех падений напряжений равна сумме всех ЭДС, а поэтому: <span class="math display">\[
+<p>Ну а согласно первому правилу Кирхгофа сумма всех падений напряжений равна сумме всех ЭДС, а поэтому: <span class="math display">\[
 I\,R + U_C = \mathcal{E}
 \]</span></p>
 <p>Или по другому <span class="math display">\[
 C\,R\,\frac{dU_C}{dt} = \mathcal{E} - U
 \]</span> <em>Здесь мы просто ток подставили</em><br>
 </p>
-<p>Это прострейший диффур с разделяющимися переменными и если его аккуратно привести к виду, то выйдет: <span class="math display">\[
+<p>Это простейший диффур с разделяющимися переменными и если его аккуратно привести к виду, то выйдет: <span class="math display">\[
 t = \int_{U_{C_0}}^{U_{C}}{\frac{R\,C}{\mathcal{E}-U_C}dU_C}
 \]</span></p>
 <p>И решение его выглядит вот так: <span class="math display">\[
@@ -637,7 +637,7 @@ U_C = \mathcal{E}\,\left( 1 - e^{-\frac{t}{R\,C}} \right)
 <h4 class="anchored" data-anchor-id="отключение-цепи">Отключение цепи</h4>
 <p>А если у нас уже было напряжение и мы цепь отключаем:<br>
 <img src="Transition_processes_L_C_img/circuit_C_closeup.png" class="img-fluid"><br>
-То для напряжения получается такой график(получается, что напряжение экпоненциально падает):<br>
+То для напряжения получается такой график(получается, что напряжение экспоненциально падает):<br>
 <img src="Transition_processes_L_C_img/U_C_closeup_graph.png" class="img-fluid"><br>
 <span class="math display">\[
 U = U_0\,e^{-\frac{t}{R\,C}}
@@ -646,7 +646,7 @@ U = U_0\,e^{-\frac{t}{R\,C}}
 I = C \,\frac{dU_C}{dt} = -\frac{U_{C_0}}{R}\,e^{-\frac{t}{R\,C}}
 \]</span> При <span class="math inline">\(t=-0\)</span> <span class="math display">\[
 I = -\frac{U_{C_0}}{R}
-\]</span> И таким образом при рзмыкании в цепи с очень маленьким сопративлением, в ней протечёт большой ток.<br>
+\]</span> И таким образом при размыкании в цепи с очень маленьким сопротивлением, в ней протечёт большой ток.<br>
 </p>
 
 

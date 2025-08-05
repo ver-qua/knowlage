@@ -348,7 +348,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../Lecture_notes/LinearAlgebra/P21_SRVF_differentiation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Параграф XXI: Дифференциируемость функции нескольких переменных</span></a>
+ <span class="menu-text">Параграф XXI: Дифференцируемость функции нескольких переменных</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -388,7 +388,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../Lecture_notes/Calculus/p1_complex_numbers.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Комплесные числа</span></a>
+ <span class="menu-text">Комплексные числа</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -564,7 +564,7 @@ window.Quarto = {
    
   <ul>
   <li><a href="#вывод-уравнения-колебательного-контура" id="toc-вывод-уравнения-колебательного-контура" class="nav-link active" data-scroll-target="#вывод-уравнения-колебательного-контура">Вывод уравнения колебательного контура</a></li>
-  <li><a href="#чисто-вынужденнные-колебания" id="toc-чисто-вынужденнные-колебания" class="nav-link" data-scroll-target="#чисто-вынужденнные-колебания">Чисто вынужденнные колебания</a></li>
+  <li><a href="#чисто-вынужденные-колебания" id="toc-чисто-вынужденные-колебания" class="nav-link" data-scroll-target="#чисто-вынужденные-колебания">Чисто вынужденные колебания</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ver-qua/knowlage/blob/master/Lecture_notes/Physics/ElectricCircuits/RLC_circuit.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Показать код</a></li><li><a href="https://github.com/ver-qua/knowlage/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Сообщить о проблеме</a></li><li><a href="https://github.com/ver-qua/knowlage/edit/master/Lecture_notes/Physics/ElectricCircuits/RLC_circuit.qmd" target="_blank" class="toc-action"><i class="bi empty"></i>Редактировать страницу</a></li></ul></div></nav>
     </div>
@@ -599,7 +599,7 @@ window.Quarto = {
 
 <p>А теперь рассмотрим вот такую цепь:</p>
 <p><img src="RLC_circuit_img/simple_oscilator.png" class="img-fluid"></p>
-<p>Из источника ЭДС, последовательно включённого конденсатора, котушки индкутивности и резистора.</p>
+<p>Из источника ЭДС, последовательно включённого конденсатора, катушки индуктивности и резистора.</p>
 <section id="вывод-уравнения-колебательного-контура" class="level3">
 <h3 class="anchored" data-anchor-id="вывод-уравнения-колебательного-контура">Вывод уравнения колебательного контура</h3>
 <p>А теперь зададим направление тока и нарисуем источник ЭДС индукции над катушкой:</p>
@@ -610,10 +610,10 @@ window.Quarto = {
 <p>Далее распишем ЭДС индукции и напряжение на конденсаторе через заряд(<span class="math inline">\(q = C\,U\)</span>): <span class="math display">\[
 \mathcal{E} -L\,\frac{dI}{dt} = I\,R + \frac{q}{C}
 \]</span></p>
-<p>И таким образом наше дифференцальное уравнение можно переписать относительно заряда: <span class="math display">\[
+<p>И таким образом наше дифференциальное уравнение можно переписать относительно заряда: <span class="math display">\[
 \mathcal{E} = L\frac{d^2 q}{dt^2} + R\frac{dq}{dt} + \frac{q}{C}
 \]</span></p>
-<p>И это <code>уравнение колебаний</code>! Но его лучше преобразовать поделив всё на индукцивность: <span class="math display">\[
+<p>И это <code>уравнение колебаний</code>! Но его лучше преобразовать поделив всё на индуктивность: <span class="math display">\[
 \frac{\mathcal{E}}{L} = \frac{d^2 q}{dt^2} + \frac{R}{L}\frac{dq}{dt} + \frac{q}{C\,L}
 \]</span></p>
 <p>Введём обозначения: <span class="math display">\[
@@ -647,8 +647,8 @@ B = \frac{f_0}{\sqrt{\left(\omega_0^2 + \omega^2 \right)^2 + 4\,p^2\,\omega^2}}\
 \end{align}
 \]</span></p>
 </section>
-<section id="чисто-вынужденнные-колебания" class="level3">
-<h3 class="anchored" data-anchor-id="чисто-вынужденнные-колебания">Чисто вынужденнные колебания</h3>
+<section id="чисто-вынужденные-колебания" class="level3">
+<h3 class="anchored" data-anchor-id="чисто-вынужденные-колебания">Чисто вынужденные колебания</h3>
 <p>Предположим, что свободные колебания в контуре затухли и остались только вынужденные колебания. Для этих вынужденных колебаний можно сказать, что заряд <span class="math inline">\(q\)</span> равен: <span class="math display">\[
 q = q_0 \sin\left(\omega t + \varphi_0 \right)
 \]</span></p>
