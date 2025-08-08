@@ -27,32 +27,32 @@ website:
     - title: "Конспекты"
       collapse-level: 5
       contents:
-          - section: "Конспекты"
+          - section: "📦Конспекты"
             href: Lecture_notes/index.qmd
             contents: 
-              - section: "Линейная Алгебра"
+              - section: "🗓️Линейная Алгебра"
                 href: Lecture_notes/LinearAlgebra/index.qmd
                 contents: 
                   - Lecture_notes/LinearAlgebra/P20_Several_real_variables_function.qmd
                   - Lecture_notes/LinearAlgebra/P21_SRVF_differentiation.qmd
                   - Lecture_notes/LinearAlgebra/P22_Rn_to_Rm_differentiation.qmd
 
-              - section: "Диффуры"
+              - section: "🏎️Диффуры"
                 href: Lecture_notes/DifferentialEquations/index.qmd
                 contents: 
                   - Lecture_notes/DifferentialEquations/P1_ODE_General_concepts.qmd
 
-              - section: "Матанализ"
+              - section: "📈Матанализ"
                 href: Lecture_notes/Calculus/index.qmd
                 contents: 
                   - Lecture_notes/Calculus/p1_complex_numbers.qmd
                   - Lecture_notes/Calculus/PX_integration_methods.qmd
                   - Lecture_notes/Calculus/PX_definite_integral.qmd
 
-              - section: "Физика"
+              - section: "🌍Физика"
                 href: Lecture_notes/Physics/index.qmd
                 contents:
-                  - section: "Электростатика"
+                  - section: "🔋Электростатика"
                     href: "Lecture_notes/Physics/Electrostatics/index.qmd"
                     contents: 
                       - Lecture_notes/Physics/Electrostatics/P1_electric_feild.qmd
@@ -66,7 +66,7 @@ website:
                       - Lecture_notes/Physics/Electrostatics/P9_energy_of_electrostatic_feild.qmd
                       - Lecture_notes/Physics/Electrostatics/P10_el_stat_eng_diffform.qmd
 
-                  - section: "Постоянный ток"
+                  - section: "⚡Постоянный ток"
                     href: Lecture_notes/Physics/DirectCurrent/index.qmd
                     contents: 
                       - Lecture_notes/Physics/DirectCurrent/p1_direct_current.qmd
@@ -75,7 +75,7 @@ website:
                       - Lecture_notes/Physics/DirectCurrent/p4_Drudus_Lorenz_theory_disaster.qmd
                       - Lecture_notes/Physics/DirectCurrent/p5_electromotive_force.qmd
 
-                  - section: "Электрические цепи"
+                  - section: "🔗Электрические цепи"
                     href: "Lecture_notes/Physics/ElectricCircuits/index.qmd"
                     contents: 
                       - Lecture_notes/Physics/ElectricCircuits/Transition_processes_L_C.qmd

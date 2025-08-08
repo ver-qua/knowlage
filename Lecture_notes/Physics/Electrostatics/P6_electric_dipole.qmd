@@ -84,7 +84,7 @@ $$
 \end{pmatrix}
 $$
 
-Объясняем прирощения
+Объясняем приращения
 
 ![](P6_ElectricDipole/3.png){fig-align="center"}
 
