@@ -8,3 +8,8 @@ date: "24 06 2025"
 ## Заметтье
 Всё здесь в основном записано по лекциям Ильи Львовича Шеймана с `youtube`: [https://www.youtube.com/@I_Sheinman](https://www.youtube.com/@I_Sheinman)
 :::
+
+::: {.callout-caution}
+## Важно
+Раздел ещё в процессе написания. 
+:::
